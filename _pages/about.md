@@ -12,11 +12,9 @@ Greetings!!!
 
 <div style="text-align: justify"> 
 
-I am Tonmoy Hossain, a third-year Ph.D. in CS student at the University of Virginia. I am working as a Graduate Research Assistant at the MIA Lab under the supervision of [Prof. Miaomiao Zhang](https://www.cs.virginia.edu/~mz8rr/index.html). My primary research interest lies in Machine Learning Applications, Computer Vision, and Image Processing.<br /><br /></div>
+This is Tonmoy Hossain, a third-year Ph.D. in CS student at the University of Virginia. I am working as a Graduate Research Assistant at the MIA Lab under the supervision of [Prof. Miaomiao Zhang](https://www.cs.virginia.edu/~mz8rr/index.html). I am also serving as a Graduate Program Representative at [UVA CSGSG](https://csgsg.org/).My primary research interest lies in Machine Learning Applications, Computer Vision, and Image Processing.<br /><br /></div>
  
-<b> I am open to any Research Collaborations in the field of *Computer Vision*, *Image Analysis*, and *Vision Security*. Please reach out if you have anything to discuss or want to work together.  </b> <a href="mailto:pwg7jb@virginia.edu"><i class="fas fa-envelope"></i></a> <br />  
-
-<I am also serving as a Graduate Program Representative at [UVA CSGSG](https://csgsg.org/). I have completed B.Sc. in Computer Science and Engineering from <a href="http://aust.edu/">Ahsanullah University of Science and Technology (AUST)</a>, Dhaka, Bangladesh. After completing my undergraduate program, I got the opportunity to serve my alma mater as a Lecturer in the <a href="https://www.aust.edu/cse">Department of CSE</a>.> 
+<b> I am open to any Research Collaborations in the field of *Computer Vision*, *Image Analysis*, and *Causal Inference*. Please reach out if you have anything to discuss or want to work together.  </b> <a href="mailto:pwg7jb@virginia.edu"><i class="fas fa-envelope"></i></a> <br />  
 
 **For additional information, please see the [CV](https://tonmoy-hossain.github.io/cv/) and [publications](https://tonmoy-hossain.github.io/publications/).**
 
