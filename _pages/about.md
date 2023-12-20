@@ -22,7 +22,7 @@ This is Tonmoy Hossain, a third-year Ph.D. in CS student at the University of Vi
 
 
 # Activities 
-* <span style="color:Blue"> [Dec 09, 2023] </span> - Our paper on MGAug: Multimodal Geometric Augmentation in Latent Spaces of Image Deformations was accepted at AAAI 2023. arXiv coming soon. Hooray!!! 
+* <span style="color:Blue"> [Dec 09, 2023] </span> - Our paper on MGAug: Multimodal Geometric Augmentation in Latent Spaces of Image Deformations was accepted at AAAI 2024. arXiv coming soon. Hooray!!! 
 * <span style="color:Blue"> [Aug 18, 2023] </span> - Our paper on [SADIR: Shape-Aware Diffusion Models for 3D Image Reconstruction](https://arxiv.org/pdf/2309.03335.pdf) was accepted at MICCAI ShapeMI 2023. 
 * <span style="color:Blue"> [Jan 22, 2023] </span> - Our paper on [Multimodal Deep Learning to Differentiate Tumor Recurrence from Treatment Effect in Human Glioblastoma](https://arxiv.org/pdf/2302.14124.pdf) was accepted at ISBI 2023. 
 * <span style="color:Blue"> [May 05, 2022] </span> - I have started working with [Professor Miaomiao Zhang](https://engineering.virginia.edu/faculty/miaomiao-zhang) as my Ph.D. advisor. I'll be working in the field of Computer Vision, concentrating on Generative AI and Causal Inference. For any kind of collaboration, don't hesitate to communicate.
