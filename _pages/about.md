@@ -18,15 +18,13 @@ I am currently pursuing a Ph.D. in Information Systems at the University of Mary
 
 <div style="text-align: justify">
 
-
-Previously, I engaged in research at the Advanced Medical Engineering Research Center (AMEC) at the University of Hyogo, Japan, under Prof. Dr. Syoji Kobashi. My work focused on the application of Deep Learning in Medical Image Processing, particularly in real-time wearable camera video analysis for surgical workflow recognition, supported by a HUMAP research scholarship.
+  Previously, I engaged in research at the Advanced Medical Engineering Research Center (AMEC) at the University of Hyogo, Japan, under Prof. Dr. Syoji Kobashi. My work focused on the application of Deep Learning in Medical Image Processing, particularly in real-time wearable camera video analysis for surgical workflow recognition, supported by a HUMAP research scholarship.
 
 </div>
 
 <div style="text-align: justify">
 
-
-Before embarking on my Ph.D., I taught as a Lecturer in the Department of Computer Science and Engineering (CSE) at Leading University, Sylhet, and served as a Teaching Assistant at the International University of Business Agriculture and Technology (IUBAT), Dhaka, where I completed my B.Sc. in Electrical and Electronic Engineering with distinction. For further details, my extended CV is available upon request.
+  Before embarking on my Ph.D., I taught as a Lecturer in the Department of Computer Science and Engineering (CSE) at Leading University, Sylhet, and served as a Teaching Assistant at the International University of Business Agriculture and Technology (IUBAT), Dhaka, where I completed my B.Sc. in Electrical and Electronic Engineering with distinction. For further details, my extended CV is available upon request.
 
 </div>
 
