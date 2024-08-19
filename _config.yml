@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Tonmoy Hossain"
+title                    : "Shadman Sakib"
 title_separator          : "-"
-name                     : &name "Tonmoy Hossain"
+name                     : &name "Shadman Sakib"
 description              : &description "personal description"
-url                      : https://tonmoy-hossain.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://sakibshadman.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "tonmoy-hossain/tonmoy-hossain.github.io"
+repository               : "sakibshadman/sakibshadman.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -80,16 +80,16 @@ analytics:
 
 # Site Author
 author:
-  name             : "Tonmoy Hossain"
+  name             : "Shadman Sakib"
   avatar           : "final_picture.jpg"
-  bio              : "Communicating with the data to contribute to the field of Deep Learning and Computer Vision for mankind is my pre-eminent ambition"
-  location         : "Virginia, United States"
+  #bio              : "Communicating with the data to contribute to the field of Deep Learning and Computer Vision for mankind is my pre-eminent ambition"
+  location         : "Maryland, United States"
   employer         :
-  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "https://scholar.google.com/citations?user=JoLJE7AAAAAJ&hl=en"
+  #pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  googlescholar    : "https://scholar.google.com/citations?user=RlxTPrkAAAAJ&hl=en"
   DBLP             : 
-  email            :  pwg7jb@virginia.edu
-  researchgate     :  "https://www.researchgate.net/profile/Tonmoy_Hossain2"
+  email            :  ssakib1@umbc.edu
+  #researchgate     :  "https://www.researchgate.net/profile/Tonmoy_Hossain2"
   uri              :
   bitbucket        :
   codepen          :
@@ -97,20 +97,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "tonmoy-hossain"
+  github           : "sakibshadman"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/tonmoy-hossain-dihan"
-  orcid            : "https://orcid.org/0000-0002-5808-6391"
+  linkedin         : "https://www.linkedin.com/in/shadman-sakib15/"
+  orcid            : "https://orcid.org/0000-0002-8794-1414"
   pinterest        :
   soundcloud       :
-  stackoverflow    : # http://stackoverflow.com/users/123456/username
+  #stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : #"mtnayeem"
+  #twitter          : #"mtnayeem"
   vine             :
   weibo            :
   xing             :
