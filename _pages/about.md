@@ -16,12 +16,7 @@ I am currently pursuing a Ph.D. in Information Systems at the University of Mary
 
 Previously, I engaged in research at the Advanced Medical Engineering Research Center (AMEC) at the University of Hyogo, Japan, under Prof. Dr. Syoji Kobashi. My work focused on the application of Deep Learning in Medical Image Processing, particularly in real-time wearable camera video analysis for surgical workflow recognition, supported by a HUMAP research scholarship.
 
-Before embarking on my Ph.D., I taught as a Lecturer in the Department of Computer Science and Engineering (CSE) at Leading University, Sylhet, and served as a Teaching Assistant at the International University of Business Agriculture and Technology (IUBAT), Dhaka, where I completed my B.Sc. in Electrical and Electronic Engineering with distinction. For further details, my extended CV is available upon request. 
-#This is Tonmoy Hossain, a third-year Ph.D. in CS student at the University of Virginia. I am working as a Graduate Research Assistant at the MIA Lab under the supervision of <a #href="https://www.cs.virginia.edu/~mz8rr/index.html">Prof. Miaomiao Zhang</a>. I am also serving as a Graduate Program Representative at <a href="https://csgsg.org/">UVA CSGSG</a>. My primary research interest lies in #Computer Vision, Image Analysis and Causal Inference.<br /><br /></div>
- 
-#<b> I am open to any Research Collaborations in the field of *Multimodal Representation*, *Generative AI*, *Shape Analysis*, and *Causal Inference*. Please reach out if you have anything to discuss or want to work #together.  </b> <a href="mailto:pwg7jb@virginia.edu"><i class="fas fa-envelope"></i></a> <br />  
-
-#**For additional information, please see the [CV](https://tonmoy-hossain.github.io/cv/) and [publications](https://tonmoy-hossain.github.io/publications/).**
+Before embarking on my Ph.D., I taught as a Lecturer in the Department of Computer Science and Engineering (CSE) at Leading University, Sylhet, and served as a Teaching Assistant at the International University of Business Agriculture and Technology (IUBAT), Dhaka, where I completed my B.Sc. in Electrical and Electronic Engineering with distinction. For further details, my extended CV is available upon request. <br /><br /></div>
 
 -----------
 
