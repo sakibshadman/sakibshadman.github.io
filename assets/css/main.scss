@@ -615,3 +615,110 @@ details {
     box-shadow: none !important;
   }
 }
+
+/* ==========================================================================
+   SIDEBAR LIVE INFO
+   ========================================================================== */
+
+.orcid-icon {
+  color: #a6ce39 !important;
+}
+
+.sidebar-live-info {
+  margin-top: 18px;
+  padding-top: 13px;
+
+  border-top: 1px solid $border-color;
+
+  font-size: 0.88em;
+}
+
+.sidebar-live-row {
+  display: flex;
+  align-items: center;
+
+  gap: 7px;
+
+  margin-bottom: 8px;
+
+  color: $gray;
+  line-height: 1.35;
+}
+
+.sidebar-live-label {
+  color: $dark-gray;
+  font-weight: 500;
+}
+
+
+/* Animated globe */
+
+.visitor-globe {
+  width: 18px;
+
+  color: $teal;
+
+  text-align: center;
+
+  animation: globe-spin 8s linear infinite;
+}
+
+@keyframes globe-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* Visitor counter */
+
+.sidebar-live-info .visitor-counter {
+  display: inline-block !important;
+
+  width: auto !important;
+  height: 20px !important;
+
+  min-width: 0 !important;
+  max-width: 75px !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  border: 0 !important;
+
+  border-radius: 3px !important;
+
+  box-shadow: none !important;
+}
+
+
+/* Clock */
+
+.sidebar-clock-icon {
+  width: 18px;
+
+  color: $gold;
+
+  text-align: center;
+}
+
+#sidebar-live-clock {
+  color: $dark-gray;
+
+  font-size: 0.95em;
+
+  font-variant-numeric: tabular-nums;
+}
+
+
+/* Accessibility */
+
+@media (prefers-reduced-motion: reduce) {
+  .visitor-globe {
+    animation: none;
+  }
+}
