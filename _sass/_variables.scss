@@ -9,7 +9,7 @@
 $doc-font-size              : 15;
 
 /* paragraph indention */
-$paragraph-indent           : false; // true, false (default)
+$paragraph-indent           : false;
 $indent-var                 : 0.5em;
 
 /* system typefaces */
@@ -42,8 +42,8 @@ $type-size-2                : 1.953em;
 $type-size-3                : 1.4em;
 $type-size-4                : 1.2em;
 $type-size-5                : 1em;
-$type-size-6                : 1em;
-$type-size-7                : 0.6875em;
+$type-size-6                : 0.95em;
+$type-size-7                : 0.75em;
 $type-size-8                : 0.625em;
 
 
@@ -52,15 +52,26 @@ $type-size-8                : 0.625em;
    ========================================================================== */
 
 /*
-   Professional academic theme:
-   Deep navy + slate + blue
+   Professional academic palette
+   Navy + teal + muted gold
 */
 
-$gray                       : #64748b;
+$navy                       : #17324d;
+$navy-dark                  : #10263b;
+$navy-light                 : #31536f;
+
+$teal                       : #0f766e;
+$teal-dark                  : #0b5f59;
+$teal-light                 : #dff4f1;
+
+$gold                       : #c58a2c;
+$gold-light                 : #f7eedc;
+
+$gray                       : #6b7280;
 $dark-gray                  : #334155;
-$darker-gray                : #0f172a;
+$darker-gray                : #1f2937;
 $light-gray                 : #cbd5e1;
-$lighter-gray               : #e2e8f0;
+$lighter-gray               : #e5e7eb;
 
 $body-color                 : #ffffff;
 $background-color           : #ffffff;
@@ -69,14 +80,14 @@ $code-background-color      : #f8fafc;
 $code-background-color-dark : #e2e8f0;
 
 $text-color                 : #334155;
-$border-color               : #e2e8f0;
+$border-color               : #dbe3ea;
 
-$primary-color              : #0f172a;
+$primary-color              : $navy;
 
-$success-color              : #16a34a;
-$warning-color              : #d97706;
-$danger-color               : #dc2626;
-$info-color                 : #2563eb;
+$success-color              : #15803d;
+$warning-color              : #b7791f;
+$danger-color               : #c2413b;
+$info-color                 : $teal;
 
 
 /*
@@ -109,12 +120,12 @@ $xing-color                 : #006567;
    Links
    ========================================================================== */
 
-$link-color                 : #2563eb;
-$link-color-hover           : #1d4ed8;
-$link-color-visited         : #1e40af;
+$link-color                 : #1769aa;
+$link-color-hover           : $teal;
+$link-color-visited         : #31536f;
 
 $masthead-link-color        : #334155;
-$masthead-link-color-hover  : #2563eb;
+$masthead-link-color-hover  : $teal;
 
 
 /*
@@ -122,14 +133,6 @@ $masthead-link-color-hover  : #2563eb;
    ========================================================================== */
 
 @include breakpoint-set("to ems", true);
-
-/*
-$small                      : 400px;
-$medium                     : 500px;
-$medium-wide                : 550px;
-$large                      : 1200px;
-$x-large                    : 1800px;
-*/
 
 $small                      : 600px !default;
 $medium                     : 768px !default;
@@ -155,13 +158,6 @@ $susy: (
   gutter-position: after,
   container: $large,
   global-box-sizing: border-box,
-
-  // debug: (
-  //   image: show,
-  //   color: blue,
-  //   output: overlay,
-  //   toggle: top right,
-  // ),
 );
 
 
@@ -169,9 +165,9 @@ $susy: (
    Other
    ========================================================================== */
 
-$border-radius              : 6px;
+$border-radius              : 7px;
 
-$box-shadow                 : 0 1px 3px rgba(15, 23, 42, 0.08);
+$box-shadow                 : 0 2px 8px rgba(23, 50, 77, 0.08);
 
 $navicon-width              : 28px;
 $navicon-height             : 4px;
