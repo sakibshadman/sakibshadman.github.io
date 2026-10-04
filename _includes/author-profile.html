@@ -4,12 +4,7 @@
   {% assign author = site.author %}
 {% endif %}
 
-
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
-
-  <!-- =========================================================
-       PROFILE PHOTO
-       ========================================================= -->
 
   <div class="author__avatar">
     <img
@@ -18,11 +13,6 @@
       alt="{{ author.name }}"
     >
   </div>
-
-
-  <!-- =========================================================
-       NAME + POSITION
-       ========================================================= -->
 
   <div class="author__content">
 
@@ -38,45 +28,23 @@
 
   </div>
 
-
-  <!-- =========================================================
-       PROFILE LINKS
-       ========================================================= -->
-
   <div class="author__urls-wrapper">
 
     <ul class="author__urls social-icons">
 
-
-      <!-- Location -->
-
       {% if author.location %}
       <li>
-        <i
-          class="fas fa-fw fa-map-marker-alt"
-          aria-hidden="true">
-        </i>
-
+        <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>
         {{ author.location }}
       </li>
       {% endif %}
 
-
-      <!-- Employer / Lab -->
-
       {% if author.employer %}
       <li>
-        <i
-          class="fas fa-fw fa-university"
-          aria-hidden="true">
-        </i>
-
+        <i class="fas fa-fw fa-university" aria-hidden="true"></i>
         {{ author.employer }}
       </li>
       {% endif %}
-
-
-      <!-- CV -->
 
       {% if author.cv %}
       <li>
@@ -84,36 +52,20 @@
           href="{{ author.cv | relative_url }}"
           target="_blank"
           rel="noopener noreferrer">
-
-          <i
-            class="fas fa-fw fa-file-pdf"
-            aria-hidden="true">
-          </i>
-
+          <i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i>
           CV
         </a>
       </li>
       {% endif %}
 
-
-      <!-- Email -->
-
       {% if author.email %}
       <li>
         <a href="mailto:{{ author.email }}">
-
-          <i
-            class="fas fa-fw fa-envelope"
-            aria-hidden="true">
-          </i>
-
+          <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
           Email
         </a>
       </li>
       {% endif %}
-
-
-      <!-- LinkedIn -->
 
       {% if author.linkedin %}
       <li>
@@ -121,19 +73,11 @@
           href="https://www.linkedin.com/in/{{ author.linkedin }}"
           target="_blank"
           rel="noopener noreferrer">
-
-          <i
-            class="fab fa-fw fa-linkedin"
-            aria-hidden="true">
-          </i>
-
+          <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>
           LinkedIn
         </a>
       </li>
       {% endif %}
-
-
-      <!-- Google Scholar -->
 
       {% if author.googlescholar %}
       <li>
@@ -141,19 +85,11 @@
           href="{{ author.googlescholar }}"
           target="_blank"
           rel="noopener noreferrer">
-
-          <i
-            class="fas fa-fw fa-graduation-cap"
-            aria-hidden="true">
-          </i>
-
+          <i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i>
           Google Scholar
         </a>
       </li>
       {% endif %}
-
-
-      <!-- ORCID -->
 
       {% if author.orcid %}
       <li>
@@ -161,12 +97,7 @@
           href="{{ author.orcid }}"
           target="_blank"
           rel="noopener noreferrer">
-
-          <i
-            class="ai ai-orcid ai-fw orcid-icon"
-            aria-hidden="true">
-          </i>
-
+          <i class="ai ai-orcid ai-fw orcid-icon" aria-hidden="true"></i>
           ORCID
         </a>
       </li>
@@ -175,25 +106,15 @@
     </ul>
 
 
-    <!-- =======================================================
-         VISITOR COUNT + LIVE CLOCK
-         ======================================================= -->
+    <!-- Visitor count + live clock -->
 
     <div class="sidebar-live-info">
 
+      <div class="sidebar-live-row">
 
-      <!-- Visitor counter -->
+        <i class="fas fa-globe-americas visitor-globe" aria-hidden="true"></i>
 
-      <div class="sidebar-live-row visitor-row">
-
-        <i
-          class="fas fa-globe visitor-globe"
-          aria-hidden="true">
-        </i>
-
-        <span class="sidebar-live-label">
-          Visitors
-        </span>
+        <span class="sidebar-live-label">Visitors</span>
 
         <img
           class="visitor-counter"
@@ -203,18 +124,12 @@
 
       </div>
 
-
-      <!-- Live date and time -->
-
       <div class="sidebar-live-row">
 
-        <i
-          class="far fa-clock sidebar-clock-icon"
-          aria-hidden="true">
-        </i>
+        <i class="fas fa-clock sidebar-clock-icon" aria-hidden="true"></i>
 
         <span id="sidebar-live-clock">
-          Loading time...
+          Loading...
         </span>
 
       </div>
@@ -222,86 +137,46 @@
     </div>
 
 
-    <!-- =======================================================
-         MOBILE ICONS
-         ======================================================= -->
+    <!-- Mobile links -->
 
     <div class="author__urls_sm">
 
       {% if author.cv %}
-      <a
-        href="{{ author.cv | relative_url }}"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="CV">
-
-        <i
-          class="fas fa-fw fa-file-pdf"
-          aria-hidden="true">
-        </i>
-
+      <a href="{{ author.cv | relative_url }}" target="_blank" aria-label="CV">
+        <i class="fas fa-file-pdf"></i>
       </a>
       {% endif %}
-
 
       {% if author.email %}
-      <a
-        href="mailto:{{ author.email }}"
-        aria-label="Email">
-
-        <i
-          class="fas fa-fw fa-envelope"
-          aria-hidden="true">
-        </i>
-
+      <a href="mailto:{{ author.email }}" aria-label="Email">
+        <i class="fas fa-envelope"></i>
       </a>
       {% endif %}
-
 
       {% if author.linkedin %}
       <a
         href="https://www.linkedin.com/in/{{ author.linkedin }}"
         target="_blank"
-        rel="noopener noreferrer"
         aria-label="LinkedIn">
-
-        <i
-          class="fab fa-fw fa-linkedin"
-          aria-hidden="true">
-        </i>
-
+        <i class="fab fa-linkedin"></i>
       </a>
       {% endif %}
-
 
       {% if author.googlescholar %}
       <a
         href="{{ author.googlescholar }}"
         target="_blank"
-        rel="noopener noreferrer"
         aria-label="Google Scholar">
-
-        <i
-          class="fas fa-fw fa-graduation-cap"
-          aria-hidden="true">
-        </i>
-
+        <i class="fas fa-graduation-cap"></i>
       </a>
       {% endif %}
-
 
       {% if author.orcid %}
       <a
         href="{{ author.orcid }}"
         target="_blank"
-        rel="noopener noreferrer"
         aria-label="ORCID">
-
-        <i
-          class="ai ai-orcid ai-fw"
-          aria-hidden="true">
-        </i>
-
+        <i class="ai ai-orcid"></i>
       </a>
       {% endif %}
 
@@ -310,213 +185,3 @@
   </div>
 
 </div>
-
-
-<!-- ===========================================================
-     PROFILE WIDGET STYLING
-     =========================================================== -->
-
-<style>
-
-  /*
-     ORCID
-     ===========================================================
-  */
-
-  .orcid-icon {
-    color: #a6ce39 !important;
-  }
-
-
-  /*
-     Live information container
-     ===========================================================
-  */
-
-  .sidebar-live-info {
-    margin-top: 18px;
-    padding-top: 13px;
-
-    border-top: 1px solid #e2e8f0;
-
-    font-size: 0.88em;
-  }
-
-
-  .sidebar-live-row {
-    display: flex;
-
-    align-items: center;
-
-    gap: 7px;
-
-    margin-bottom: 8px;
-
-    color: #64748b;
-
-    line-height: 1.35;
-  }
-
-
-  .sidebar-live-label {
-    color: #475569;
-
-    font-weight: 500;
-  }
-
-
-  /*
-     Animated globe
-     ===========================================================
-  */
-
-  .visitor-globe {
-    width: 18px;
-
-    color: #0f766e;
-
-    text-align: center;
-
-    animation: rotate-globe 10s linear infinite;
-  }
-
-
-  @keyframes rotate-globe {
-
-    from {
-      transform: rotate(0deg);
-    }
-
-    to {
-      transform: rotate(360deg);
-    }
-
-  }
-
-
-  /*
-     Visitor badge
-     ===========================================================
-  */
-
-  .visitor-counter {
-    display: inline-block !important;
-
-    width: auto !important;
-    height: 20px !important;
-
-    min-width: 0 !important;
-    max-width: 90px !important;
-
-    margin: 0 !important;
-    padding: 0 !important;
-
-    border: none !important;
-    border-radius: 3px !important;
-
-    box-shadow: none !important;
-  }
-
-
-  /*
-     Clock
-     ===========================================================
-  */
-
-  .sidebar-clock-icon {
-    width: 18px;
-
-    color: #c58a2c;
-
-    text-align: center;
-  }
-
-
-  #sidebar-live-clock {
-    color: #475569;
-
-    font-variant-numeric: tabular-nums;
-  }
-
-
-  /*
-     Accessibility: stop animation when user prefers
-     reduced motion
-     ===========================================================
-  */
-
-  @media (prefers-reduced-motion: reduce) {
-
-    .visitor-globe {
-      animation: none;
-    }
-
-  }
-
-</style>
-
-
-<!-- ===========================================================
-     LIVE CLOCK SCRIPT
-     =========================================================== -->
-
-<script>
-
-  (function () {
-
-    function updateSidebarClock() {
-
-      const clock =
-        document.getElementById("sidebar-live-clock");
-
-      if (!clock) {
-        return;
-      }
-
-
-      const now = new Date();
-
-
-      const dateFormatter =
-        new Intl.DateTimeFormat(
-          "en-US",
-          {
-            timeZone: "America/New_York",
-            month: "short",
-            day: "numeric",
-            year: "numeric"
-          }
-        );
-
-
-      const timeFormatter =
-        new Intl.DateTimeFormat(
-          "en-US",
-          {
-            timeZone: "America/New_York",
-            hour: "numeric",
-            minute: "2-digit",
-            second: "2-digit",
-            hour12: true
-          }
-        );
-
-
-      clock.textContent =
-        dateFormatter.format(now)
-        + " · "
-        + timeFormatter.format(now);
-
-    }
-
-
-    updateSidebarClock();
-
-    setInterval(
-      updateSidebarClock,
-      1000
-    );
-
-  })();
-
-</script>
