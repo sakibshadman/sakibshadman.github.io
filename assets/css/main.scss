@@ -2,15 +2,19 @@
 ---
 
 /*
- *    Minimal Mistakes Jekyll Theme
+ * Minimal Mistakes Jekyll Theme
  *
- *  - Michael Rose
- *  - mademistakes.com
- *  - https://twitter.com/mmistakes
- *
-*/
+ * - Michael Rose
+ * - mademistakes.com
+ * - https://twitter.com/mmistakes
+ */
 
-@import "vendor/breakpoint/breakpoint"; // media query mixins
+
+/* ==========================================================================
+   CORE IMPORTS
+   ========================================================================== */
+
+@import "vendor/breakpoint/breakpoint";
 @import "variables";
 @import "mixins";
 @import "vendor/susy/susy";
@@ -23,6 +27,7 @@
 @import "tables";
 @import "buttons";
 @import "notices";
+
 @import "masthead";
 @import "navigation";
 @import "footer";
@@ -38,82 +43,575 @@
 @import "vendor/font-awesome/solid";
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
+
 @import "print";
 
+
+/* ==========================================================================
+   PUBLICATION CARDS
+   ========================================================================== */
+
 .paper-box {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    border-bottom: 1px #efefef solid;
-    padding: 2em 0 2em 0;
-    
+  display: grid;
 
-    .paper-box-image{
-        justify-content: center;
-        display: flex;
-        width: 100%;
-        order: 2;
-        img {
-            max-width: 400px;
-            box-shadow: 3px 3px 6px #888;
-            object-fit: cover;
-        }
-    }
-    
-    .paper-box-text{
-        max-width: 100%;
-        order: 1;
-    }
-    
-    @include breakpoint($medium) {
-        .paper-box-image{
-            justify-content: left;
-            min-width: 200px;
-            max-width: 40%;
-            order: 1;
-        }
-        
-        .paper-box-text{
-            justify-content: left;
-            padding-left: 2em;
-            max-width: 60%;
-            order: 2;
-        }
+  grid-template-columns: 210px minmax(0, 1fr);
 
-    }
+  gap: 24px;
 
+  align-items: center;
 
+  margin: 0 0 24px;
+
+  padding: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #f8fbfd 100%
+    );
+
+  border: 1px solid $border-color;
+  border-left: 4px solid $teal;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 1px 2px rgba(23, 50, 77, 0.03),
+    0 5px 18px rgba(23, 50, 77, 0.05);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
 }
 
-$scroll_offset : 2em;
-h1:before, .anchor:before { 
-    content: ''; 
-    display: block; 
-    position: relative; 
-    width: 0; 
-    height: $scroll_offset; 
-    margin-top: -$scroll_offset;
+
+.paper-box:hover {
+  transform: translateY(-2px);
+
+  border-color: #bdd6dc;
+  border-left-color: $teal-dark;
+
+  box-shadow:
+    0 2px 6px rgba(23, 50, 77, 0.05),
+    0 12px 28px rgba(23, 50, 77, 0.08);
 }
+
+
+/*
+   Publication image
+   ========================================================================== */
+
+.paper-box-image {
+  width: 100%;
+}
+
+
+.paper-box-image > div {
+  position: relative;
+}
+
+
+.paper-box-image img {
+  display: block;
+
+  width: 100%;
+  height: 135px;
+
+  max-width: none;
+
+  margin: 0;
+
+  object-fit: cover;
+
+  background: #ffffff;
+
+  border: 1px solid $border-color;
+  border-radius: 7px;
+
+  box-shadow: 0 2px 8px rgba(23, 50, 77, 0.07);
+
+  transition: $global-transition;
+}
+
+
+/*
+   Publication badge
+   ========================================================================== */
+
+.paper-box .badge {
+  position: absolute;
+
+  top: 8px;
+  left: 8px;
+
+  z-index: 2;
+
+  display: inline-block;
+
+  margin: 0;
+
+  padding: 4px 8px;
+
+  color: #ffffff;
+
+  background-color: $teal;
+
+  border-radius: 5px;
+
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+
+  box-shadow: 0 2px 7px rgba(15, 118, 110, 0.22);
+}
+
+
+/*
+   Publication text
+   ========================================================================== */
+
+.paper-box-text {
+  min-width: 0;
+
+  max-width: none;
+
+  padding-left: 0;
+
+  color: $text-color;
+
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+
+.paper-box-text p {
+  margin-bottom: 0.55em;
+}
+
+
+.paper-box-text p:first-child {
+  color: $navy;
+
+  font-size: 1.02rem;
+  line-height: 1.45;
+}
+
+
+.paper-box-text strong {
+  font-weight: 650;
+}
+
+
+.paper-box-text em {
+  color: $gray;
+
+  font-size: 0.91rem;
+}
+
+
+/*
+   Publication links
+   ========================================================================== */
+
+.paper-box-text a {
+  display: inline-block;
+
+  margin-top: 5px;
+  margin-right: 6px;
+
+  padding: 4px 9px;
+
+  color: $navy !important;
+
+  background: $teal-light;
+
+  border: 1px solid #bfe2dd;
+  border-radius: 5px;
+
+  font-size: 0.78rem;
+  font-weight: 650;
+
+  text-decoration: none !important;
+
+  transition: $global-transition;
+}
+
+
+.paper-box-text a:hover {
+  color: #ffffff !important;
+
+  background: $teal;
+
+  border-color: $teal;
+
+  text-decoration: none !important;
+}
+
+
+/*
+   Publication descriptions
+   ========================================================================== */
+
+.paper-box-text ul {
+  margin-top: 9px;
+  margin-bottom: 0;
+
+  padding-left: 18px;
+}
+
+
+.paper-box-text li {
+  margin-bottom: 0;
+
+  color: #526275;
+
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+
+/*
+   Mobile publication layout
+   ========================================================================== */
+
+@include breakpoint(max-width $medium) {
+
+  .paper-box {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    padding: 14px;
+  }
+
+  .paper-box-image {
+    max-width: 330px;
+  }
+
+  .paper-box-image img {
+    height: auto;
+    max-height: 185px;
+  }
+}
+
+
+/* ==========================================================================
+   SCROLL OFFSET FOR STICKY NAVIGATION
+   ========================================================================== */
+
+$scroll_offset: 5em;
+
+h1:before,
+.anchor:before {
+  content: '';
+
+  display: block;
+
+  position: relative;
+
+  width: 0;
+  height: $scroll_offset;
+
+  margin-top: -$scroll_offset;
+
+  visibility: hidden;
+}
+
+
+/* ==========================================================================
+   GENERAL BADGE FALLBACK
+   ========================================================================== */
 
 .badge {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    position: absolute;
-    margin-top: .5em;
-    margin-left: -.5em;
-    color: white;
-    background-color: #00369f;
-    font-size: .8em;
+  display: inline-block;
+
+  padding: 4px 8px;
+
+  color: #ffffff;
+
+  background-color: $teal;
+
+  border-radius: 5px;
+
+  font-size: 0.75em;
+  font-weight: 650;
 }
-/* Collapsible "Older news" / "Earlier work" blocks */
+
+
+/* ==========================================================================
+   COLLAPSIBLE BLOCKS
+   "Older news" / "Earlier work"
+   ========================================================================== */
+
 details {
-    margin: 0.5em 0 1.2em 0;
-    summary {
-        cursor: pointer;
-        font-weight: bold;
-        margin-bottom: 0.5em;
-    }
-    ul { margin-top: 0.5em; }
+  margin: 0.7em 0 1.3em;
+
+  padding: 0.65em 0.85em;
+
+  background: #f8fafc;
+
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+
+  summary {
+    color: $navy;
+
+    font-weight: 650;
+
+    cursor: pointer;
+
+    margin-bottom: 0;
+  }
+
+  &[open] summary {
+    margin-bottom: 0.6em;
+  }
+
+  ul {
+    margin-top: 0.5em;
+  }
+}
+
+
+/* ==========================================================================
+   FINAL SIDEBAR OVERRIDES
+   ========================================================================== */
+
+/*
+   These rules intentionally come AFTER every imported stylesheet.
+   This ensures no older sidebar/card styling can override them.
+*/
+
+@include breakpoint($large) {
+
+  /*
+     Remove sidebar card/container
+     ====================================================================== */
+
+  .sidebar .profile_box {
+    display: block !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    border: none !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    border-left: none !important;
+
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+  }
+
+
+  /*
+     Profile image
+     ====================================================================== */
+
+  .sidebar .author__avatar {
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 0 1em !important;
+
+    text-align: center;
+  }
+
+
+  .sidebar .author__avatar img {
+    display: block !important;
+
+    width: 175px !important;
+    height: 175px !important;
+
+    min-width: 175px !important;
+    max-width: 175px !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    object-fit: cover !important;
+
+    background: transparent !important;
+
+    border: none !important;
+    border-radius: 50% !important;
+
+    box-shadow: none !important;
+  }
+
+
+  /*
+     Author text
+     ====================================================================== */
+
+  .sidebar .author__content {
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    text-align: center !important;
+  }
+
+
+  .sidebar .author__name {
+    margin-top: 0.75em !important;
+    margin-bottom: 0.35em !important;
+
+    color: $navy !important;
+
+    font-weight: 700 !important;
+
+    text-align: center !important;
+  }
+
+
+  .sidebar .author__bio {
+    max-width: 190px;
+
+    margin: 0 auto 1.1em !important;
+    padding: 0 !important;
+
+    color: $gray !important;
+
+    line-height: 1.5 !important;
+
+    text-align: center !important;
+  }
+
+
+  /*
+     Contact links container
+     ====================================================================== */
+
+  .sidebar .author__urls-wrapper {
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+
+  .sidebar .author__urls {
+    display: block !important;
+
+    position: relative !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    border: none !important;
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+
+    list-style: none !important;
+
+    z-index: auto !important;
+  }
+
+
+  .sidebar .author__urls:before,
+  .sidebar .author__urls:after {
+    display: none !important;
+  }
+
+
+  /*
+     Contact rows
+     ====================================================================== */
+
+  .sidebar .author__urls li {
+    margin: 0 0 0.35em !important;
+
+    padding: 0 !important;
+
+    white-space: normal !important;
+  }
+
+
+  .sidebar .author__urls a {
+    display: block !important;
+
+    margin: 0 !important;
+    padding: 0.12em 0 !important;
+
+    color: $text-color !important;
+
+    background: transparent !important;
+
+    border: none !important;
+    border-radius: 0 !important;
+
+    font-size: 0.94em !important;
+    line-height: 1.45 !important;
+
+    text-decoration: none !important;
+
+    box-shadow: none !important;
+  }
+
+
+  .sidebar .author__urls a:hover {
+    color: $teal !important;
+
+    background: transparent !important;
+
+    border: none !important;
+
+    text-decoration: none !important;
+  }
+
+
+  /*
+     Contact icons
+     ====================================================================== */
+
+  .sidebar .author__urls li i,
+  .sidebar .author__urls li .fa,
+  .sidebar .author__urls li .fas,
+  .sidebar .author__urls li .far,
+  .sidebar .author__urls li .fab {
+    width: 1.35em !important;
+
+    margin-right: 0.3em !important;
+
+    color: $teal !important;
+
+    text-align: center !important;
+  }
+}
+
+
+/* ==========================================================================
+   MOBILE SIDEBAR REFINEMENT
+   ========================================================================== */
+
+@include breakpoint(max-width $large) {
+
+  .sidebar .profile_box {
+    background: transparent !important;
+
+    border: none !important;
+
+    box-shadow: none !important;
+  }
 }
