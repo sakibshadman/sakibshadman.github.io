@@ -5,19 +5,30 @@
 .masthead {
   position: sticky;
   top: 0;
-  background-color: white;
+
+  background-color: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid $border-color;
+
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  box-shadow: 0 1px 8px rgba(15, 23, 42, 0.04);
+
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
+
   -webkit-animation-delay: 0.15s;
           animation-delay: 0.15s;
+
   z-index: 20;
 
   &__inner-wrap {
     @include container;
     @include clearfix;
-    padding: .5em;
-    font-family: $sans-serif-narrow;
+
+    padding: 0.65em 0.9em;
+
+    font-family: $header-font-family;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -28,37 +39,135 @@
     }
 
     a {
+      color: $masthead-link-color;
       text-decoration: none;
+      transition: $global-transition;
+
+      &:hover {
+        color: $masthead-link-color-hover;
+        text-decoration: none;
+      }
     }
   }
 }
+
+
+/*
+   Menu
+   ========================================================================== */
 
 .masthead__menu {
 
   ul {
     margin: 0;
     padding: 0;
+
     clear: both;
+
     list-style-type: none;
   }
 }
 
+
+/*
+   Home item
+   ========================================================================== */
+
 .masthead__menu-home-item {
+  display: none !important;
+
   @include breakpoint($medium) {
     display: block !important;
   }
-  display: none !important;
 }
+
+
+/*
+   Menu item
+   ========================================================================== */
 
 .masthead__menu-item {
   display: block;
+
   list-style-type: none;
   white-space: nowrap;
+
+  font-size: 0.95em;
+  font-weight: 500;
+
+  a {
+    display: inline-block;
+
+    position: relative;
+
+    padding: 0.45em 0.7em;
+
+    color: $masthead-link-color;
+
+    border-radius: 5px;
+
+    transition: $global-transition;
+
+    &:hover {
+      color: $masthead-link-color-hover;
+      background-color: #f8fafc;
+    }
+  }
 
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+
+    a {
+      color: $primary-color;
+    }
   }
 }
 
 
+/*
+   Subtle underline interaction
+   ========================================================================== */
+
+.masthead__menu-item:not(.masthead__menu-item--lg) a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0.7em;
+  right: 0.7em;
+  bottom: 0.18em;
+
+  height: 2px;
+
+  background-color: $link-color;
+
+  transform: scaleX(0);
+  transform-origin: center;
+
+  transition: transform 0.2s ease-in-out;
+}
+
+.masthead__menu-item:not(.masthead__menu-item--lg) a:hover::after {
+  transform: scaleX(1);
+}
+
+
+/*
+   Mobile refinement
+   ========================================================================== */
+
+@include breakpoint(max-width $medium) {
+
+  .masthead__inner-wrap {
+    padding: 0.55em 0.65em;
+  }
+
+  .masthead__menu-item {
+    font-size: 0.9em;
+
+    a {
+      padding: 0.4em 0.5em;
+    }
+  }
+}
