@@ -1,0 +1,26 @@
+# Top navigation bar. Each url must match a section heading id on the page:
+# a heading "# 🔥 News" becomes the id "-news" (emoji dropped, spaces -> dashes).
+main:
+  - title: "About Me"
+    url: "/#about-me"
+
+  - title: "News"
+    url: "/#-news"
+
+  - title: "Publications"
+    url: "/#-publications"
+
+  - title: "Honors & Awards"
+    url: "/#-honors-and-awards"
+
+  - title: "Education"
+    url: "/#-education"
+
+  - title: "Experience"
+    url: "/#-research-experience"
+
+  - title: "Teaching"
+    url: "/#-teaching"
+
+  - title: "Service"
+    url: "/#-service"

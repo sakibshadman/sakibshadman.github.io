@@ -1,0 +1,12 @@
+# 🎖 Honors and Awards
+- *2025, 2026* Doctoral Research Poster Award, UMBC COEIT Research Day
+- *2026* NSF Student Travel Grant, IEEE/ACM CHASE 2026
+- *2025* Student Travel Grant, Department of Information Systems, UMBC — IEEE ICMLA 2025
+- *2021* Best Paper Award, Signal Processing Track — IEEE IEMCON 2021
+- *2021* Best Paper Award, Biomedical Engineering Track — IEEE R10 HTC 2021
+- *2020* Student Travel Grant, University of Hyogo — IEEE SCIS & ISIS 2020
+- *2019–2020* HUMAP Fellowship, University of Hyogo, Japan
+- *2018–2020* Outstanding Chancellor's Teaching Assistant Award, Department of EEE, IUBAT
+- *2016–2019* University Merit Scholarship and Dean's List of Honors (all undergraduate levels), IUBAT
+- *2016* Chancellor's Award for Academic Excellence, IUBAT
+- *2015–2016* Departmental Chair's Award for outstanding undergraduate academic performance, IUBAT
