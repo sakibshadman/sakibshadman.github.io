@@ -1,37 +1,66 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
+# Global configuration for Shadman Sakib's academic website.
 
+
+# ============================================================================
 # Site Settings
+# ============================================================================
+
 title                    : "Shadman Sakib"
-description              : "Multimodal AI · Contactless Physiological Sensing · Trustworthy Medical AI"
+
+# Leave blank so the research-keyword tagline is not shown in the sidebar.
+description              : ""
+
 repository               : "sakibshadman/sakibshadman.github.io"
 url                      : "https://sakibshadman.github.io"
-google_scholar_stats_use_cdn : true
 
-# google analytics
-google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/
 
-# SEO Related
-google_site_verification :  # get google_site_verification from https://search.google.com/search-console/about
-bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
-baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
+# ============================================================================
+# Google Analytics
+# ============================================================================
 
+google_analytics_id      :
+
+
+# ============================================================================
+# SEO Verification
+# ============================================================================
+
+google_site_verification :
+bing_site_verification   :
+baidu_site_verification  :
+
+
+# ============================================================================
 # Site Author
+# ============================================================================
+
 author:
   name             : "Shadman Sakib"
+
   avatar           : "images/profile.jpg"
+
   bio              : "Ph.D. Researcher, Information Systems (AI/ML), UMBC"
+
   location         : "Baltimore, Maryland, USA"
+
   employer         : "MPSC Lab, UMBC"
+
   cv               : "files/CV-Shadman.pdf"
-  pubmed           :
-  googlescholar    : "https://scholar.google.com/citations?user=RlxTPrkAAAAJ"
+
   email            : "ssakib1@umbc.edu"
-  researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
+
+  linkedin         : "shadman-sakib15"
+
+  googlescholar    : "https://scholar.google.com/citations?user=RlxTPrkAAAAJ"
+
+  orcid            : "https://orcid.org/0000-0002-8794-1414"
+
+
+  # Unused profiles
+  pubmed           :
+  researchgate     :
   uri              :
   bitbucket        :
   codepen          :
@@ -39,15 +68,16 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "sakibshadman"
+
+  # GitHub intentionally hidden from sidebar
+  github           :
+
   google_plus      :
   keybase          :
   instagram        :
   impactstory      :
   lastfm           :
-  linkedin         : "shadman-sakib15"
-  dblp             : # e.g., "https://dblp.org/pid/xx/xxxx.html"
-  orcid            : # e.g., "https://orcid.org/xxxx-xxxx-xxxx-xxxx"
+  dblp             :
   pinterest        :
   soundcloud       :
   stackoverflow    :
@@ -61,11 +91,15 @@ author:
   wikipedia        :
 
 
+# ============================================================================
 # Reading Files
+# ============================================================================
+
 include:
   - .htaccess
   - _pages
   - files
+
 exclude:
   - docs
   - README.md
@@ -94,22 +128,37 @@ exclude:
   - package.json
   - tmp
   - vendor
+
+
 keep_files:
   - .git
   - .svn
+
+
 encoding: "utf-8"
+
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
+# ============================================================================
 # Conversion
+# ============================================================================
+
 markdown: kramdown
+
 highlighter: rouge
+
 lsi: false
+
 excerpt_separator: "\n\n"
+
 incremental: false
 
 
+# ============================================================================
 # Markdown Processing
+# ============================================================================
+
 kramdown:
   input: GFM
   hard_wrap: false
@@ -120,36 +169,52 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
+
+# ============================================================================
 # Defaults
+# ============================================================================
+
 defaults:
-  # _pages
+
   - scope:
       path: ""
       type: pages
+
     values:
       layout: default
       author_profile: true
 
 
-# Sass/SCSS
+# ============================================================================
+# Sass / SCSS
+# ============================================================================
+
 sass:
   sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  style: compressed
 
 
-# Outputting
+# ============================================================================
+# Output
+# ============================================================================
+
 permalink: /:categories/:title/
-timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+timezone: America/New_York
 
 
+# ============================================================================
 # Plugins
+# ============================================================================
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-redirect-from
-# mimic GitHub Pages with --safe
+
+
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
@@ -158,8 +223,10 @@ whitelist:
   - jemoji
 
 
+# ============================================================================
 # HTML Compression
-# - http://jch.penibelst.de/
+# ============================================================================
+
 compress_html:
   clippings: all
   ignore:
