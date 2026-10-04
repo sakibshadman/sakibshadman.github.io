@@ -6,13 +6,16 @@
   position: sticky;
   top: 0;
 
-  background-color: rgba(255, 255, 255, 0.96);
+  background-color: rgba(255, 255, 255, 0.97);
+
   border-bottom: 1px solid $border-color;
 
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
-  box-shadow: 0 1px 8px rgba(15, 23, 42, 0.04);
+  box-shadow:
+    0 1px 2px rgba(23, 50, 77, 0.03),
+    0 4px 14px rgba(23, 50, 77, 0.04);
 
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
@@ -26,7 +29,7 @@
     @include container;
     @include clearfix;
 
-    padding: 0.65em 0.9em;
+    padding: 0.7em 1em;
 
     font-family: $header-font-family;
 
@@ -40,11 +43,14 @@
 
     a {
       color: $masthead-link-color;
+
       text-decoration: none;
+
       transition: $global-transition;
 
       &:hover {
         color: $masthead-link-color-hover;
+
         text-decoration: none;
       }
     }
@@ -92,41 +98,48 @@
   list-style-type: none;
   white-space: nowrap;
 
-  font-size: 0.95em;
-  font-weight: 500;
+  font-size: 0.94em;
+  font-weight: 550;
 
   a {
     display: inline-block;
 
     position: relative;
 
-    padding: 0.45em 0.7em;
+    padding: 0.48em 0.72em;
 
     color: $masthead-link-color;
 
-    border-radius: 5px;
+    border-radius: 6px;
 
-    transition: $global-transition;
+    transition:
+      color 0.18s ease,
+      background-color 0.18s ease,
+      box-shadow 0.18s ease;
 
     &:hover {
-      color: $masthead-link-color-hover;
-      background-color: #f8fafc;
+      color: $teal;
+
+      background-color: #f2faf8;
+
+      box-shadow: inset 0 0 0 1px rgba(15, 118, 110, 0.08);
     }
   }
 
   &--lg {
     padding-right: 2em;
+
     font-weight: 700;
 
     a {
-      color: $primary-color;
+      color: $navy;
     }
   }
 }
 
 
 /*
-   Subtle underline interaction
+   Underline interaction
    ========================================================================== */
 
 .masthead__menu-item:not(.masthead__menu-item--lg) a::after {
@@ -134,22 +147,39 @@
 
   position: absolute;
 
-  left: 0.7em;
-  right: 0.7em;
-  bottom: 0.18em;
+  left: 0.72em;
+  right: 0.72em;
+  bottom: 0.14em;
 
   height: 2px;
 
-  background-color: $link-color;
+  background-color: $teal;
+
+  border-radius: 999px;
 
   transform: scaleX(0);
   transform-origin: center;
 
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.18s ease-in-out;
 }
 
 .masthead__menu-item:not(.masthead__menu-item--lg) a:hover::after {
   transform: scaleX(1);
+}
+
+
+/*
+   Emphasize homepage link
+   ========================================================================== */
+
+.masthead__menu-home-item a {
+  color: $navy;
+
+  font-weight: 650;
+
+  &:hover {
+    color: $teal;
+  }
 }
 
 
@@ -160,14 +190,14 @@
 @include breakpoint(max-width $medium) {
 
   .masthead__inner-wrap {
-    padding: 0.55em 0.65em;
+    padding: 0.58em 0.7em;
   }
 
   .masthead__menu-item {
-    font-size: 0.9em;
+    font-size: 0.88em;
 
     a {
-      padding: 0.4em 0.5em;
+      padding: 0.42em 0.5em;
     }
   }
 }
