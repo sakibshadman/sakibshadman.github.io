@@ -1,10 +1,5 @@
 # 🔥 News
 
-### 🌍 Upcoming Research Travel & Presentations
-
-- *2026.11*: 🇺🇸 **AAAI 2026 Fall Symposium Series** — presenting research on **trustworthy and agentic AI for health** in **Arlington, Virginia**.
-- *2026.12*: 🇺🇸 **NeurIPS 2026 Med-Reasoner Workshop** — presenting research on **reliable physiological reasoning with vision-language models** in **Atlanta, Georgia**.
-
 - *2026.09*: 🎉 **Two papers accepted at the NeurIPS 2026 Med-Reasoner Workshop** on medical reasoning with vision-language foundation models.
 - *2026.09*: 🎉 **Two papers accepted at the AAAI 2026 Fall Symposium Series**, on counterfactual auditing for multimodal health agents and therapeutic-boundary failures in LLM agents.
 - *2026.08*: 🎉 **Paper accepted at ACM CIKM 2026** — *Reliability-Guided Video Token Learning for Contactless Vital Sign Estimation*.
