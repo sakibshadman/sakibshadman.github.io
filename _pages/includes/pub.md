@@ -1,3 +1,195 @@
+# 📝 Publications
+
+Full and up-to-date list on [Google Scholar](https://scholar.google.com/citations?user=RlxTPrkAAAAJ). Selected papers below, grouped by research thread.
+
+
+## 🧠 Trustworthy and Agentic Reasoning for Health AI
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">NeurIPS 2026 Workshop</div>
+<img src='images/measure26.jpg' alt="Measure What Matters" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**Measure What Matters: Active Evidence Acquisition for Reliable Physiological Reasoning**](https://drive.google.com/file/d/1B4r10UoS3IYqClQ0eTsBuIxxql9tt090/view) \\
+**Shadman Sakib**, Nirmalya Roy \\
+*NeurIPS 2026 Workshop on Medical Reasoning with Vision Language Foundation Models (Med-Reasoner)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">NeurIPS 2026 Workshop</div>
+<img src='images/keeptime26.jpg' alt="Can VLMs Keep Time?" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**Can VLMs Keep Time? Probing Quantitative Temporal Reasoning in Physiological Videos**](https://drive.google.com/file/d/1QVT9kdUWBEAnXftCWekVjMSfdgzAL9dI/view) \\
+**Shadman Sakib**, Nirmalya Roy \\
+*NeurIPS 2026 Workshop on Medical Reasoning with Vision Language Foundation Models (Med-Reasoner)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">AAAI FSS 2026</div>
+<img src='images/cfaudit26.jpg' alt="Counterfactual Auditing" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**Does the Agent Follow the Evidence? Counterfactual Auditing for Trustworthy Multimodal Health Agents**](https://drive.google.com/file/d/1_R9zvNgJY-CpGD4OrJHa_sM9w1-LJZDa/view?usp=sharing) \\
+**Shadman Sakib**, Nirmalya Roy \\
+*AAAI 2026 Fall Symposium on Trustworthy Agentic Systems (TAS 2026)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">MICCAI 2026 Workshop</div>
+<img src='images/evical26.png' alt="EviCal-RR" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**EviCal-RR: Evidence-Calibrated Reasoning for Contactless Respiratory Monitoring**](https://drive.google.com/file/d/1_P-2eoTz9MTqR7LD4BKQ_IjTuAri1R4m/view?usp=sharing) \\
+**Shadman Sakib**, Nirmalya Roy \\
+*MICCAI 2026 Workshop on Stable Adaptation and Faithful Evaluation of Reasoning in Medical Foundation Models (SAFER)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">CHASE 2026</div>
+<img src='images/vlsrr26.jpg' alt="VLS-RR" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**Decoupling Perception and Reasoning for Contactless Respiratory Rate with Vision Language and Small Language Models**](https://drive.google.com/file/d/1oF4TUfFocZsIw6tBQSWbLIsMjxOxfgXX/view?usp=sharing) \\
+**Shadman Sakib**, Gaurav Shinde, Nirmalya Roy \\
+*IEEE/ACM International Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE 2026)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">CVPR 2026 Workshop</div>
+<img src='images/calibra26.png' alt="CALIBRA" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**CALIBRA: Calibration-Aware Multi-Agent Verification for Contactless Physiological Monitoring**](https://openaccess.thecvf.com/CVPR2026_workshops/GRAIL-V) \\
+**Shadman Sakib**, Gaurav Shinde, Nirmalya Roy \\
+*CVPR 2026 Workshop on Grounded Retrieval and Agentic Intelligence for Vision-Language (GRAIL-V)*
+
+</div>
+</div>
+
+
+## 📡 Contactless Physiological Sensing
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">CIKM 2026</div>
+<img src='images/cikm26.png' alt="Reliability-Guided Video Token Learning" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**Reliability-Guided Video Token Learning for Contactless Vital Sign Estimation**](https://drive.google.com/file/d/1_wHP_3e1s5KN2ztvJkb66XsY8whUs0L6/view?usp=sharing) \\
+**Shadman Sakib**, Haley Patel, Nirmalya Roy \\
+*35th ACM International Conference on Information and Knowledge Management (CIKM 2026)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">ICML 2026 Workshop</div>
+<img src='images/vitaldiff26.png' alt="ViTaL-Diff" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**ViTaL-Diff: Video-Token Latent Diffusion for Contactless Respiratory Monitoring**](https://drive.google.com/file/d/1CyoQrBMLuhcM0W3E8yvdeQWxWzC29GCk/view?usp=sharing) \\
+**Shadman Sakib**, Nirmalya Roy \\
+*ICML 2026 Workshop on Structured Data for Health (SD4H)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">ICMLA 2025</div>
+<img src='images/respformer25.png' alt="RespFormer" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**RespFormer: A Motion-Guided Temporal-Frequency Multimodal Fusion Transformer for Contactless Respiratory Monitoring**](https://drive.google.com/file/d/1bMdFk0pYLXdmMfyMulAUOtvW7Fl1rwci/view?usp=sharing) \\
+**Shadman Sakib**, Gaurav Shinde, Snehalraj Chugh, Mohammad Saeid Anwar, Nirmalya Roy \\
+*IEEE International Conference on Machine Learning and Applications (ICMLA 2025)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">SmartComp 2025</div>
+<img src='images/e2respunet25.png' alt="E2RespUNet" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**E2RespUNet: End-to-End Respiratory Signal Reconstruction and Rate Prediction Using a Unified Attention-Enhanced U-Net**](https://drive.google.com/file/d/1Uj1cqX2En70U0-jYV-REJU3qre2rQDnV/view?usp=sharing) \\
+**Shadman Sakib**, Gaurav Shinde, Emon Dey, Nirmalya Roy \\
+*IEEE International Conference on Smart Computing (SmartComp 2025)*
+
+</div>
+</div>
+
+
+
 ## 📚 Full Publication List
 
 
