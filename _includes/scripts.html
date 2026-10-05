@@ -1,7 +1,12 @@
-<script src="assets/js/main.min.js"></script>
+<script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
 
 {% include analytics.html %}
 {% include fetch_google_scholar_stats.html %}
+
+
+<!-- =========================================================
+     LIVE SIDEBAR CLOCK
+     ========================================================= -->
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -41,10 +46,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
+
+<!-- =========================================================
+     COLLAPSIBLE DETAILS FALLBACK
+     Older news / Earlier work
+     ========================================================= -->
+
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  document.querySelectorAll("details > summary").forEach(function (summary) {
+  var summaries = document.querySelectorAll("details > summary");
+
+  summaries.forEach(function (summary) {
 
     summary.addEventListener("click", function (event) {
 
@@ -57,9 +70,13 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       if (details.hasAttribute("open")) {
+
         details.removeAttribute("open");
+
       } else {
+
         details.setAttribute("open", "");
+
       }
 
     });
