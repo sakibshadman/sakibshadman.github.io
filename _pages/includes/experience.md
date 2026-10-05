@@ -1,4 +1,4 @@
-# 🔬 Research Experience
+# Research Experience
 
 ### Graduate Research Assistant
 **[Mobile, Pervasive and Sensor Computing (MPSC) Lab](https://mpsc.umbc.edu/), University of Maryland, Baltimore County (UMBC)**  
@@ -44,7 +44,7 @@ Collaborative research with the **DEVCOM Army Research Laboratory (ARL)** on aut
   [Media feature](https://www.youtube.com/watch?v=s8bOpcyQmNE)
 
 
-# 🤖 Field Demonstrations
+# Field Demonstrations
 
 ### NSF TRACE Testbed Workshop & Field Experiment
 **CYPRESS Technology Research Center, UMBC**  
