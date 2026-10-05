@@ -105,13 +105,16 @@
 
 .paper-box-image {
   width: 100%;
+
+  display: flex;
+  justify-content: center;
 }
 
 
 .paper-box-image > div {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
+  align-items: center;
 
   width: 100%;
 
@@ -126,16 +129,16 @@
   display: block;
 
   width: 100%;
-  height: 135px;
+  height: auto;
 
-  max-width: none;
+  max-width: 100%;
 
   margin: 0 !important;
   padding: 0;
 
   box-sizing: border-box;
 
-  object-fit: cover;
+  object-fit: contain;
 
   background: #ffffff;
 
@@ -157,22 +160,19 @@
   align-items: center;
   justify-content: center;
 
-  position: relative;
-
   width: 100%;
-  min-height: 23px;
 
   box-sizing: border-box;
 
   margin: 0 0 8px 0 !important;
-  padding: 4px 8px;
+  padding: 5px 8px;
 
   color: #ffffff;
 
-  background: #c000a0;
+  background: #b013a8;
 
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
 
   font-size: 0.68rem;
   font-weight: 700;
@@ -181,7 +181,7 @@
   letter-spacing: 0.01em;
   text-align: center;
 
-  box-shadow: 0 2px 6px rgba(192, 0, 160, 0.20);
+  box-shadow: 0 2px 6px rgba(176, 19, 168, 0.18);
 }
 
 
@@ -305,11 +305,14 @@
 
   .paper-box-image {
     max-width: 330px;
+
+    margin: 0 auto;
   }
 
   .paper-box-image img {
+    width: 100%;
     height: auto;
-    max-height: 185px;
+    max-height: none;
   }
 }
 
@@ -446,10 +449,6 @@ details > ol {
 
 @include breakpoint($large) {
 
-  /*
-     Remove sidebar card/container
-     ====================================================================== */
-
   .sidebar .profile_box {
     display: block !important;
 
@@ -469,10 +468,6 @@ details > ol {
     box-shadow: none !important;
   }
 
-
-  /*
-     Profile image
-     ====================================================================== */
 
   .sidebar .author__avatar {
     display: block !important;
@@ -507,10 +502,6 @@ details > ol {
     box-shadow: none !important;
   }
 
-
-  /*
-     Author text
-     ====================================================================== */
 
   .sidebar .author__content {
     display: block !important;
@@ -550,10 +541,6 @@ details > ol {
   }
 
 
-  /*
-     Contact links container
-     ====================================================================== */
-
   .sidebar .author__urls-wrapper {
     display: block !important;
 
@@ -592,10 +579,6 @@ details > ol {
     display: none !important;
   }
 
-
-  /*
-     Contact rows
-     ====================================================================== */
 
   .sidebar .author__urls li {
     margin: 0 0 0.35em !important;
@@ -638,10 +621,6 @@ details > ol {
     text-decoration: none !important;
   }
 
-
-  /*
-     Contact icons
-     ====================================================================== */
 
   .sidebar .author__urls li i,
   .sidebar .author__urls li .fa,
