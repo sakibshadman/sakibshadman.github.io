@@ -1,4 +1,4 @@
-# 🤝 Service
+# Service
 
 ### Program Committee & Reviewing
 
