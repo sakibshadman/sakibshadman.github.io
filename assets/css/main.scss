@@ -794,7 +794,7 @@ details > ol {
   &::before, &::after { display: none !important; }  // no hover underline on the logo
   img {
     display: block;
-    height: 34px;     // make the logo bigger or smaller here
+    height: 30px;     // make the logo bigger or smaller here
     width: auto;
   }
 }
