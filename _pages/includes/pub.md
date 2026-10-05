@@ -1,3 +1,196 @@
+# 📝 Publications
+
+Full and up-to-date list on [Google Scholar](https://scholar.google.com/citations?user=RlxTPrkAAAAJ).
+
+
+## 🧠 Trustworthy and Agentic Reasoning for Health AI
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">NeurIPS 2026 Workshop</div>
+<img src='images/measure26.jpg' alt="Measure What Matters" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**Measure What Matters: Active Evidence Acquisition for Reliable Physiological Reasoning**](https://drive.google.com/file/d/1B4r10UoS3IYqClQ0eTsBuIxxql9tt090/view) \\
+**Shadman Sakib**, Nirmalya Roy \\
+*NeurIPS 2026 Workshop on Medical Reasoning with Vision Language Foundation Models (Med-Reasoner)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">NeurIPS 2026 Workshop</div>
+<img src='images/keeptime26.jpg' alt="Can VLMs Keep Time?" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**Can VLMs Keep Time? Probing Quantitative Temporal Reasoning in Physiological Videos**](https://drive.google.com/file/d/1QVT9kdUWBEAnXftCWekVjMSfdgzAL9dI/view) \\
+**Shadman Sakib**, Nirmalya Roy \\
+*NeurIPS 2026 Workshop on Medical Reasoning with Vision Language Foundation Models (Med-Reasoner)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">AAAI FSS 2026</div>
+<img src='images/cfaudit26.jpg' alt="Counterfactual Auditing" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**Does the Agent Follow the Evidence? Counterfactual Auditing for Trustworthy Multimodal Health Agents**](https://drive.google.com/file/d/1_R9zvNgJY-CpGD4OrJHa_sM9w1-LJZDa/view?usp=sharing) \\
+**Shadman Sakib**, Nirmalya Roy \\
+*AAAI 2026 Fall Symposium on Trustworthy Agentic Systems (TAS 2026)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">MICCAI 2026 Workshop</div>
+<img src='images/evical26.png' alt="EviCal-RR" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**EviCal-RR: Evidence-Calibrated Reasoning for Contactless Respiratory Monitoring**](https://drive.google.com/file/d/1_P-2eoTz9MTqR7LD4BKQ_IjTuAri1R4m/view?usp=sharing) \\
+**Shadman Sakib**, Nirmalya Roy \\
+*MICCAI 2026 Workshop on Stable Adaptation and Faithful Evaluation of Reasoning in Medical Foundation Models (SAFER)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">CHASE 2026</div>
+<img src='images/vlsrr26.jpg' alt="VLS-RR" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**Decoupling Perception and Reasoning for Contactless Respiratory Rate with Vision Language and Small Language Models**](https://drive.google.com/file/d/1oF4TUfFocZsIw6tBQSWbLIsMjxOxfgXX/view?usp=sharing) \\
+**Shadman Sakib**, Gaurav Shinde, Nirmalya Roy \\
+*IEEE/ACM International Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE 2026)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">CVPR 2026 Workshop</div>
+<img src='images/calibra26.png' alt="CALIBRA" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**CALIBRA: Calibration-Aware Multi-Agent Verification for Contactless Physiological Monitoring**](https://openaccess.thecvf.com/CVPR2026_workshops/GRAIL-V) \\
+**Shadman Sakib**, Gaurav Shinde, Nirmalya Roy \\
+*CVPR 2026 Workshop on Grounded Retrieval and Agentic Intelligence for Vision-Language (GRAIL-V)*
+
+</div>
+</div>
+
+
+
+## 📡 Contactless Physiological Sensing
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">CIKM 2026</div>
+<img src='images/cikm26.png' alt="Reliability-Guided Video Token Learning" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**Reliability-Guided Video Token Learning for Contactless Vital Sign Estimation**](https://drive.google.com/file/d/1_wHP_3e1s5KN2ztvJkb66XsY8whUs0L6/view?usp=sharing) \\
+**Shadman Sakib**, Haley Patel, Nirmalya Roy \\
+*35th ACM International Conference on Information and Knowledge Management (CIKM 2026)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">ICML 2026 Workshop</div>
+<img src='images/vitaldiff26.png' alt="ViTaL-Diff" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**ViTaL-Diff: Video-Token Latent Diffusion for Contactless Respiratory Monitoring**](https://drive.google.com/file/d/1CyoQrBMLuhcM0W3E8yvdeQWxWzC29GCk/view?usp=sharing) \\
+**Shadman Sakib**, Nirmalya Roy \\
+*ICML 2026 Workshop on Structured Data for Health (SD4H)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">ICMLA 2025</div>
+<img src='images/respformer25.png' alt="RespFormer" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**RespFormer: A Motion-Guided Temporal-Frequency Multimodal Fusion Transformer for Contactless Respiratory Monitoring**](https://drive.google.com/file/d/1bMdFk0pYLXdmMfyMulAUOtvW7Fl1rwci/view?usp=sharing) \\
+**Shadman Sakib**, Gaurav Shinde, Snehalraj Chugh, Mohammad Saeid Anwar, Nirmalya Roy \\
+*IEEE International Conference on Machine Learning and Applications (ICMLA 2025)*
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">SmartComp 2025</div>
+<img src='images/e2respunet25.png' alt="E2RespUNet" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+[**E2RespUNet: End-to-End Respiratory Signal Reconstruction and Rate Prediction Using a Unified Attention-Enhanced U-Net**](https://drive.google.com/file/d/1Uj1cqX2En70U0-jYV-REJU3qre2rQDnV/view?usp=sharing) \\
+**Shadman Sakib**, Gaurav Shinde, Emon Dey, Nirmalya Roy \\
+*IEEE International Conference on Smart Computing (SmartComp 2025)*
+
+</div>
+</div>
+
+
+
 ## 📚 Full Publication List
 
 
@@ -96,7 +289,7 @@
 
 
 <details>
-<summary><strong>2024</strong></summary>
+<summary><strong>2018–2024</strong></summary>
 
 <ul>
 
@@ -107,14 +300,12 @@ Md. Arifuzzaman, Iftekhar Ahmed, Md. Jalal Uddin Chowdhury, <strong>Shadman Saki
 <em>arXiv preprint arXiv:2412.09472, 2024.</em>
 </li>
 
-
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#2563eb;color:#ffffff;font-size:0.60em;font-weight:700;">IEEE Access 2024</span>
 Iftekhar Ahmed, Biggo Bushon Routh, Md. Saidur Rahman Kohinoor, <strong>Shadman Sakib</strong>, Md. Mahfuzur Rahman, Farag Azzedin.
 <a href="https://ieeexplore.ieee.org/document/10772229/"><strong>Multi-Model Attentional Fusion Ensemble for Accurate Skin Cancer Classification.</strong></a>
 <em>IEEE Access, Volume 12, pp. 181009–181024, 2024.</em>
 </li>
-
 
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#0f766e;color:#ffffff;font-size:0.60em;font-weight:700;">COMPAS 2024</span>
@@ -123,24 +314,12 @@ Md. Saidur Rahman Kohinoor, Ayesha Loylus Miah, Shah Fayez Ali, Md. Sabir Hossai
 <em>2024 IEEE International Conference on Computing, Applications and Systems (COMPAS 2024).</em>
 </li>
 
-
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#f97316;color:#ffffff;font-size:0.60em;font-weight:700;">ICoDSA 2024</span>
 <strong>Shadman Sakib</strong>, Md. Nurul Absar Siddiky, Md. Arifuzzaman, Md. Jalal Uddin Chowdhury.
 <a href="https://ieeexplore.ieee.org/document/10651632/"><strong>Optimizing Facial Recognition: An Analytical Comparison of Traditional and Deep Learning Approaches.</strong></a>
 <em>2024 IEEE International Conference on Data Science and Its Applications (ICoDSA).</em>
 </li>
-
-</ul>
-
-</details>
-
-
-
-<details>
-<summary><strong>2023</strong></summary>
-
-<ul>
 
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#be123c;color:#ffffff;font-size:0.60em;font-weight:700;">IEEE TCSS 2023</span>
@@ -149,24 +328,12 @@ Khan Md Hasib, Md Rafiqul Islam, <strong>Shadman Sakib</strong>, Md Ali Akbar, M
 <em>IEEE Transactions on Computational Social Systems, Volume 10, Issue 4, pp. 1568–1586, 2023.</em>
 </li>
 
-</ul>
-
-</details>
-
-
-
-<details>
-<summary><strong>2018–2022</strong></summary>
-
-<ul>
-
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#2563eb;color:#ffffff;font-size:0.60em;font-weight:700;">AIIoT 2022</span>
 Khan Md Hasib, <strong>Shadman Sakib</strong>, Jubayer Al Mahmud, Kamruzzaman Mithu, Md. Saifur Rahman.
 <a href="https://doi.org/10.1109/AIIoT54504.2022.9817160"><strong>COVID-19 Prediction based on Infected Cases and Deaths of Bangladesh using Deep Transfer Learning.</strong></a>
 <em>IEEE World AI IoT Congress (AIIoT 2022), Seattle, United States.</em>
 </li>
-
 
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#7c3aed;color:#ffffff;font-size:0.60em;font-weight:700;">IEMCON 2021</span>
@@ -176,7 +343,6 @@ Khan Md Hasib, <strong>Shadman Sakib</strong>, Jubayer Al Mahmud, Kamruzzaman Mi
 <span style="color:#d97706;font-weight:800;">🏆 Best Paper Award, Signal Processing Track</span>
 </li>
 
-
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#8b5cf6;color:#ffffff;font-size:0.60em;font-weight:700;">IEMCON 2021</span>
 <strong>Shadman Sakib</strong>, Abyaz Kader Tanzeem, Ihtyaz Kader Tasawar, Fatema Shorna, Md. Abu Bakr Siddique, Saadia Binte Alam.
@@ -184,14 +350,12 @@ Khan Md Hasib, <strong>Shadman Sakib</strong>, Jubayer Al Mahmud, Kamruzzaman Mi
 <em>12th IEEE Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON 2021), Vancouver, Canada.</em>
 </li>
 
-
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#db2777;color:#ffffff;font-size:0.60em;font-weight:700;">ICCCES 2021</span>
 <strong>Shadman Sakib</strong>, Nowrin Yasmin, Abyaz Kader Tanzeem, Fatema Shorna, Khan Md Hasib, Saadia Binte Alam.
 <a href="https://doi.org/10.1007/978-981-16-8862-1_46"><strong>Breast Cancer Detection and Classification: A Comparative Analysis Using Machine Learning Algorithms.</strong></a>
 <em>3rd International Conference on Communication, Computing and Electronics Systems (ICCCES 2021), Springer.</em>
 </li>
-
 
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#0f766e;color:#ffffff;font-size:0.60em;font-weight:700;">R10 HTC 2021</span>
@@ -201,14 +365,12 @@ Khan Md Hasib, <strong>Shadman Sakib</strong>, Jubayer Al Mahmud, Kamruzzaman Mi
 <span style="color:#d97706;font-weight:800;">🏆 Best Paper Award, Biomedical Engineering Track</span>
 </li>
 
-
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#14b8a6;color:#ffffff;font-size:0.60em;font-weight:700;">R10 HTC 2021</span>
 Fairuz Shadmani Shishir, Khan Md Hasib, <strong>Shadman Sakib</strong>, Shithi Maitra, Farzana M. Shah.
 <a href="https://doi.org/10.1109/R10-HTC53172.2021.9641611"><strong>De Novo Drug Property Prediction using Graph Convolutional Neural Networks.</strong></a>
 <em>IEEE 9th Region 10 Humanitarian Technology Conference (R10-HTC 2021), Bangalore, India.</em>
 </li>
-
 
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#ea580c;color:#ffffff;font-size:0.60em;font-weight:700;">ICOSEC 2021</span>
@@ -217,14 +379,12 @@ Fairuz Shadmani Shishir, Khan Md Hasib, <strong>Shadman Sakib</strong>, Shithi M
 <em>2nd International Conference on Smart Electronics and Communication (ICOSEC 2021), Trichy, India.</em>
 </li>
 
-
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#0369a1;color:#ffffff;font-size:0.60em;font-weight:700;">SCIS–ISIS 2020</span>
 <strong>Shadman Sakib</strong>, Belayat Hossain, Takafumi Hiranaka, Syoji Kobashi.
 <a href="https://doi.org/10.1109/SCISISIS50064.2020.9322759"><strong>Hand Frame Extraction in Surgical Video Images Using Convolutional Neural Network.</strong></a>
 <em>Joint 11th International Conference on Soft Computing and Intelligent Systems and 21st International Symposium on Advanced Intelligent Systems (SCIS–ISIS 2020).</em>
 </li>
-
 
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#16a34a;color:#ffffff;font-size:0.60em;font-weight:700;">TENSYMP 2020</span>
@@ -233,14 +393,12 @@ Fairuz Shadmani Shishir, Khan Md Hasib, <strong>Shadman Sakib</strong>, Shithi M
 <em>IEEE Region 10 Symposium (TENSYMP 2020), Dhaka, Bangladesh.</em>
 </li>
 
-
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#be123c;color:#ffffff;font-size:0.60em;font-weight:700;">I-SMAC 2020</span>
 Md. Abu Bakr Siddique, <strong>Shadman Sakib</strong>, Mohammad Mahmudur Rahman Khan, Abyaz Kader Tanzeem, Madiha Chowdhury, Nowrin Yasmin.
 <a href="https://doi.org/10.1109/I-SMAC49090.2020.9243461"><strong>Deep Convolutional Neural Networks Model-based Brain Tumor Detection in Brain MRI Images.</strong></a>
 <em>Fourth International Conference on I-SMAC (IoT in Social, Mobile, Analytics and Cloud) (I-SMAC 2020).</em>
 </li>
-
 
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#0f766e;color:#ffffff;font-size:0.60em;font-weight:700;">R10 HTC 2020</span>
@@ -249,7 +407,6 @@ Mohammad Mahmudur Rahman Khan, <strong>Shadman Sakib</strong>, Md. Abu Bakr Sidd
 <em>IEEE 8th Region 10 Humanitarian Technology Conference (R10-HTC 2020).</em>
 </li>
 
-
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#9333ea;color:#ffffff;font-size:0.60em;font-weight:700;">ICIET 2019</span>
 Md. Abu Bakr Siddique, <strong>Shadman Sakib</strong>, Md. Abdur Rahman.
@@ -257,14 +414,12 @@ Md. Abu Bakr Siddique, <strong>Shadman Sakib</strong>, Md. Abdur Rahman.
 <em>2nd International Conference on Innovation in Engineering and Technology (ICIET 2019), Dhaka, Bangladesh.</em>
 </li>
 
-
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#e11d48;color:#ffffff;font-size:0.60em;font-weight:700;">ICAEE 2019</span>
 Fathma Siddique, <strong>Shadman Sakib</strong>, Md. Abu Bakr Siddique.
 <a href="https://doi.org/10.1109/ICAEE48663.2019.8975496"><strong>Recognition of Handwritten Digit using Convolutional Neural Network in Python with Tensorflow and Comparison of Performance for Various Hidden Layers.</strong></a>
 <em>5th International Conference on Advances in Electrical Engineering (ICAEE 2019), Dhaka, Bangladesh.</em>
 </li>
-
 
 <li>
 <span style="display:inline-block;padding:2px 6px;margin-right:6px;border-radius:4px;background:#9333ea;color:#ffffff;font-size:0.60em;font-weight:700;">ICIET 2018</span>
