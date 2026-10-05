@@ -3,16 +3,9 @@
 {% include analytics.html %}
 {% include fetch_google_scholar_stats.html %}
 
-
-<!-- =========================================================
-     LIVE SIDEBAR CLOCK
-     ========================================================= -->
-
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-
   function updateSidebarClock() {
-
     var clock = document.getElementById("sidebar-live-clock");
 
     if (!clock) {
@@ -40,27 +33,16 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   updateSidebarClock();
-
   setInterval(updateSidebarClock, 1000);
-
 });
 </script>
 
-
-<!-- =========================================================
-     COLLAPSIBLE DETAILS FALLBACK
-     Older news / Earlier work
-     ========================================================= -->
-
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-
   var summaries = document.querySelectorAll("details > summary");
 
   summaries.forEach(function (summary) {
-
     summary.addEventListener("click", function (event) {
-
       event.preventDefault();
 
       var details = summary.parentElement;
@@ -70,18 +52,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       if (details.hasAttribute("open")) {
-
         details.removeAttribute("open");
-
       } else {
-
         details.setAttribute("open", "");
-
       }
-
     });
-
   });
-
 });
 </script>
