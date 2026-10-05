@@ -348,32 +348,75 @@ h1:before,
    ========================================================================== */
 
 details {
+  display: block;
+
+  width: 100%;
+
   margin: 0.7em 0 1.3em;
 
-  padding: 0.65em 0.85em;
+  padding: 0;
 
   background: #f8fafc;
 
   border: 1px solid $border-color;
   border-radius: $border-radius;
 
-  summary {
-    color: $navy;
+  overflow: hidden;
+}
 
-    font-weight: 650;
 
-    cursor: pointer;
+details > summary {
+  display: list-item;
 
-    margin-bottom: 0;
-  }
+  width: 100%;
 
-  &[open] summary {
-    margin-bottom: 0.6em;
-  }
+  box-sizing: border-box;
 
-  ul {
-    margin-top: 0.5em;
-  }
+  margin: 0;
+  padding: 0.75em 0.95em;
+
+  color: $navy;
+
+  background: #f8fafc;
+
+  font-weight: 650;
+
+  cursor: pointer;
+
+  user-select: none;
+
+  position: relative;
+  z-index: 1;
+}
+
+
+details > summary:hover {
+  color: $teal;
+
+  background: #f3f8f8;
+}
+
+
+details[open] > summary {
+  margin-bottom: 0;
+
+  border-bottom: 1px solid $border-color;
+}
+
+
+details > ul,
+details > ol,
+details > div,
+details > p {
+  margin-left: 0.95em;
+  margin-right: 0.95em;
+}
+
+
+details > ul,
+details > ol {
+  margin-top: 0.75em;
+  margin-bottom: 0.9em;
 }
 
 
@@ -616,6 +659,7 @@ details {
   }
 }
 
+
 /* ==========================================================================
    SIDEBAR LIVE INFO
    ========================================================================== */
@@ -623,6 +667,7 @@ details {
 .orcid-icon {
   color: #a6ce39 !important;
 }
+
 
 .sidebar-live-info {
   margin-top: 18px;
@@ -632,6 +677,7 @@ details {
 
   font-size: 0.88em;
 }
+
 
 .sidebar-live-row {
   display: flex;
@@ -644,6 +690,7 @@ details {
   color: $gray;
   line-height: 1.35;
 }
+
 
 .sidebar-live-label {
   color: $dark-gray;
@@ -663,7 +710,9 @@ details {
   animation: globe-spin 8s linear infinite;
 }
 
+
 @keyframes globe-spin {
+
   from {
     transform: rotate(0deg);
   }
@@ -706,6 +755,7 @@ details {
   text-align: center;
 }
 
+
 #sidebar-live-clock {
   color: $dark-gray;
 
@@ -718,35 +768,8 @@ details {
 /* Accessibility */
 
 @media (prefers-reduced-motion: reduce) {
+
   .visitor-globe {
     animation: none;
   }
 }
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  document.querySelectorAll("details > summary").forEach(function (summary) {
-
-    summary.addEventListener("click", function (event) {
-
-      event.preventDefault();
-
-      var details = summary.parentElement;
-
-      if (!details) {
-        return;
-      }
-
-      if (details.hasAttribute("open")) {
-        details.removeAttribute("open");
-      } else {
-        details.setAttribute("open", "");
-      }
-
-    });
-
-  });
-
-});
-</script>
