@@ -1,15 +1,14 @@
 <div style="
   margin: 1.5rem 0 2rem 0;
   padding: 16px 18px;
-  background: linear-gradient(135deg, #f8fbff 0%, #f3f8fa 100%);
-  border: 1px solid #d6e3e8;
-  border-left: 4px solid #315b7d;
-  border-radius: 9px;
-  box-shadow: 0 2px 10px rgba(23, 50, 77, 0.05);
+  background: #f8fbfd;
+  border: 1px solid #dbe5ea;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(23, 50, 77, 0.04);
 ">
 
 <div style="
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   color: #17324d;
   font-size: 1.03rem;
   font-weight: 700;
@@ -17,7 +16,7 @@
 🌍 Upcoming Research Travel & Presentations
 </div>
 
-<div style="margin-bottom: 9px;">
+<div style="margin-bottom: 12px;">
   <strong>Nov. 2026 · AAAI 2026 Fall Symposium Series</strong><br>
   <span style="color:#526275;">
     Presenting research on <strong>trustworthy and agentic AI for health</strong> · Arlington, Virginia
