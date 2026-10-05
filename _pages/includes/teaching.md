@@ -1,4 +1,4 @@
-# 🏫 Teaching
+# Teaching
 
 ### Graduate Teaching Assistant
 **Department of Information Systems, University of Maryland, Baltimore County (UMBC)**  
