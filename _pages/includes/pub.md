@@ -115,7 +115,7 @@ Full and up-to-date list on [Google Scholar](https://scholar.google.com/citation
 
 
 
-## 📡 Contactless Physiological Sensing
+## Contactless Physiological Sensing
 
 
 <div class='paper-box'>
