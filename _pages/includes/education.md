@@ -1,4 +1,4 @@
-# 🎓 Education
+# Education
 
 **Ph.D. in Information Systems (AI/ML Track)**  
 [University of Maryland, Baltimore County (UMBC)](https://umbc.edu/)  
