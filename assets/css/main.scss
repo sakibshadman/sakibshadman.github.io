@@ -785,3 +785,16 @@ details > ol {
     animation: none;
   }
 }
+
+/* UMBC logo in the top bar */
+.masthead__logo {
+  display: flex !important;
+  align-items: center;
+  padding: 0.2em 0 !important;
+  &::before, &::after { display: none !important; }  // no hover underline on the logo
+  img {
+    display: block;
+    height: 34px;     // make the logo bigger or smaller here
+    width: auto;
+  }
+}
