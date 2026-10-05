@@ -10,7 +10,7 @@ Full and up-to-date list on [Google Scholar](https://scholar.google.com/citation
 <div class='paper-box-image'>
 <div>
 <div class="badge">NeurIPS 2026 Workshop</div>
-<img src='images/measure26.png' alt="Measure What Matters" width="100%">
+<img src='images/measure26.jpg' alt="Measure What Matters" width="100%">
 </div>
 </div>
 
@@ -28,7 +28,7 @@ Full and up-to-date list on [Google Scholar](https://scholar.google.com/citation
 <div class='paper-box-image'>
 <div>
 <div class="badge">NeurIPS 2026 Workshop</div>
-<img src='images/keeptime26.png' alt="Can VLMs Keep Time?" width="100%">
+<img src='images/keeptime26.jpg' alt="Can VLMs Keep Time?" width="100%">
 </div>
 </div>
 
@@ -46,7 +46,7 @@ Full and up-to-date list on [Google Scholar](https://scholar.google.com/citation
 <div class='paper-box-image'>
 <div>
 <div class="badge">AAAI FSS 2026</div>
-<img src='images/cfaudit26.png' alt="Counterfactual Auditing" width="100%">
+<img src='images/cfaudit26.jpg' alt="Counterfactual Auditing" width="100%">
 </div>
 </div>
 
@@ -82,7 +82,7 @@ Full and up-to-date list on [Google Scholar](https://scholar.google.com/citation
 <div class='paper-box-image'>
 <div>
 <div class="badge">CHASE 2026</div>
-<img src='images/vlsrr26.png' alt="VLS-RR" width="100%">
+<img src='images/vlsrr26.jpg' alt="VLS-RR" width="100%">
 </div>
 </div>
 
