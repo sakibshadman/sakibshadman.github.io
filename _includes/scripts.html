@@ -40,3 +40,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 </script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  document.querySelectorAll("details > summary").forEach(function (summary) {
+
+    summary.addEventListener("click", function (event) {
+
+      event.preventDefault();
+
+      var details = summary.parentElement;
+
+      if (!details) {
+        return;
+      }
+
+      if (details.hasAttribute("open")) {
+        details.removeAttribute("open");
+      } else {
+        details.setAttribute("open", "");
+      }
+
+    });
+
+  });
+
+});
+</script>
