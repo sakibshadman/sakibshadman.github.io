@@ -6,6 +6,10 @@
 
 <div itemscope itemtype="http://schema.org/Person" class="profile_box">
 
+  <!-- =====================================================
+       PROFILE PHOTO
+       ===================================================== -->
+
   <div class="author__avatar">
     <img
       src="{{ author.avatar | relative_url }}"
@@ -13,6 +17,11 @@
       alt="{{ author.name }}"
     >
   </div>
+
+
+  <!-- =====================================================
+       NAME + BIO
+       ===================================================== -->
 
   <div class="author__content">
 
@@ -28,93 +37,233 @@
 
   </div>
 
+
+  <!-- =====================================================
+       PROFILE INFORMATION
+       ===================================================== -->
+
   <div class="author__urls-wrapper">
 
-    <ul class="author__urls social-icons">
+    <ul class="author__urls">
 
       {% if author.location %}
       <li>
-        <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>
+        <i
+          class="fas fa-fw fa-map-marker-alt"
+          aria-hidden="true">
+        </i>
         {{ author.location }}
       </li>
       {% endif %}
 
       {% if author.employer %}
       <li>
-        <i class="fas fa-fw fa-university" aria-hidden="true"></i>
+        <i
+          class="fas fa-fw fa-university"
+          aria-hidden="true">
+        </i>
         {{ author.employer }}
-      </li>
-      {% endif %}
-
-      {% if author.cv %}
-      <li>
-        <a
-          href="{{ author.cv | relative_url }}"
-          target="_blank"
-          rel="noopener noreferrer">
-          <i class="fas fa-fw fa-file-pdf" aria-hidden="true"></i>
-          CV
-        </a>
-      </li>
-      {% endif %}
-
-      {% if author.email %}
-      <li>
-        <a href="mailto:{{ author.email }}">
-          <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
-          Email
-        </a>
-      </li>
-      {% endif %}
-
-      {% if author.linkedin %}
-      <li>
-        <a
-          href="https://www.linkedin.com/in/{{ author.linkedin }}"
-          target="_blank"
-          rel="noopener noreferrer">
-          <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i>
-          LinkedIn
-        </a>
-      </li>
-      {% endif %}
-
-      {% if author.googlescholar %}
-      <li>
-        <a
-          href="{{ author.googlescholar }}"
-          target="_blank"
-          rel="noopener noreferrer">
-          <i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i>
-          Google Scholar
-        </a>
-      </li>
-      {% endif %}
-
-      {% if author.orcid %}
-      <li>
-        <a
-          href="{{ author.orcid }}"
-          target="_blank"
-          rel="noopener noreferrer">
-          <i class="ai ai-orcid ai-fw orcid-icon" aria-hidden="true"></i>
-          ORCID
-        </a>
       </li>
       {% endif %}
 
     </ul>
 
 
-    <!-- Visitor count + live clock -->
+    <!-- =====================================================
+         EMAIL
+         ===================================================== -->
+
+    {% if author.email %}
+    <div style="
+      margin-top: 10px;
+      text-align: center;
+      font-size: 0.88em;
+    ">
+
+      <a
+        href="mailto:{{ author.email }}"
+        style="
+          color: #526275;
+          text-decoration: none;
+        "
+        title="Email">
+
+        {{ author.email }}
+
+      </a>
+
+    </div>
+    {% endif %}
+
+
+    <!-- =====================================================
+         CV BUTTON
+         ===================================================== -->
+
+    {% if author.cv %}
+    <div style="
+      margin: 13px 0 15px;
+      text-align: center;
+    ">
+
+      <a
+        href="{{ author.cv | relative_url }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          gap: 7px;
+
+          padding: 7px 18px;
+
+          color: #ffffff;
+          background: #315b7d;
+
+          border: 1px solid #315b7d;
+          border-radius: 6px;
+
+          font-size: 0.87em;
+          font-weight: 650;
+
+          text-decoration: none;
+
+          box-shadow: 0 2px 6px rgba(49, 91, 125, 0.16);
+        "
+        title="Curriculum Vitae">
+
+        <i
+          class="fas fa-file-pdf"
+          aria-hidden="true">
+        </i>
+
+        View CV
+
+      </a>
+
+    </div>
+    {% endif %}
+
+
+    <!-- =====================================================
+         SOCIAL / ACADEMIC ICONS
+         ===================================================== -->
+
+    <div style="
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      gap: 22px;
+
+      margin: 4px 0 18px;
+
+      font-size: 1.22rem;
+    ">
+
+      {% if author.googlescholar %}
+      <a
+        href="{{ author.googlescholar }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Google Scholar"
+        title="Google Scholar"
+        style="
+          color: #315b7d;
+          text-decoration: none;
+        ">
+
+        <i
+          class="fas fa-graduation-cap"
+          aria-hidden="true">
+        </i>
+
+      </a>
+      {% endif %}
+
+
+      {% if author.github %}
+      <a
+        href="https://github.com/{{ author.github }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="GitHub"
+        title="GitHub"
+        style="
+          color: #315b7d;
+          text-decoration: none;
+        ">
+
+        <i
+          class="fab fa-github"
+          aria-hidden="true">
+        </i>
+
+      </a>
+      {% endif %}
+
+
+      {% if author.linkedin %}
+      <a
+        href="https://www.linkedin.com/in/{{ author.linkedin }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="LinkedIn"
+        title="LinkedIn"
+        style="
+          color: #315b7d;
+          text-decoration: none;
+        ">
+
+        <i
+          class="fab fa-linkedin"
+          aria-hidden="true">
+        </i>
+
+      </a>
+      {% endif %}
+
+
+      {% if author.orcid %}
+      <a
+        href="{{ author.orcid }}"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="ORCID"
+        title="ORCID"
+        style="
+          color: #a6ce39;
+          text-decoration: none;
+        ">
+
+        <i
+          class="ai ai-orcid"
+          aria-hidden="true">
+        </i>
+
+      </a>
+      {% endif %}
+
+    </div>
+
+
+    <!-- =====================================================
+         VISITOR COUNT + LIVE CLOCK
+         ===================================================== -->
 
     <div class="sidebar-live-info">
 
       <div class="sidebar-live-row">
 
-        <i class="fas fa-globe-americas visitor-globe" aria-hidden="true"></i>
+        <i
+          class="fas fa-globe-americas visitor-globe"
+          aria-hidden="true">
+        </i>
 
-        <span class="sidebar-live-label">Visitors</span>
+        <span class="sidebar-live-label">
+          Visitors
+        </span>
 
         <img
           class="visitor-counter"
@@ -124,61 +273,19 @@
 
       </div>
 
+
       <div class="sidebar-live-row">
 
-        <i class="fas fa-clock sidebar-clock-icon" aria-hidden="true"></i>
+        <i
+          class="fas fa-clock sidebar-clock-icon"
+          aria-hidden="true">
+        </i>
 
         <span id="sidebar-live-clock">
           Loading...
         </span>
 
       </div>
-
-    </div>
-
-
-    <!-- Mobile links -->
-
-    <div class="author__urls_sm">
-
-      {% if author.cv %}
-      <a href="{{ author.cv | relative_url }}" target="_blank" aria-label="CV">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      {% endif %}
-
-      {% if author.email %}
-      <a href="mailto:{{ author.email }}" aria-label="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-      {% endif %}
-
-      {% if author.linkedin %}
-      <a
-        href="https://www.linkedin.com/in/{{ author.linkedin }}"
-        target="_blank"
-        aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      {% endif %}
-
-      {% if author.googlescholar %}
-      <a
-        href="{{ author.googlescholar }}"
-        target="_blank"
-        aria-label="Google Scholar">
-        <i class="fas fa-graduation-cap"></i>
-      </a>
-      {% endif %}
-
-      {% if author.orcid %}
-      <a
-        href="{{ author.orcid }}"
-        target="_blank"
-        aria-label="ORCID">
-        <i class="ai ai-orcid"></i>
-      </a>
-      {% endif %}
 
     </div>
 
