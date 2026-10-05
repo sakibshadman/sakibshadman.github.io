@@ -1,4 +1,4 @@
-# 🎖 Honors and Awards
+# Honors and Awards
 
 ### Research & Professional Recognition
 
