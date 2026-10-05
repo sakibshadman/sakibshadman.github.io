@@ -9,19 +9,19 @@ main:
     url: "#-news"
 
   - title: "Publications"
-    url: "#-publications"
+    url: "#publications"
 
   - title: "Honors & Awards"
-    url: "#-honors-and-awards"
+    url: "#honors-and-awards"
 
   - title: "Education"
-    url: "#-education"
+    url: "#education"
 
   - title: "Experience"
-    url: "#-research-experience"
+    url: "#research-experience"
 
   - title: "Teaching"
-    url: "#-teaching"
+    url: "#teaching"
 
   - title: "Service"
-    url: "#-service"
+    url: "#service"
