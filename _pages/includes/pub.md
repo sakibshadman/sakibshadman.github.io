@@ -1,9 +1,9 @@
-# 📝 Publications
+# Publications
 
 Full and up-to-date list on [Google Scholar](https://scholar.google.com/citations?user=RlxTPrkAAAAJ).
 
 
-## 🧠 Trustworthy and Agentic Reasoning for Health AI
+## Trustworthy and Agentic Reasoning for Health AI
 
 
 <div class='paper-box'>
@@ -191,7 +191,7 @@ Full and up-to-date list on [Google Scholar](https://scholar.google.com/citation
 
 
 
-## 📚 Full Publication List
+## Full Publication List
 
 
 ### 2026
