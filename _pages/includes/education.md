@@ -3,14 +3,14 @@
 **Ph.D. in Information Systems (AI/ML Track)**  
 [University of Maryland, Baltimore County (UMBC)](https://umbc.edu/)  
 *Jan. 2024 – Present*  
-Research emphasis: multimodal AI, computer vision, physiological sensing, trustworthy AI, medical reasoning, ubiquitous computing, and edge intelligence.
+CGPA: **4.00/4.00**
 
 **M.Sc. in Information Systems (AI/ML Track)**  
 [University of Maryland, Baltimore County (UMBC)](https://umbc.edu/)  
 *Jan. 2024 – Aug. 2025*  
-Graduate study in artificial intelligence, machine learning, biomedical applications, signal processing, NLP, data mining, optimization, and statistical learning.
+CGPA: **4.00/4.00**
 
 **B.Sc. in Electrical and Electronic Engineering**  
 [International University of Business Agriculture and Technology (IUBAT)](https://iubat.edu/)  
 *Aug. 2015 – Aug. 2019*  
-Graduated with distinction; ranked **1st out of 66 students**.
+CGPA: **3.96/4.00** · **Class Rank: 1**
