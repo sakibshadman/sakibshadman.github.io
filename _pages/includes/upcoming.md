@@ -18,14 +18,14 @@
 </div>
 
 <div style="margin-bottom: 9px;">
-  <strong>🇺🇸 Nov. 2026 · AAAI 2026 Fall Symposium Series</strong><br>
+  <strong>Nov. 2026 · AAAI 2026 Fall Symposium Series</strong><br>
   <span style="color:#526275;">
     Presenting research on <strong>trustworthy and agentic AI for health</strong> · Arlington, Virginia
   </span>
 </div>
 
 <div>
-  <strong>🇺🇸 Dec. 2026 · NeurIPS 2026 Med-Reasoner Workshop</strong><br>
+  <strong>Dec. 2026 · NeurIPS 2026 Med-Reasoner Workshop</strong><br>
   <span style="color:#526275;">
     Presenting research on <strong>reliable physiological reasoning with vision-language models</strong> · Atlanta, Georgia
   </span>
