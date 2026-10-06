@@ -1,6 +1,6 @@
 # Publications
 
-Full and up-to-date list on <a class="scholar-link" href="https://scholar.google.com/citations?user=RlxTPrkAAAAJ"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+<a class="scholar-link" href="https://scholar.google.com/citations?user=RlxTPrkAAAAJ"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
 
 
 ## Trustworthy and Agentic Reasoning for Health AI
@@ -191,7 +191,7 @@ Full and up-to-date list on <a class="scholar-link" href="https://scholar.google
 
 
 
-## Full Publication List
+## All Publications
 
 <!-- Each entry starts with <span class="pub-tag TYPE">LABEL</span>, where TYPE is
      journal, conference, workshop, review or preprint. The colour for each type
