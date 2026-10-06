@@ -1771,12 +1771,26 @@ $upcoming-light  : #dbeafe;
 }
 
 /* ==========================================================================
-   UPCOMING: steady dot, no pulse
+   UPCOMING: round dot with a gentle fade
    ========================================================================== */
 
 .upcoming__dot {
-  animation: none !important;
+  flex: 0 0 auto;
+  width: 9px;
+  height: 9px;
+  min-width: 9px;
+  border-radius: 50%;
   box-shadow: none !important;
+  animation: up-fade 2.2s ease-in-out infinite !important;
+}
+
+@keyframes up-fade {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .upcoming__dot { animation: none !important; opacity: 1; }
 }
 
 /* ==========================================================================
@@ -1784,7 +1798,6 @@ $upcoming-light  : #dbeafe;
    ========================================================================== */
 
 .collab {
-  max-width: 54rem;
   margin: 2.6em 0 0.5em;
   padding: 1.3em 1.5em 1.2em;
   background: linear-gradient(180deg, #ffffff 0%, #f8fbfa 100%);
@@ -1813,6 +1826,7 @@ $upcoming-light  : #dbeafe;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
 
+  @media (min-width: 1100px) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   @media (max-width: 860px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   @media (max-width: 560px) { grid-template-columns: 1fr; }
 }
