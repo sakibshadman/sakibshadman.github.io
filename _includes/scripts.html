@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var m = document.getElementById("dclock-m");
   var s = document.getElementById("dclock-s");
   var ap = document.getElementById("dclock-ap");
-  if (!h) { return; }
 
   function tick() {
+    if (!h) { return; }
     var v = {};
     new Intl.DateTimeFormat("en-US", {
       timeZone: "America/New_York",
@@ -23,14 +23,43 @@ document.addEventListener("DOMContentLoaded", function () {
       hour12: true
     }).formatToParts(new Date()).forEach(function (p) { v[p.type] = p.value; });
 
+    var dt = document.getElementById("dclock-date");
+    if (dt) {
+      dt.textContent = new Intl.DateTimeFormat("en-US", {
+        timeZone: "America/New_York",
+        month: "short",
+        day: "numeric"
+      }).format(new Date());
+    }
+
     h.textContent = v.hour;
     m.textContent = v.minute;
     if (s) { s.textContent = v.second; }
     if (ap) { ap.textContent = (v.dayPeriod || "").toUpperCase(); }
   }
 
-  tick();
-  setInterval(tick, 1000);
+  if (h) { tick(); setInterval(tick, 1000); }
+
+  /* Back to top ---------------------------------------------------------- */
+
+  var topBtn = document.getElementById("to-top");
+  if (!topBtn) { return; }
+
+  function toggleTop() {
+    if (window.scrollY > 600) {
+      topBtn.classList.add("is-on");
+    } else {
+      topBtn.classList.remove("is-on");
+    }
+  }
+
+  toggleTop();
+  window.addEventListener("scroll", toggleTop, { passive: true });
+
+  topBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 });
 </script>
 
