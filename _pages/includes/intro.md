@@ -10,4 +10,11 @@ Previously, I conducted research at the [Advanced Medical Engineering Research I
 
 Before beginning my Ph.D., I spent two years as a Lecturer in the Department of Computer Science and Engineering at [Leading University](https://www.lus.ac.bd/), Bangladesh, where I also served as a mentor for the IEEE Leading University Student Branch.
 
-**Research Interests:** Multimodal AI · Contactless Physiological Sensing · Vision-Language Models · Trustworthy & Agentic AI · LLM Safety · Edge Intelligence
+<div class="ri-thrusts">
+  <p class="ri-thrusts__title">Research Interests</p>
+  <div class="ri-thrusts__grid">
+    <div><strong>Contactless Health Sensing</strong><span>Breathing and vital signs from ordinary video, robust to motion, lighting, and occlusion</span></div>
+    <div><strong>Trustworthy Medical AI</strong><span>Vision-language models and agents that calibrate, verify, and audit their evidence</span></div>
+    <div><strong>Deployable Health Systems</strong><span>Efficient on-device inference on edge hardware and mobile robots</span></div>
+  </div>
+</div>
