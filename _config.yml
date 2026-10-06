@@ -1,0 +1,236 @@
+# Welcome to Jekyll!
+#
+# Global configuration for Shadman Sakib's academic website.
+
+
+# ============================================================================
+# Site Settings
+# ============================================================================
+
+title                    : "Shadman Sakib"
+
+# Leave blank so the research-keyword tagline is not shown in the sidebar.
+description              : ""
+
+repository               : "sakibshadman/sakibshadman.github.io"
+url                      : "https://sakibshadman.github.io"
+
+# Set to true once your RevolverMaps snippet is in _includes/visitor-globe.html
+visitor_globe            : true
+
+
+# ============================================================================
+# Google Analytics
+# ============================================================================
+
+google_analytics_id      :
+
+
+# ============================================================================
+# SEO Verification
+# ============================================================================
+
+google_site_verification :
+bing_site_verification   :
+baidu_site_verification  :
+
+
+# ============================================================================
+# Site Author
+# ============================================================================
+
+author:
+  name             : "Shadman Sakib"
+
+  avatar           : "images/profile.jpg"
+
+  bio: "Ph.D. Researcher | AI for Health & Multimodal Sensing"
+
+  location         : "Baltimore, Maryland, USA"
+
+  employer         : "MPSC Lab · CYPRESS, UMBC"
+
+  cv               : "files/CV-Shadman.pdf"
+
+  email            : "ssakib1@umbc.edu"
+
+  linkedin         : "shadman-sakib15"
+
+  googlescholar    : "https://scholar.google.com/citations?user=RlxTPrkAAAAJ"
+
+  orcid            : "https://orcid.org/0000-0002-8794-1414"
+
+
+  # Unused profiles
+  pubmed           :
+  researchgate     :
+  uri              :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+
+  # GitHub intentionally hidden from sidebar
+  github           :
+
+  google_plus      :
+  keybase          :
+  instagram        :
+  impactstory      :
+  lastfm           :
+  dblp             :
+  pinterest        :
+  soundcloud       :
+  stackoverflow    :
+  steam            :
+  tumblr           :
+  twitter          :
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+  wikipedia        :
+
+
+# ============================================================================
+# Reading Files
+# ============================================================================
+
+include:
+  - .htaccess
+  - _pages
+  - files
+
+exclude:
+  - docs
+  - README.md
+  - google_scholar_crawler
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - .github
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - config
+  - gulpfile.js
+  - log
+  - node_modules
+  - package.json
+  - tmp
+  - vendor
+
+
+keep_files:
+  - .git
+  - .svn
+
+
+encoding: "utf-8"
+
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# ============================================================================
+# Conversion
+# ============================================================================
+
+markdown: kramdown
+
+highlighter: rouge
+
+lsi: false
+
+excerpt_separator: "\n\n"
+
+incremental: false
+
+
+# ============================================================================
+# Markdown Processing
+# ============================================================================
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# ============================================================================
+# Defaults
+# ============================================================================
+
+defaults:
+
+  - scope:
+      path: ""
+      type: pages
+
+    values:
+      layout: default
+      author_profile: true
+
+
+# ============================================================================
+# Sass / SCSS
+# ============================================================================
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# ============================================================================
+# Output
+# ============================================================================
+
+permalink: /:categories/:title/
+
+timezone: America/New_York
+
+
+# ============================================================================
+# Plugins
+# ============================================================================
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-redirect-from
+
+
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+
+
+# ============================================================================
+# HTML Compression
+# ============================================================================
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
