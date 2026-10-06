@@ -1955,3 +1955,87 @@ $upcoming-light  : #dbeafe;
 @media (max-width: 600px) {
   .to-top { right: 14px; bottom: 14px; width: 38px; height: 38px; }
 }
+
+/* ==========================================================================
+   PHONES AND SMALL TABLETS: stack the sidebar instead of squeezing it
+   into three columns
+   ========================================================================== */
+
+@media (max-width: 924px) {
+
+  .sidebar .profile_box {
+    display: block;
+    text-align: center;
+  }
+
+  .sidebar .author__avatar,
+  .sidebar .author__content,
+  .sidebar .author__urls-wrapper {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .sidebar .author__avatar {
+    margin: 0 auto 0.9em;
+
+    img {
+      width: 150px;
+      height: 150px;
+      max-width: 150px;
+      margin: 0 auto;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+  /* the template hides these behind a Follow button on small screens */
+  .sidebar .author__urls {
+    display: block !important;
+    position: relative;
+    right: auto;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+    box-shadow: none;
+    z-index: auto;
+  }
+
+  .sidebar .author__urls-wrapper > button { display: none !important; }
+
+  .sidebar .author__name {
+    margin: 0 0 0.25em;
+    font-size: 1.35rem;
+  }
+
+  .sidebar .author__bio {
+    max-width: 22rem;
+    margin: 0 auto 0.6em;
+  }
+
+  .sidebar .prof-facts {
+    max-width: 22rem;
+    margin: 0.6em auto 0 !important;
+  }
+
+  .sidebar .cv-button { margin: 14px auto; }
+
+  .sidebar .prof-links { margin-bottom: 14px; }
+
+  /* the clock stays on one line */
+  .sidebar .dclock {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  /* a rule under the whole block, so it reads as its own band */
+  .sidebar .profile_box {
+    padding-bottom: 1.2em;
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 1.4em;
+  }
+}
