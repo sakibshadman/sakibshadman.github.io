@@ -1,6 +1,37 @@
---- layout: compress --- {% include head.html %} {% include head/custom.html %} {% include browser-upgrade.html %} {% include masthead.html %}
-{% include sidebar.html %}
-{% if page.title %}{% endif %}
-{{ content }}
-{% if page.permalink == "/" %}{% include news-rail.html %}{% endif %}
-{% include footer.html %} {% include scripts.html %}
+---
+layout: compress
+---
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body>
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    <div id="main" role="main">
+      {% include sidebar.html %}
+    
+      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
+        <div class="page__inner-wrap">
+          <section class="page__content" itemprop="text">
+            {{ content }}
+          </section>
+        </div>
+            </article>
+
+      {% if page.permalink == "/" %}{% include news-rail.html %}{% endif %}
+    </div>
+
+    {% include footer.html %}
+
+    {% include scripts.html %}
+
+  </body>
+</html>
