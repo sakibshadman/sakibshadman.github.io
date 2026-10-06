@@ -1,0 +1,148 @@
+{% if page.author and site.data.authors[page.author] %}
+  {% assign author = site.data.authors[page.author] %}
+{% else %}
+  {% assign author = site.author %}
+{% endif %}
+
+<div itemscope itemtype="http://schema.org/Person" class="profile_box">
+
+  <!-- =====================================================
+       PROFILE PHOTO
+       ===================================================== -->
+
+  <div class="author__avatar">
+    <img
+      src="{{ author.avatar | relative_url }}"
+      class="author__avatar"
+      alt="{{ author.name }}"
+    >
+  </div>
+
+
+  <!-- =====================================================
+       NAME + ROLE
+       ===================================================== -->
+
+  <div class="author__content">
+
+    <h3 class="author__name">
+      {{ author.name }}
+    </h3>
+
+    {% if author.bio %}
+      <p class="author__bio">
+        {{ author.bio }}
+      </p>
+    {% endif %}
+
+  </div>
+
+
+  <!-- =====================================================
+       AFFILIATION AND CONTACT
+       ===================================================== -->
+
+  <div class="author__urls-wrapper">
+
+    <ul class="author__urls prof-facts">
+
+      {% if author.employer %}
+      <li>
+        <i class="fas fa-fw fa-university" aria-hidden="true"></i>
+        {{ author.employer }}
+      </li>
+      {% endif %}
+
+      {% if author.location %}
+      <li>
+        <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>
+        {{ author.location }}
+      </li>
+      {% endif %}
+
+      {% if author.email %}
+      <li>
+        <i class="fas fa-fw fa-envelope" aria-hidden="true"></i>
+        <a href="mailto:{{ author.email }}">{{ author.email }}</a>
+      </li>
+      {% endif %}
+
+    </ul>
+
+
+    <!-- =====================================================
+         CURRICULUM VITAE
+         ===================================================== -->
+
+    {% if author.cv %}
+    <a
+      class="cv-button"
+      href="{{ author.cv | relative_url }}"
+      target="_blank"
+      rel="noopener noreferrer">
+      <i class="fas fa-file-alt" aria-hidden="true"></i>
+      <span>Curriculum Vitae</span>
+      <span class="cv-button__meta">PDF</span>
+    </a>
+    {% endif %}
+
+
+    <!-- =====================================================
+         ACADEMIC PROFILES
+         ===================================================== -->
+
+    <div class="prof-links">
+
+      {% if author.googlescholar %}
+      <a href="{{ author.googlescholar }}" target="_blank" rel="noopener noreferrer"
+         aria-label="Google Scholar" data-tip="Scholar">
+        <i class="fas fa-graduation-cap" aria-hidden="true"></i>
+      </a>
+      {% endif %}
+
+      {% if author.github %}
+      <a href="https://github.com/{{ author.github }}" target="_blank" rel="noopener noreferrer"
+         aria-label="GitHub" data-tip="GitHub">
+        <i class="fab fa-github" aria-hidden="true"></i>
+      </a>
+      {% endif %}
+
+      {% if author.linkedin %}
+      <a href="https://www.linkedin.com/in/{{ author.linkedin }}" target="_blank" rel="noopener noreferrer"
+         aria-label="LinkedIn" data-tip="LinkedIn">
+        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+      </a>
+      {% endif %}
+
+      {% if author.orcid %}
+      <a href="{{ author.orcid }}" target="_blank" rel="noopener noreferrer"
+         aria-label="ORCID" data-tip="ORCID">
+        <i class="ai ai-orcid" aria-hidden="true"></i>
+      </a>
+      {% endif %}
+
+    </div>
+
+
+    <!-- =====================================================
+         EASTERN TIME CLOCK
+         ===================================================== -->
+
+    <div class="sidebar-live-info">
+
+      <div class="sidebar-live-row">
+
+        <i class="fas fa-clock sidebar-clock-icon" aria-hidden="true"></i>
+
+        <div>
+          <div class="sidebar-live-label">Eastern Time</div>
+          <span id="sidebar-live-clock">Loading...</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
