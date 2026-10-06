@@ -1634,3 +1634,96 @@ $news-rail-from : 1440px;   // screens at least this wide get the right-hand pan
 }
 
 .site-foot__sep { margin: 0 0.25em; opacity: 0.6; }
+
+/* ==========================================================================
+   INTRO: rule between the bio and Research Interests
+   ========================================================================== */
+
+.page__content hr.intro-rule {
+  height: 0;
+  margin: 1.8em 0 1.6em;
+  border: 0;
+  border-top: 1px solid $border-color;
+}
+
+/* ==========================================================================
+   NEWS PANEL: ends with the introduction
+   ========================================================================== */
+
+@media (min-width: 1440px) {
+  .news-rail__scroll { max-height: 27em; }
+}
+
+/* ==========================================================================
+   UPCOMING: blue accents, and the panel sits in the right-hand column
+   ========================================================================== */
+
+$upcoming        : #1d4ed8;   // the accent colour: change these two to recolour
+$upcoming-light  : #dbeafe;
+
+.upcoming__dot {
+  background: #3b82f6;
+  box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.5);
+  animation: up-pulse-blue 2.4s ease-out infinite;
+}
+
+@keyframes up-pulse-blue {
+  70%  { box-shadow: 0 0 0 7px rgba(59, 130, 246, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+
+.upcoming__label {
+  padding: 2px 7px;
+  border-radius: 4px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.upnext__when { background: $upcoming-light; }
+.upnext__mon  { color: $upcoming; }
+.upnext__yr   { color: $upcoming; opacity: 0.8; }
+
+.upnext:hover { background: #f5f9ff; }
+.upnext:hover .upnext__venue { color: $upcoming; }
+.upnext__where i { color: #3b82f6; }
+.upnext__go { color: $upcoming; }
+
+@media (prefers-reduced-motion: reduce) {
+  .upcoming__dot { animation: none; }
+}
+
+/* Where the panel lives: in the right column on wide screens,
+   in the page itself on anything narrower. */
+
+.upcoming-rail { display: none; }
+
+@media (min-width: 1440px) {
+  .upcoming-inline { display: none; }
+
+  .upcoming-rail {
+    display: block;
+    margin-top: 16px;
+  }
+
+  .upcoming-rail .upcoming {
+    margin: 0;
+    padding: 14px 14px 9px;
+  }
+
+  .upcoming-rail .upcoming__title { font-size: 0.9rem; }
+  .upcoming-rail .upnext {
+    grid-template-columns: 46px minmax(0, 1fr);
+    gap: 11px;
+    padding: 9px 8px;
+    margin: 0 -8px;
+  }
+  .upcoming-rail .upnext__go { display: none; }
+  .upcoming-rail .upnext__venue { font-size: 0.9rem; }
+  .upcoming-rail .upnext__what  { font-size: 0.84rem; }
+  .upcoming-rail .upnext__where { font-size: 0.78rem; }
+  .upcoming-rail .upnext__mon   { font-size: 0.8rem; }
+  .upcoming-rail .upnext__yr    { font-size: 0.64rem; }
+}
