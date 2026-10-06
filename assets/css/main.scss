@@ -1046,10 +1046,6 @@ $news-rail-from : 1440px;   // screens at least this wide get the right-hand pan
 
   /* a quiet accent line at the top of each tile */
   border-top: 3px solid $navy-light;
-
-  &--a { border-top-color: $teal; }
-  &--b { border-top-color: $navy-light; }
-  &--c { border-top-color: $gray; }
 }
 
 /* ==========================================================================
@@ -1189,13 +1185,13 @@ $news-rail-from : 1440px;   // screens at least this wide get the right-hand pan
   border-left-color: #bdd6dc;
 }
 
-/* Research-thread headings: soft tinted band, no bar */
+/* Research-thread headings: slate band, kept clear of the teal venue badges */
 .page__content h2 {
   display: inline-block;
   padding: 0.3em 0.85em;
-  background: $teal-light;
+  background: #eef2f7;
   border-radius: 6px;
-  color: $teal-dark;
+  color: $navy;
 }
 
 /* ==========================================================================
