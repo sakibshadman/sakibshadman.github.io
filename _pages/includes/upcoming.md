@@ -6,7 +6,7 @@
     <span class="upcoming__title">Research Travel &amp; Presentations</span>
   </div>
 
-  <a class="upnext" href="https://aaai.org/conference/fall-symposia/fss26/" target="_blank" rel="noopener">
+  <a class="upnext" href="https://tas2026.github.io/" target="_blank" rel="noopener">
     <span class="upnext__when"><span class="upnext__mon">Nov</span><span class="upnext__yr">2026</span></span>
     <span class="upnext__body">
       <span class="upnext__venue">AAAI 2026 Fall Symposium Series</span>
