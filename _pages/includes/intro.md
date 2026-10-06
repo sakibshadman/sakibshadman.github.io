@@ -9,10 +9,22 @@ Previously, I was a research assistant at the [Advanced Medical Engineering Rese
 <hr class="intro-rule">
 
 <div class="ri-thrusts">
+
   <p class="ri-thrusts__title">Research Interests</p>
+
   <div class="ri-thrusts__grid">
-    <div><strong>Contactless Health Sensing</strong><span>Breathing and vital signs from ordinary video, robust to motion, lighting, and occlusion</span></div>
-    <div><strong>Trustworthy Medical AI</strong><span>Vision-language models and agents that calibrate, verify, and audit their evidence</span></div>
-    <div><strong>Deployable Health Systems</strong><span>Efficient on-device inference on edge hardware and mobile robots</span></div>
+    <div class="ri ri--a">
+      <strong>Contactless Health Sensing</strong>
+      <span>Breathing and vital signs from ordinary video, robust to motion, lighting, and occlusion</span>
+    </div>
+    <div class="ri ri--b">
+      <strong>Trustworthy Medical AI</strong>
+      <span>Vision-language models and agents that calibrate, verify, and audit their evidence</span>
+    </div>
+    <div class="ri ri--c">
+      <strong>Deployable Health Systems</strong>
+      <span>Efficient on-device inference on edge hardware and mobile robots</span>
+    </div>
   </div>
+
 </div>
