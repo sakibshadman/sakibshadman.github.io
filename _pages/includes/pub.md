@@ -209,7 +209,7 @@
 
 
 
-<h1 id="publications">Publications <a class="scholar-link" href="https://scholar.google.com/citations?user=RlxTPrkAAAAJ"><i class="fas fa-graduation-cap"></i> Google Scholar</a></h1>
+<h1 id="publications">Selected Publications <a class="scholar-link" href="https://scholar.google.com/citations?user=RlxTPrkAAAAJ"><i class="fas fa-graduation-cap"></i> Google Scholar</a></h1>
 
 <!-- Each entry starts with <span class="pub-tag TYPE">LABEL</span>, where TYPE is
      journal, conference, workshop, review or preprint. The colour for each type
