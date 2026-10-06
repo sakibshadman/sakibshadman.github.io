@@ -798,3 +798,105 @@ details > ol {
     width: auto;
   }
 }
+
+/* ==========================================================================
+   NEWS: right-hand panel on wide screens, inline section elsewhere
+   Items come from _data/news.yml. Change the width where the panel
+   appears with $news-rail-from.
+   ========================================================================== */
+
+$news-rail-from : 1440px;   // screens at least this wide get the right-hand panel
+
+/* Shared item style (panel and inline) */
+.news-list { margin: 0; padding: 0; list-style: none; }
+.news-item {
+  margin: 0;
+  padding: 0.7em 0;
+  border-top: 1px solid $border-color;
+  &:first-child { border-top: 0; padding-top: 0.2em; }
+}
+.news-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 0.2em;
+  color: $gray;
+  font-size: 0.8em;
+  font-variant-numeric: tabular-nums;
+}
+.news-type {
+  padding: 0.05em 0.5em;
+  border-radius: 4px;
+  background: $teal-light;
+  color: $teal-dark;
+  font-size: 0.92em;
+  font-weight: 600;
+}
+.news-text {
+  color: $text-color;
+  font-size: 0.93em;
+  line-height: 1.5;
+  strong { color: $navy; }
+}
+.news-older {
+  margin-top: 0.6em;
+  summary { cursor: pointer; color: $navy-light; font-size: 0.88em; font-weight: 600; }
+  .news-list { margin-top: 0.5em; }
+}
+
+/* Inline section (laptops, tablets, phones) */
+.news-inline .news-item { padding: 0.6em 0; }
+.news-inline .news-text { font-size: 1em; }
+
+/* Right-hand panel: hidden until the screen is wide enough */
+.news-rail { display: none; }
+
+@media (min-width: $news-rail-from) {
+  .masthead__inner-wrap { max-width: 1680px; }   // top bar lines up with the wider page
+
+  #main {
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr) 300px;
+    column-gap: 3rem;
+    align-items: start;
+    max-width: 1680px;
+    &::after { display: none; }        // template clearfix would become a grid cell
+  }
+  #main > .sidebar,
+  #main > .page {
+    float: none;
+    width: auto;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .news-rail {
+    display: block;
+    position: sticky;
+    top: 5.5em;                        // just under the sticky top bar
+    padding: 1.1em 1.2em 1em;
+    background: #f8fbfd;
+    border: 1px solid $border-color;
+    border-radius: 10px;
+  }
+  .news-rail__title {
+    margin: 0 0 0.7em;
+    padding: 0;
+    border: 0;
+    color: $navy;
+    font-size: 1.05em;
+    font-weight: 700;
+    &::before { display: none; }
+  }
+  .news-rail__scroll {
+    max-height: calc(100vh - 11em);    // long lists scroll inside the panel
+    overflow-y: auto;
+    padding-right: 0.4em;
+    scrollbar-width: thin;
+  }
+
+  // the panel replaces the inline section and its menu link
+  #-news, .news-inline { display: none; }
+  .masthead__menu-item:has(> a[href$="#-news"]) { display: none; }
+}
