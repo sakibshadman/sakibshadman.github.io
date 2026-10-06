@@ -994,17 +994,62 @@ $news-rail-from : 1440px;   // screens at least this wide get the right-hand pan
    ========================================================================== */
 
 .ri-thrusts {
-  margin: 1.4em 0 1.6em;
-  .ri-thrusts__title { margin: 0 0 0.6em; color: $navy; font-weight: 700; }
-  .ri-thrusts__grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
-    @media (max-width: 760px) { grid-template-columns: 1fr; gap: 12px; }
+  margin: 1.6em 0 1.8em;
+  padding: 1.3em 1.5em 1.4em;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbfa 100%);
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(23, 50, 77, 0.05);
+}
+
+.ri-thrusts__title {
+  margin: 0 0 0.75em;
+  color: $navy;
+  font-size: 1.18rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.ri-thrusts__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+
+  @media (max-width: 860px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 560px) { grid-template-columns: 1fr; }
+}
+
+.ri {
+  padding: 13px 15px 14px;
+  border-radius: 0 0 8px 8px;
+
+  strong {
+    display: block;
+    font-size: 0.97rem;
+    font-weight: 700;
+    line-height: 1.35;
   }
-  .ri-thrusts__grid > div { padding-top: 10px; border-top: 2px solid $teal; }
-  strong { display: block; color: $navy; line-height: 1.35; }
-  span { display: block; margin-top: 4px; color: $gray; font-size: 0.9em; line-height: 1.5; }
+
+  span {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.86rem;
+    line-height: 1.5;
+    opacity: 0.88;
+  }
+
+  background: #f6f9fb;
+  border: 1px solid $border-color;
+
+  strong { color: $navy; }
+  span    { color: $gray; opacity: 1; }
+
+  /* a quiet accent line at the top of each tile */
+  border-top: 3px solid $navy-light;
+
+  &--a { border-top-color: $teal; }
+  &--b { border-top-color: $navy-light; }
+  &--c { border-top-color: $gray; }
 }
 
 /* ==========================================================================
