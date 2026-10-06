@@ -24,7 +24,9 @@ layout: compress
             {{ content }}
           </section>
         </div>
-      </article>
+            </article>
+
+      {% if page.permalink == "/" %}{% include news-rail.html %}{% endif %}
     </div>
 
     {% include scripts.html %}
