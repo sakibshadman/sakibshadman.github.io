@@ -1727,3 +1727,176 @@ $upcoming-light  : #dbeafe;
   .upcoming-rail .upnext__mon   { font-size: 0.8rem; }
   .upcoming-rail .upnext__yr    { font-size: 0.64rem; }
 }
+
+/* ==========================================================================
+   TOP BAR: nothing happens on hover
+   ========================================================================== */
+
+.masthead__menu-item a:hover {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  color: $masthead-link-color !important;
+}
+
+/* no underline sliding in, from either rule */
+.masthead__menu-item a::after,
+.masthead__menu-item a:hover::after,
+.greedy-nav a::before,
+.greedy-nav a:hover::before,
+.greedy-nav .visible-links a::before,
+.greedy-nav .visible-links a:hover::before {
+  display: none !important;
+  transform: scaleX(0) !important;
+}
+
+/* ==========================================================================
+   SIDEBAR CLOCK: date beside the time
+   ========================================================================== */
+
+.sidebar .dclock {
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.sidebar .dclock__date {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: $gray;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+
+  i { color: $navy-light; font-size: 0.82rem; }
+}
+
+/* ==========================================================================
+   UPCOMING: steady dot, no pulse
+   ========================================================================== */
+
+.upcoming__dot {
+  animation: none !important;
+  box-shadow: none !important;
+}
+
+/* ==========================================================================
+   OPEN TO RESEARCH COLLABORATION
+   ========================================================================== */
+
+.collab {
+  max-width: 54rem;
+  margin: 2.6em 0 0.5em;
+  padding: 1.3em 1.5em 1.2em;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbfa 100%);
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(23, 50, 77, 0.05);
+}
+
+.collab__title {
+  margin: 0 0 0.35em;
+  color: $navy;
+  font-size: 1.18rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.collab__lede {
+  margin: 0 0 0.9em;
+  color: $text-color;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.collab__tags {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+
+  @media (max-width: 860px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 560px) { grid-template-columns: 1fr; }
+}
+
+.ct {
+  display: flex;
+  align-items: center;
+  padding: 7px 12px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  /* one soft shade per area */
+  &--a { background: #dff4f1; color: #0b5f59; }   // teal
+  &--b { background: #dbeafe; color: #1d4ed8; }   // blue
+  &--c { background: #ede9fe; color: #6d28d9; }   // violet
+  &--d { background: #ffe4e6; color: #be123c; }   // rose
+  &--e { background: #fef3c7; color: #a16207; }   // gold
+  &--f { background: #dcfce7; color: #15803d; }   // green
+  &--g { background: #ffedd5; color: #c2410c; }   // amber
+  &--h { background: #e2e8f0; color: #334155; }   // slate
+  &--i { background: #cffafe; color: #0e7490; }   // cyan
+  &--j { background: #fce7f3; color: #9d174d; }   // pink
+}
+
+.collab__foot {
+  margin: 1.1em 0 0;
+  padding-top: 0.9em;
+  border-top: 1px solid $border-color;
+  color: $text-color;
+  font-size: 0.9rem;
+
+  strong { color: $navy; }
+  a { color: $navy-light; text-decoration: none; }
+  a:hover { color: $teal-dark; text-decoration: underline; }
+}
+
+@media (max-width: 600px) {
+  .collab { padding: 1.2em 1.1em; }
+  .ct { font-size: 0.8rem; padding: 4px 11px; }
+}
+
+/* ==========================================================================
+   BACK TO TOP
+   ========================================================================== */
+
+.to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 30;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+
+  color: #ffffff !important;
+  background: $navy-light;
+  border-radius: 50%;
+  box-shadow: 0 3px 12px rgba(23, 50, 77, 0.28);
+
+  font-size: 0.95rem;
+  text-decoration: none !important;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease, visibility 0.2s;
+
+  &.is-on {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  &:hover {
+    background: $navy;
+    box-shadow: 0 5px 16px rgba(23, 50, 77, 0.34);
+  }
+}
+
+@media (max-width: 600px) {
+  .to-top { right: 14px; bottom: 14px; width: 38px; height: 38px; }
+}
