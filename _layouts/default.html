@@ -1,0 +1,6 @@
+--- layout: compress --- {% include head.html %} {% include head/custom.html %} {% include browser-upgrade.html %} {% include masthead.html %}
+{% include sidebar.html %}
+{% if page.title %}{% endif %}
+{{ content }}
+{% if page.permalink == "/" %}{% include news-rail.html %}{% endif %}
+{% include footer.html %} {% include scripts.html %}
