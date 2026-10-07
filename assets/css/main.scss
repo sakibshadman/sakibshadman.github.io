@@ -2203,3 +2203,42 @@ a, button, summary, .masthead__menu-item a {
 /* Venue badge: flush with the left edge of the figure */
 .paper-box-image > div { align-items: flex-start; }
 .paper-box .badge { margin: 0 0 9px 0 !important; }
+
+
+/* ==========================================================================
+   GOOGLE SCHOLAR METRICS: a quiet line under the Publications heading
+   ========================================================================== */
+
+.gs-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 18px;
+  margin: -0.4em 0 1.5em !important;
+  color: $gray;
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.gs-stat {
+  white-space: nowrap;
+
+  strong {
+    margin-right: 3px;
+    color: $navy;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.gs-stats__asof {
+  color: $gray;
+  font-size: 0.78rem;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+@media (max-width: 600px) {
+  .gs-stats { gap: 4px 14px; font-size: 0.82rem; }
+  .gs-stats__asof { flex-basis: 100%; }
+}
