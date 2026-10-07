@@ -34,6 +34,4 @@ redirect_from:
 
 {% include_relative includes/service.md %}
 
-{% include_relative includes/collab.md %}
-
-{% include_relative includes/contact.md %}
+{% include_relative includes/engage.md %}
