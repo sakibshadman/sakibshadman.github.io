@@ -211,6 +211,15 @@
 
 <h1 id="publications">Selected Publications <a class="scholar-link" href="https://scholar.google.com/citations?user=RlxTPrkAAAAJ"><i class="fas fa-graduation-cap"></i> Google Scholar</a></h1>
 
+<!-- Citation metrics are entered by hand. Refresh them from Google Scholar
+     every few months and update the "as of" month alongside the numbers. -->
+<p class="gs-stats">
+  <span class="gs-stat"><strong>1,200+</strong> citations</span>
+  <span class="gs-stat"><strong>16</strong> h-index</span>
+  <span class="gs-stat"><strong>23</strong> i10-index</span>
+  <span class="gs-stats__asof">Google Scholar, October 2026</span>
+</p>
+
 <!-- Each entry starts with <span class="pub-tag TYPE">LABEL</span>, where TYPE is
      journal, conference, workshop, review or preprint. The colour for each type
      is set once in assets/css/main.scss under PUBLICATION TAGS. -->
