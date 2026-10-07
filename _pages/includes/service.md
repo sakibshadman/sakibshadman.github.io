@@ -9,7 +9,7 @@
 
   <div class="svc__row">
     <div class="svc__label">Conference Reviewer</div>
-    <div class="svc__body"><span class="nw">IEEE ISBI 2026</span> · <span class="nw">MICCAI 2026</span> <span class="nw">IEEE BigData 2026</span> · <span class="nw">ICVGIP 2026</span> · <span class="nw">AusDM 2026</span> · <span class="nw">NCA 2026</span> · <span class="nw">IEEE ICSIPA 2026</span> · <span class="nw">IEEE SCIS&ndash;ISIS 2024, 2026</span></div>
+    <div class="svc__body"><span class="nw">IEEE ISBI 2026</span> · <span class="nw">MICCAI 2026</span> · <span class="nw">IEEE BigData 2026</span> · <span class="nw">ICVGIP 2026</span> · <span class="nw">AusDM 2026</span> · <span class="nw">NCA 2026</span> · <span class="nw">IEEE ICSIPA 2026</span> · <span class="nw">IEEE SCIS&ndash;ISIS 2024, 2026</span></div>
   </div>
 
   <div class="svc__row">
