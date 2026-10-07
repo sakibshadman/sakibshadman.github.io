@@ -4,41 +4,36 @@
 {% include fetch_google_scholar_stats.html %}
 
 <script>
-/* Digital clock, Eastern Time */
+/* Date and Eastern Time in the sidebar */
 document.addEventListener("DOMContentLoaded", function () {
 
-  var h = document.getElementById("dclock-h");
-  var m = document.getElementById("dclock-m");
-  var s = document.getElementById("dclock-s");
-  var ap = document.getElementById("dclock-ap");
+  var dateEl = document.getElementById("dclock-date");
+  var timeEl = document.getElementById("dclock-time");
 
   function tick() {
-    if (!h) { return; }
-    var v = {};
-    new Intl.DateTimeFormat("en-US", {
-      timeZone: "America/New_York",
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-      hour12: true
-    }).formatToParts(new Date()).forEach(function (p) { v[p.type] = p.value; });
+    if (!dateEl && !timeEl) { return; }
+    var now = new Date();
 
-    var dt = document.getElementById("dclock-date");
-    if (dt) {
-      dt.textContent = new Intl.DateTimeFormat("en-US", {
+    if (dateEl) {
+      dateEl.textContent = new Intl.DateTimeFormat("en-US", {
         timeZone: "America/New_York",
         month: "short",
         day: "numeric"
-      }).format(new Date());
+      }).format(now);
     }
 
-    h.textContent = v.hour;
-    m.textContent = v.minute;
-    if (s) { s.textContent = v.second; }
-    if (ap) { ap.textContent = (v.dayPeriod || "").toUpperCase(); }
+    if (timeEl) {
+      timeEl.textContent = new Intl.DateTimeFormat("en-US", {
+        timeZone: "America/New_York",
+        hour: "numeric",
+        minute: "2-digit",
+        hour12: true
+      }).format(now) + " EST";
+    }
   }
 
-  if (h) { tick(); setInterval(tick, 1000); }
+  tick();
+  setInterval(tick, 10000);
 
   /* Back to top ---------------------------------------------------------- */
 
@@ -46,11 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!topBtn) { return; }
 
   function toggleTop() {
-    if (window.scrollY > 600) {
-      topBtn.classList.add("is-on");
-    } else {
-      topBtn.classList.remove("is-on");
-    }
+    if (window.scrollY > 600) { topBtn.classList.add("is-on"); }
+    else { topBtn.classList.remove("is-on"); }
   }
 
   toggleTop();

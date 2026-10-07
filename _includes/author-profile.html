@@ -124,15 +124,19 @@
 
 
     <!-- =====================================================
-         DIGITAL CLOCK (Eastern Time)
+         DATE AND EASTERN TIME
          ===================================================== -->
 
     <div class="dclock">
-      <span class="dclock__date"><i class="fas fa-calendar-alt" aria-hidden="true"></i><span id="dclock-date">--</span></span>
-      <span class="dclock__time">
-        <span id="dclock-h">--</span><span class="dclock__colon">:</span><span id="dclock-m">--</span><span class="dclock__sec" id="dclock-s">--</span>
+      <span class="dclock__item">
+        <i class="fas fa-calendar-alt" aria-hidden="true"></i>
+        <span id="dclock-date">&mdash;</span>
       </span>
-      <span class="dclock__meta"><span id="dclock-ap">--</span> EST</span>
+      <span class="dclock__dot" aria-hidden="true">&middot;</span>
+      <span class="dclock__item">
+        <i class="fas fa-clock" aria-hidden="true"></i>
+        <span id="dclock-time">&mdash;</span>
+      </span>
     </div>
 
   </div>
