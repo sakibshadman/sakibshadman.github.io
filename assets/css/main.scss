@@ -2156,3 +2156,40 @@ summary:focus-visible {
 a, button, summary, .masthead__menu-item a {
   -webkit-tap-highlight-color: transparent;
 }
+
+
+/* ==========================================================================
+   PAPER CARDS: tighter text block, badge flush left
+   ========================================================================== */
+
+/* The markdown line break after the title left a blank line of its own,
+   because .ptitle is already a block-level element. */
+.paper-box-text .ptitle + br { display: none; }
+
+.paper-box-text .ptitle {
+  margin-bottom: 5px;
+  line-height: 1.35;
+}
+
+/* Authors and venue sit back at body size, so the title leads on its own */
+.paper-box-text p:first-child {
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+/* Text column centred against the figure: leftover height is shared above
+   and below rather than all collecting under the PDF button */
+.paper-box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2px 0;
+}
+
+.paper-box-text p { margin-bottom: 0.3em; }
+.paper-box-text p:last-child { margin-bottom: 0; }
+.paper-box-text a.pdf-btn { margin-top: 11px; }
+
+/* Venue badge: flush with the left edge of the figure */
+.paper-box-image > div { align-items: flex-start; }
+.paper-box .badge { margin: 0 0 9px 0 !important; }
