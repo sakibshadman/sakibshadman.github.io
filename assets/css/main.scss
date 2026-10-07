@@ -1614,51 +1614,502 @@ $news-rail-from : 1440px;   // screens at least this wide get the right-hand pan
   .sidebar .dclock { gap: 10px; }
 }
 
+
 /* ==========================================================================
-   PROFILE PHOTO: upright portrait, rounded corners rather than a circle
+   RESEARCH HIGHLIGHTS: bigger figures, tighter spacing
    ========================================================================== */
 
-.sidebar .author__avatar img {
-  width: 100%;
-  max-width: 200px;
-  height: auto !important;
-  border-radius: 12px !important;
-  object-fit: cover;
-}
+/* Less air between a section heading and the first thread title */
+.page__content h1 { margin-bottom: 0.5em; }
+.page__content h2 { margin: 1.1em 0 0.9em; }
 
-@media (max-width: 924px) {
-  .sidebar .author__avatar img {
-    width: 170px;
-    max-width: 170px;
-    height: auto !important;
-    border-radius: 12px !important;
+/* Figures: wider column, filling the full height of the card */
+@include breakpoint($medium) {
+  .paper-box {
+    grid-template-columns: 330px minmax(0, 1fr);
+    gap: 20px;
+    align-items: stretch;
+  }
+  .paper-box-image > div { height: 100%; display: flex; }
+  .paper-box-image img {
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    object-fit: contain;
   }
 }
 
-
 /* ==========================================================================
-   FOCUS: no gold outline on click, a quiet ring for keyboard users
+   SITE FOOTER
    ========================================================================== */
 
-a:focus,
-button:focus,
-summary:focus,
-.masthead__menu-item a:focus {
-  outline: none !important;
-  box-shadow: none !important;
+.site-foot {
+  margin-top: 3.5rem;
+  padding: 1.3rem 1.2rem 1.5rem;
+  border-top: 1px solid $border-color;
+  text-align: center;
+
+  p {
+    margin: 0;
+    color: $gray;
+    font-size: 0.8rem;
+    line-height: 1.6;
+  }
 }
 
-a:focus-visible,
-button:focus-visible,
-summary:focus-visible {
-  outline: 2px solid $navy-light !important;
-  outline-offset: 2px;
+.site-foot__sep { margin: 0 0.25em; opacity: 0.6; }
+
+/* ==========================================================================
+   INTRO: rule between the bio and Research Interests
+   ========================================================================== */
+
+.page__content hr.intro-rule {
+  height: 0;
+  margin: 1.8em 0 1.6em;
+  border: 0;
+  border-top: 1px solid $border-color;
+}
+
+/* ==========================================================================
+   NEWS PANEL: ends with the introduction
+   ========================================================================== */
+
+@media (min-width: 1440px) {
+  .news-rail__scroll { max-height: 27em; }
+}
+
+/* ==========================================================================
+   UPCOMING: blue accents, and the panel sits in the right-hand column
+   ========================================================================== */
+
+$upcoming        : #1d4ed8;   // the accent colour: change these two to recolour
+$upcoming-light  : #dbeafe;
+
+.upcoming__dot {
+  background: #3b82f6;
+  box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.5);
+  animation: up-pulse-blue 2.4s ease-out infinite;
+}
+
+@keyframes up-pulse-blue {
+  70%  { box-shadow: 0 0 0 7px rgba(59, 130, 246, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
+}
+
+.upcoming__label {
+  padding: 2px 7px;
   border-radius: 4px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
-a, button, summary, .masthead__menu-item a {
-  -webkit-tap-highlight-color: transparent;
+.upnext__when { background: $upcoming-light; }
+.upnext__mon  { color: $upcoming; }
+.upnext__yr   { color: $upcoming; opacity: 0.8; }
+
+.upnext:hover { background: #f5f9ff; }
+.upnext:hover .upnext__venue { color: $upcoming; }
+.upnext__where i { color: #3b82f6; }
+.upnext__go { color: $upcoming; }
+
+@media (prefers-reduced-motion: reduce) {
+  .upcoming__dot { animation: none; }
 }
+
+/* Where the panel lives: in the right column on wide screens,
+   in the page itself on anything narrower. */
+
+.upcoming-rail { display: none; }
+
+@media (min-width: 1440px) {
+  .upcoming-inline { display: none; }
+
+  .upcoming-rail {
+    display: block;
+    margin-top: 16px;
+  }
+
+  .upcoming-rail .upcoming {
+    margin: 0;
+    padding: 14px 14px 9px;
+  }
+
+  .upcoming-rail .upcoming__title { font-size: 0.9rem; }
+  .upcoming-rail .upnext {
+    grid-template-columns: 46px minmax(0, 1fr);
+    gap: 11px;
+    padding: 9px 8px;
+    margin: 0 -8px;
+  }
+  .upcoming-rail .upnext__go { display: none; }
+  .upcoming-rail .upnext__venue { font-size: 0.9rem; }
+  .upcoming-rail .upnext__what  { font-size: 0.84rem; }
+  .upcoming-rail .upnext__where { font-size: 0.78rem; }
+  .upcoming-rail .upnext__mon   { font-size: 0.8rem; }
+  .upcoming-rail .upnext__yr    { font-size: 0.64rem; }
+}
+
+/* ==========================================================================
+   TOP BAR: nothing happens on hover
+   ========================================================================== */
+
+.masthead__menu-item a,
+.greedy-nav a,
+.greedy-nav .visible-links a,
+.greedy-nav .hidden-links a {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+.masthead__menu-item a:hover,
+.masthead__menu-item a:focus,
+.masthead__menu-item a:active,
+.greedy-nav a:hover,
+.greedy-nav a:focus,
+.greedy-nav a:active,
+.greedy-nav .visible-links a:hover,
+.greedy-nav .visible-links a:focus,
+.greedy-nav .visible-links a:active,
+.greedy-nav button:hover,
+.greedy-nav button:focus {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  outline: none !important;
+  color: $masthead-link-color !important;
+  text-decoration: none !important;
+}
+
+/* no underline sliding in, from either rule */
+.masthead__menu-item a::after,
+.masthead__menu-item a:hover::after,
+.greedy-nav a::before,
+.greedy-nav a:hover::before,
+.greedy-nav .visible-links a::before,
+.greedy-nav .visible-links a:hover::before {
+  display: none !important;
+  transform: scaleX(0) !important;
+}
+
+/* ==========================================================================
+   UPCOMING: round dot with a gentle fade
+   ========================================================================== */
+
+.upcoming__dot {
+  flex: 0 0 auto;
+  width: 9px;
+  height: 9px;
+  min-width: 9px;
+  border-radius: 50%;
+  box-shadow: none !important;
+  animation: up-fade 2.2s ease-in-out infinite !important;
+}
+
+@keyframes up-fade {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .upcoming__dot { animation: none !important; opacity: 1; }
+}
+
+/* ==========================================================================
+   OPEN TO RESEARCH COLLABORATION
+   ========================================================================== */
+
+.engage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: stretch;
+  gap: 18px;
+  margin: 2.4em 0 0.5em;
+
+  @media (max-width: 980px) { grid-template-columns: 1fr; }
+}
+
+.collab,
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 1.3em 1.5em 1.4em;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbfa 100%);
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(23, 50, 77, 0.05);
+}
+
+.collab__title {
+  margin: 0 0 0.35em;
+  color: $navy;
+  font-size: 1.18rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.collab__lede {
+  margin: 0 0 0.9em;
+  color: $text-color;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.collab__tags {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+
+  @media (max-width: 560px) { grid-template-columns: 1fr; }
+}
+
+.ct {
+  display: flex;
+  align-items: center;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.4;
+
+  /* one soft shade per area */
+  &--a { background: #dff4f1; color: #0b5f59; }   // teal
+  &--b { background: #dbeafe; color: #1d4ed8; }   // blue
+  &--c { background: #ede9fe; color: #6d28d9; }   // violet
+  &--d { background: #ffe4e6; color: #be123c; }   // rose
+  &--e { background: #fef3c7; color: #a16207; }   // gold
+  &--f { background: #dcfce7; color: #15803d; }   // green
+  &--g { background: #ffedd5; color: #c2410c; }   // amber
+  &--h { background: #e2e8f0; color: #334155; }   // slate
+  &--i { background: #cffafe; color: #0e7490; }   // cyan
+  &--j { background: #fce7f3; color: #9d174d; }   // pink
+}
+
+.collab__foot {
+  margin: 1.3em 0 0;
+  color: $text-color;
+  font-size: 0.9rem;
+
+  strong { color: $navy; }
+  a { color: $navy-light; text-decoration: none; }
+  a:hover { color: $teal-dark; text-decoration: underline; }
+}
+
+@media (max-width: 600px) {
+  .collab { padding: 1.2em 1.1em; }
+  .ct { font-size: 0.8rem; padding: 4px 11px; }
+}
+
+/* ==========================================================================
+   BACK TO TOP
+   ========================================================================== */
+
+.to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 30;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+
+  color: #ffffff !important;
+  background: $navy-light;
+  border-radius: 50%;
+  box-shadow: 0 3px 12px rgba(23, 50, 77, 0.28);
+
+  font-size: 0.95rem;
+  text-decoration: none !important;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, background 0.2s ease, visibility 0.2s;
+
+  &.is-on {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  &:hover {
+    background: $navy;
+    box-shadow: 0 5px 16px rgba(23, 50, 77, 0.34);
+  }
+}
+
+@media (max-width: 600px) {
+  .to-top { right: 14px; bottom: 14px; width: 38px; height: 38px; }
+}
+
+/* ==========================================================================
+   PHONES AND SMALL TABLETS: stack the sidebar instead of squeezing it
+   into three columns
+   ========================================================================== */
+
+@media (max-width: 924px) {
+
+  .sidebar .profile_box {
+    display: block;
+    text-align: center;
+  }
+
+  .sidebar .author__avatar,
+  .sidebar .author__content,
+  .sidebar .author__urls-wrapper {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+  .sidebar .author__avatar {
+    margin: 0 auto 0.9em;
+
+    img {
+      width: 150px;
+      height: 150px;
+      max-width: 150px;
+      margin: 0 auto;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+
+  /* the template hides these behind a Follow button on small screens */
+  .sidebar .author__urls {
+    display: block !important;
+    position: relative;
+    right: auto;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+    background: none;
+    border: 0;
+    box-shadow: none;
+    z-index: auto;
+  }
+
+  .sidebar .author__urls-wrapper > button { display: none !important; }
+
+  .sidebar .author__name {
+    margin: 0 0 0.25em;
+    font-size: 1.35rem;
+  }
+
+  .sidebar .author__bio {
+    max-width: 22rem;
+    margin: 0 auto 0.6em;
+  }
+
+  .sidebar .prof-facts {
+    max-width: 22rem;
+    margin: 0.6em auto 0 !important;
+  }
+
+  .sidebar .cv-button { margin: 14px auto; }
+
+  .sidebar .prof-links { margin-bottom: 14px; }
+
+  /* the clock stays on one line */
+  .sidebar .dclock {
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  /* a rule under the whole block, so it reads as its own band */
+  .sidebar .profile_box {
+    padding-bottom: 1.2em;
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 1.4em;
+  }
+}
+
+/* ==========================================================================
+   CONTACT
+   ========================================================================== */
+
+.contact__title,
+.collab__title {
+  margin: 0 0 0.75em;
+  color: $navy;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.contact__list {
+  display: grid;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 9px 14px;
+  margin: 0;
+  align-items: baseline;
+
+  dt {
+    margin: 0;
+    color: $gray;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    line-height: 1.55;
+  }
+
+  dd {
+    margin: 0;
+    color: $text-color;
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
+  a { color: $navy-light; text-decoration: none; }
+  a:hover { color: $teal-dark; text-decoration: underline; }
+}
+
+.contact__sep { margin: 0 0.3em; color: $gray; }
+
+.contact__logos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: auto;
+  padding-top: 1.1em;
+  border-top: 1px solid $border-color;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    opacity: 0.92;
+    transition: opacity 0.18s ease, transform 0.18s ease;
+  }
+  a:hover { opacity: 1; transform: translateY(-2px); }
+
+  img {
+    display: block;
+    width: auto;
+    height: 30px;
+  }
+
+  /* the round CYPRESS mark reads smaller at the same height */
+  a:last-child img { height: 36px; }
+}
+
+@media (max-width: 600px) {
+  .contact__list { grid-template-columns: 1fr; gap: 2px 0; }
+  .contact__list dt { margin-top: 0.6em; }
+  .contact__logos { gap: 16px; img { height: 26px; } a:last-child img { height: 31px; } }
+}
+
 
 /* ==========================================================================
    PROFILE PHOTO: upright portrait, rounded corners rather than a circle
@@ -1683,7 +2134,7 @@ a, button, summary, .masthead__menu-item a {
 
 
 /* ==========================================================================
-   FOCUS: no gold outline on click, a quiet ring for keyboard users
+   FOCUS: no gold outline on click, a quiet ring for keyboard users only
    ========================================================================== */
 
 a:focus,
