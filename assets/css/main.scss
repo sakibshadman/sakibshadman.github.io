@@ -2177,13 +2177,23 @@ a, button, summary, .masthead__menu-item a {
   line-height: 1.55;
 }
 
-/* Text column centred against the figure: leftover height is shared above
-   and below rather than all collecting under the PDF button */
+/* Text column starts at the top of every card, so each title sits at the
+   same height no matter how tall its figure is */
 .paper-box-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 2px 0;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+/* The figure is free to shrink to the text's height, so nothing is left
+   hanging below the PDF button */
+.paper-box-image > div { justify-content: flex-start; }
+
+/* Cap the tallest figures, so a portrait-ish diagram can't stretch its card
+   far past the others and leave a hole under the PDF button */
+@include breakpoint($medium) {
+  .paper-box-image img { max-height: 152px !important; }
 }
 
 .paper-box-text p { margin-bottom: 0.3em; }
