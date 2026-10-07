@@ -1591,7 +1591,7 @@ $news-rail-from : 1440px;   // screens at least this wide get the right-hand pan
 
 .sidebar .dclock__time {
   color: $navy;
-  font-size: 1.02rem;
+  font-size: 0.82rem;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.01em;
@@ -1614,9 +1614,8 @@ $news-rail-from : 1440px;   // screens at least this wide get the right-hand pan
 .sidebar .dclock__sec {
   margin-left: 1px;
   color: $gray;
-  font-size: 0.7em;
+  font-size: 1em;
   font-weight: 600;
-  vertical-align: 1px;
 }
 
 .sidebar .dclock__meta {
@@ -1895,9 +1894,7 @@ $upcoming-light  : #dbeafe;
 }
 
 .collab__foot {
-  margin: 1.1em 0 0;
-  padding-top: 0.9em;
-  border-top: 1px solid $border-color;
+  margin: 1.3em 0 0;
   color: $text-color;
   font-size: 0.9rem;
 
@@ -2037,5 +2034,115 @@ $upcoming-light  : #dbeafe;
     padding-bottom: 1.2em;
     border-bottom: 1px solid $border-color;
     margin-bottom: 1.4em;
+  }
+}
+
+/* ==========================================================================
+   CONTACT
+   ========================================================================== */
+
+.contact {
+  margin: 1.6em 0 0.5em;
+  padding: 1.3em 1.5em 1.4em;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fbfa 100%);
+  border: 1px solid $border-color;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(23, 50, 77, 0.05);
+}
+
+.contact__title {
+  margin: 0 0 0.8em;
+  color: $navy;
+  font-size: 1.18rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.contact__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.contact__name {
+  margin: 0 0 0.25em;
+  color: $navy;
+  font-size: 0.98rem;
+  font-weight: 700;
+}
+
+.contact__addr {
+  margin: 0;
+  color: $text-color;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.contact__mail {
+  margin: 0.5em 0 0;
+  font-size: 0.9rem;
+
+  a { color: $navy-light; text-decoration: none; }
+  a:hover { color: $teal-dark; text-decoration: underline; }
+}
+
+.contact__logos {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  flex: 0 0 auto;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    opacity: 0.92;
+    transition: opacity 0.18s ease, transform 0.18s ease;
+  }
+  a:hover { opacity: 1; transform: translateY(-2px); }
+
+  img {
+    display: block;
+    width: auto;
+    height: 46px;
+  }
+
+  /* the round CYPRESS mark reads larger at the same height */
+  a:last-child img { height: 54px; }
+}
+
+@media (max-width: 760px) {
+  .contact__body {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.4rem;
+  }
+  .contact__logos {
+    gap: 20px;
+    img { height: 38px; }
+    a:last-child img { height: 44px; }
+  }
+}
+
+
+/* ==========================================================================
+   PROFILE PHOTO: upright portrait, rounded corners rather than a circle
+   ========================================================================== */
+
+.sidebar .author__avatar img {
+  width: 100%;
+  max-width: 200px;
+  height: auto !important;
+  border-radius: 12px !important;
+  object-fit: cover;
+}
+
+@media (max-width: 924px) {
+  .sidebar .author__avatar img {
+    width: 170px;
+    max-width: 170px;
+    height: auto !important;
+    border-radius: 12px !important;
   }
 }
