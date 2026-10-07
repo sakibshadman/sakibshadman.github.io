@@ -1834,20 +1834,35 @@ $upcoming-light  : #dbeafe;
 }
 
 /* ==========================================================================
-   OPEN TO RESEARCH COLLABORATION
+   COLLABORATION AND CONTACT, side by side
    ========================================================================== */
 
-.collab {
-  margin: 2.6em 0 0.5em;
-  padding: 1.3em 1.5em 1.2em;
+.engage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: stretch;
+  gap: 18px;
+  margin: 2.4em 0 0.5em;
+
+  @media (max-width: 980px) { grid-template-columns: 1fr; }
+}
+
+.collab,
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 1.3em 1.5em 1.4em;
   background: linear-gradient(180deg, #ffffff 0%, #f8fbfa 100%);
   border: 1px solid $border-color;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(23, 50, 77, 0.05);
 }
 
-.collab__title {
-  margin: 0 0 0.35em;
+.collab__title,
+.contact__title {
+  margin: 0 0 0.75em;
   color: $navy;
   font-size: 1.18rem;
   font-weight: 700;
@@ -1855,57 +1870,91 @@ $upcoming-light  : #dbeafe;
 }
 
 .collab__lede {
-  margin: 0 0 0.9em;
+  margin: 0 0 1em;
   color: $text-color;
-  font-size: 0.95rem;
+  font-size: 0.93rem;
   line-height: 1.6;
 }
 
+/* the areas hug their own text rather than filling a column */
 .collab__tags {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 8px;
-
-  @media (min-width: 1100px) { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  @media (max-width: 860px) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  @media (max-width: 560px) { grid-template-columns: 1fr; }
 }
 
 .ct {
-  display: flex;
-  align-items: center;
-  padding: 7px 12px;
+  padding: 5px 12px;
   border-radius: 6px;
   font-size: 0.82rem;
   font-weight: 600;
-  line-height: 1.4;
+  line-height: 1.45;
 
-  /* one soft shade per area */
-  &--a { background: #dff4f1; color: #0b5f59; }   // teal
-  &--b { background: #dbeafe; color: #1d4ed8; }   // blue
-  &--c { background: #ede9fe; color: #6d28d9; }   // violet
-  &--d { background: #ffe4e6; color: #be123c; }   // rose
-  &--e { background: #fef3c7; color: #a16207; }   // gold
-  &--f { background: #dcfce7; color: #15803d; }   // green
-  &--g { background: #ffedd5; color: #c2410c; }   // amber
-  &--h { background: #e2e8f0; color: #334155; }   // slate
-  &--i { background: #cffafe; color: #0e7490; }   // cyan
-  &--j { background: #fce7f3; color: #9d174d; }   // pink
+  &--a { background: #dff4f1; color: #0b5f59; }
+  &--b { background: #dbeafe; color: #1d4ed8; }
+  &--c { background: #ede9fe; color: #6d28d9; }
+  &--d { background: #ffe4e6; color: #be123c; }
+  &--e { background: #fef3c7; color: #a16207; }
+  &--f { background: #dcfce7; color: #15803d; }
+  &--g { background: #ffedd5; color: #c2410c; }
+  &--h { background: #e2e8f0; color: #334155; }
+  &--i { background: #cffafe; color: #0e7490; }
 }
 
-.collab__foot {
-  margin: 1.3em 0 0;
-  color: $text-color;
-  font-size: 0.9rem;
+/* Contact: label on the left, detail on the right */
 
-  strong { color: $navy; }
+.contact__list {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 5px 14px;
+  margin: 0;
+
+  dt {
+    color: $gray;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    line-height: 1.75;
+  }
+
+  dd {
+    margin: 0;
+    color: $text-color;
+    font-size: 0.88rem;
+    line-height: 1.55;
+  }
+
   a { color: $navy-light; text-decoration: none; }
   a:hover { color: $teal-dark; text-decoration: underline; }
 }
 
-@media (max-width: 600px) {
-  .collab { padding: 1.2em 1.1em; }
-  .ct { font-size: 0.8rem; padding: 4px 11px; }
+.contact__sep { margin: 0 0.3em; color: $gray; }
+
+.contact__logos {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: auto;
+  padding-top: 1.1em;
+  border-top: 1px solid $border-color;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    opacity: 0.92;
+    transition: opacity 0.18s ease, transform 0.18s ease;
+  }
+  a:hover { opacity: 1; transform: translateY(-2px); }
+
+  img { display: block; width: auto; height: 30px; }
+  a:last-child img { height: 36px; }
+}
+
+@media (max-width: 560px) {
+  .contact__list { grid-template-columns: 1fr; gap: 2px; }
+  .contact__list dt { margin-top: 0.6em; line-height: 1.4; }
+  .contact__logos { gap: 18px; img { height: 30px; } a:last-child img { height: 36px; } }
 }
 
 /* ==========================================================================
@@ -2036,95 +2085,6 @@ $upcoming-light  : #dbeafe;
     margin-bottom: 1.4em;
   }
 }
-
-/* ==========================================================================
-   CONTACT
-   ========================================================================== */
-
-.contact {
-  margin: 1.6em 0 0.5em;
-  padding: 1.3em 1.5em 1.4em;
-  background: linear-gradient(180deg, #ffffff 0%, #f8fbfa 100%);
-  border: 1px solid $border-color;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(23, 50, 77, 0.05);
-}
-
-.contact__title {
-  margin: 0 0 0.8em;
-  color: $navy;
-  font-size: 1.18rem;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-
-.contact__body {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2.5rem;
-  flex-wrap: wrap;
-}
-
-.contact__name {
-  margin: 0 0 0.25em;
-  color: $navy;
-  font-size: 0.98rem;
-  font-weight: 700;
-}
-
-.contact__addr {
-  margin: 0;
-  color: $text-color;
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-.contact__mail {
-  margin: 0.5em 0 0;
-  font-size: 0.9rem;
-
-  a { color: $navy-light; text-decoration: none; }
-  a:hover { color: $teal-dark; text-decoration: underline; }
-}
-
-.contact__logos {
-  display: flex;
-  align-items: center;
-  gap: 26px;
-  flex: 0 0 auto;
-
-  a {
-    display: inline-flex;
-    align-items: center;
-    opacity: 0.92;
-    transition: opacity 0.18s ease, transform 0.18s ease;
-  }
-  a:hover { opacity: 1; transform: translateY(-2px); }
-
-  img {
-    display: block;
-    width: auto;
-    height: 46px;
-  }
-
-  /* the round CYPRESS mark reads larger at the same height */
-  a:last-child img { height: 54px; }
-}
-
-@media (max-width: 760px) {
-  .contact__body {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.4rem;
-  }
-  .contact__logos {
-    gap: 20px;
-    img { height: 38px; }
-    a:last-child img { height: 44px; }
-  }
-}
-
 
 /* ==========================================================================
    PROFILE PHOTO: upright portrait, rounded corners rather than a circle
