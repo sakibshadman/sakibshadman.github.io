@@ -43,7 +43,7 @@
       <dt>Institution</dt>
       <dd>University of Maryland, Baltimore County<br>1000 Hilltop Circle, Baltimore, MD 21250, USA</dd>
 
-      <dt>Email</dt>
+      <dt>Connect</dt>
       <dd>
         <a href="mailto:ssakib1@umbc.edu">ssakib1@umbc.edu</a>
         <span class="contact__sep">·</span>
