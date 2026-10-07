@@ -28,3 +28,6 @@ main:
 
   - title: "Service"
     url: "#professional-service"
+
+  - title: "Contact"
+    url: "#contact"
