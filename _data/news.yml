@@ -6,6 +6,14 @@
 #   text:  one or two sentences; **bold** and [links](https://...) work
 #   older: true  -> moves the item under "Older news"
 
+- date: "2026-10"
+  type: Paper
+  text: "**Pixels-to-Phase** accepted at **WACV 2027** (IEEE/CVF Winter Conference on Applications of Computer Vision), Orlando — reliability-aware latent state-space modeling for contactless respiratory estimation."
+
+- date: "2026-10"
+  type: Paper
+  text: "Selected for an **oral** at the **BMVC 2026 BD-MedVis Workshop**: *Topology-Reliable Retinal Artery–Vein Segmentation via Spatially-Aware Differentiable Graph Pruning*."
+
 - date: "2026-09"
   type: Paper
   text: "Two papers accepted at the **NeurIPS 2026 Med-Reasoner Workshop** on medical reasoning with vision-language foundation models."
@@ -36,7 +44,7 @@
 
 - date: "2026-04"
   type: Demo
-  text: "Field experiments and research demonstrations at the **NSF TRACE Testbed Workshop**, CYPRESS Technology Research Center, UMBC. [Gallery](https://cypress.umbc.edu/testbed/trace/gallery/)"
+  text: "Field experiments and research demonstrations at the **NSF TRACE Testbed Workshop**, CYPRESS, UMBC. [Gallery](https://cypress.umbc.edu/testbed/trace/gallery/)"
 
 - date: "2025-08"
   type: Demo
