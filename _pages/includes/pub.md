@@ -393,7 +393,7 @@ Aftar Ahmad Sami, Md. Jalal Uddin Chowdhury, Shakib Absar, Iftekhar Ahmed, <stro
 <li><span class="pub-tag workshop">BMVC 2026</span>
 <strong>Topology-Reliable Retinal Artery–Vein Segmentation via Spatially-Aware Differentiable Graph Pruning</strong><br>
 Iftekhar Ahmed, Aftar Ahmad Sami, Shakib Absar, <strong>Shadman Sakib</strong>, Rashedur Rahman, Siam Tahsin Bhuiyan, Ashraful Islam, Saadia Binte Alam<br>
-<em>BMVC 2026 BD-MedVis Workshop, Lancaster, UK — Oral</em>
+<em>BMVC 2026 BD-MedVis Workshop, Lancaster, UK (Oral)</em>
 </li>
 
 <li><span class="pub-tag conference">WoWMoM 2026</span>
