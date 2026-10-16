@@ -2266,3 +2266,44 @@ a, button, summary, .masthead__menu-item a {
   .gs-stats { gap: 4px 14px; font-size: 0.82rem; }
   .gs-stats__asof { flex-basis: 100%; }
 }
+
+
+
+/* ==========================================================================
+   UPCOMING: the next trip is featured; the rest stay quiet
+   ========================================================================== */
+
+/* Quieter default rows so the featured one leads the eye */
+.upnext__venue { font-weight: 650; }
+
+/* The next trip: tinted row, accent bar, filled date chip */
+.upnext--next {
+  background: #fff3e9;
+  box-shadow: inset 3px 0 0 #c2410c;
+}
+.upnext--next:hover { background: #ffe9d6; }
+
+.upnext--next .upnext__when { background: #c2410c; }
+.upnext--next .upnext__mon { color: #ffffff; }
+.upnext--next .upnext__yr  { color: #ffffff; opacity: 0.85; }
+
+.upnext--next .upnext__venue { color: #c2410c; font-weight: 700; }
+.upnext--next:hover .upnext__venue { color: #7c2d12; }
+.upnext--next .upnext__go { opacity: 1; transform: translateX(0); color: #c2410c; }
+
+/* "Next up" eyebrow tag above the venue */
+.upnext__flag {
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  background: #c2410c;
+  color: #ffffff;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.upnext--next .upnext__where i { color: #ea580c; }
