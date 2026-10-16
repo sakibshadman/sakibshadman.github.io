@@ -255,6 +255,12 @@ Khan Md Hasib, Md Rafiqul Islam, <strong>Shadman Sakib</strong>, Md Ali Akbar, M
 ### Conference and Workshop Papers
 
 <ul class="pub-list">
+<li><span class="pub-tag conference">WACV 2027</span>
+<strong>Pixels-to-Phase: Reliability-Aware Latent State-Space Modeling for Contactless Respiratory Estimation</strong><br>
+<strong>Shadman Sakib</strong>, Nirmalya Roy<br>
+<em>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2027), Orlando, Florida</em>
+</li>
+
 <li><span class="pub-tag workshop">NeurIPS 2026</span>
 <a href="https://drive.google.com/file/d/1B4r10UoS3IYqClQ0eTsBuIxxql9tt090/view"><strong>Measure What Matters: Active Evidence Acquisition for Reliable Physiological Reasoning</strong></a><br>
 <strong>Shadman Sakib</strong>, Nirmalya Roy<br>
@@ -370,11 +376,6 @@ Zahid Hasan, Masud Ahmed, <strong>Shadman Sakib</strong>, Snehalraj Chugh, Md Az
 </li>
 
 <li><span class="pub-tag review">UNDER REVIEW</span>
-<strong>Pixels-to-Phase: Reliability-Aware Latent State-Space Modeling for Contactless Respiratory Estimation</strong><br>
-<strong>Shadman Sakib</strong>, Nirmalya Roy
-</li>
-
-<li><span class="pub-tag review">UNDER REVIEW</span>
 <strong>SAGE-RR: Selective Auditing with Grounded Evidence for Robust Contactless Respiratory Rate Estimation</strong><br>
 <strong>Shadman Sakib</strong>, Nirmalya Roy
 </li>
@@ -389,6 +390,12 @@ Aftar Ahmad Sami, Md. Jalal Uddin Chowdhury, Shakib Absar, Iftekhar Ahmed, <stro
 <summary><strong>More Publications</strong></summary>
 
 <ul class="pub-list">
+<li><span class="pub-tag workshop">BMVC 2026</span>
+<strong>Topology-Reliable Retinal Artery–Vein Segmentation via Spatially-Aware Differentiable Graph Pruning</strong><br>
+Iftekhar Ahmed, Aftar Ahmad Sami, Shakib Absar, <strong>Shadman Sakib</strong>, Rashedur Rahman, Siam Tahsin Bhuiyan, Ashraful Islam, Saadia Binte Alam<br>
+<em>BMVC 2026 BD-MedVis Workshop, Lancaster, UK — Oral</em>
+</li>
+
 <li><span class="pub-tag conference">WoWMoM 2026</span>
 <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=RlxTPrkAAAAJ&amp;citation_for_view=RlxTPrkAAAAJ:geHnlv5EZngC"><strong>CAViAR: Quality-Aware Vision-and-Radio Fusion for Relative Range Estimation Among Collaborative Autonomous Agents</strong></a><br>
 Gaurav Shinde, Anuradha Ravi, Jared Lewis, Andre Harrison, Henry Gardiner, Mohammad Saeid Anwar, <strong>Shadman Sakib</strong>, Jade Freeman, Nirmalya Roy<br>
