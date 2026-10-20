@@ -880,14 +880,11 @@ $news-rail-from : 1440px;   // screens at least this wide get the right-hand pan
     padding-right: 0;
   }
 
+  /* The right column now holds only the Upcoming panel (which has its own card);
+     keep the column itself transparent so there is no box-in-a-box. */
   .news-rail {
     display: block;
     align-self: start;                 // stays at the top, does not run down the page
-    padding: 1.1em 1.2em 1em;
-    background: #ffffff;
-    border: 1px solid $border-color;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(23, 50, 77, 0.05);
   }
   .news-rail__title {
     margin: 0 0 0.75em;
@@ -907,9 +904,7 @@ $news-rail-from : 1440px;   // screens at least this wide get the right-hand pan
     scrollbar-width: thin;
   }
 
-  // the panel replaces the inline section and its menu link
-  #-news, .news-inline { display: none; }
-  .masthead__menu-item:has(> a[href$="#-news"]) { display: none; }
+  // News now lives inline in the main column, so it stays visible at all widths
 }
 
 /* ==========================================================================
