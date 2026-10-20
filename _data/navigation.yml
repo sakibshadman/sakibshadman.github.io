@@ -6,7 +6,7 @@ main:
     url: "#about-me"
 
   - title: "News"
-    url: "#-news"
+    url: "#news"
 
   - title: "Research"
     url: "#research-highlights"
