@@ -98,11 +98,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var img = box.querySelector("img");
     if (!img) { return; }
 
-    var badge = document.createElement("span");
-    badge.className = "zoom-badge";
-    badge.innerHTML = '<i class="fas fa-search-plus" aria-hidden="true"></i>';
-    box.appendChild(badge);
-
     box.style.cursor = "zoom-in";
     box.setAttribute("role", "button");
     box.setAttribute("tabindex", "0");
