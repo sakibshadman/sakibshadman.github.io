@@ -2386,3 +2386,57 @@ a, button, summary, .masthead__menu-item a {
   .lightbox { padding: 14px; }
   .lightbox__close { top: 10px; right: 12px; }
 }
+
+
+/* ==========================================================================
+   RESEARCH HIGHLIGHTS: subtitle + category filter tabs
+   ========================================================================== */
+
+.hl-sub {
+  margin: 0.1em 0 1.1em;
+  color: $gray;
+  font-size: 0.95rem;
+
+  a { color: $teal; font-weight: 600; text-decoration: none; margin-left: 2px; }
+  a:hover { color: $teal-dark; text-decoration: underline; }
+}
+
+.hl-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 1.6em;
+}
+
+.hl-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 15px;
+  background: #ffffff;
+  border: 1px solid $border-color;
+  border-radius: 999px;
+  color: $navy;
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: background 0.16s ease, border-color 0.16s ease, color 0.16s ease;
+}
+.hl-tab:hover { border-color: $teal; color: $teal-dark; }
+.hl-tab.is-active { background: $teal; border-color: $teal; color: #ffffff; }
+
+.hl-tab__n {
+  font-size: 0.74rem;
+  font-weight: 700;
+  opacity: 0.7;
+  font-variant-numeric: tabular-nums;
+}
+.hl-tab.is-active .hl-tab__n { opacity: 0.9; }
+
+.hl-tab:focus { outline: none; }
+.hl-tab:focus-visible { outline: 2px solid $navy-light; outline-offset: 2px; }
+
+@media (max-width: 600px) {
+  .hl-tab { padding: 5px 12px; font-size: 0.82rem; }
+}
