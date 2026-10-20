@@ -347,20 +347,14 @@
 
 $scroll_offset: 5em;
 
-h1:before,
-.anchor:before {
-  content: '';
-
-  display: block;
-
-  position: relative;
-
-  width: 0;
-  height: $scroll_offset;
-
-  margin-top: -$scroll_offset;
-
-  visibility: hidden;
+/* Offset anchor jumps so the sticky nav does not cover the heading.
+   scroll-margin-top does this without a pseudo-element, so headings no
+   longer extend an invisible box over the links in the section above. */
+h1,
+h2,
+h3,
+.anchor {
+  scroll-margin-top: $scroll_offset;
 }
 
 
