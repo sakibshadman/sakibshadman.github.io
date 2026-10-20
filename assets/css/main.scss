@@ -2440,3 +2440,43 @@ a, button, summary, .masthead__menu-item a {
 @media (max-width: 600px) {
   .hl-tab { padding: 5px 12px; font-size: 0.82rem; }
 }
+
+
+/* ==========================================================================
+   AVAILABILITY BANNER (internship / opportunities)
+   ========================================================================== */
+
+.avail {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0 0 1.6em;
+  padding: 0.85em 1.15em;
+  background: linear-gradient(180deg, #f2fbf9 0%, #e9f6f3 100%);
+  border: 1px solid #bfe2dd;
+  border-left: 4px solid $teal;
+  border-radius: 10px;
+  color: $text-color;
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.avail__icon {
+  margin-top: 3px;
+  color: $teal;
+  font-size: 0.95rem;
+  flex: 0 0 auto;
+}
+
+.avail__text strong { color: $navy; }
+
+.avail__text a {
+  color: $teal;
+  font-weight: 600;
+  text-decoration: none;
+}
+.avail__text a:hover { color: $teal-dark; text-decoration: underline; }
+
+@media (max-width: 600px) {
+  .avail { font-size: 0.9rem; padding: 0.8em 1em; }
+}
