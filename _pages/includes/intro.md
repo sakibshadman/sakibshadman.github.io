@@ -1,6 +1,6 @@
 <div class="avail">
   <i class="fas fa-bullhorn avail__icon" aria-hidden="true"></i>
-  <span class="avail__text"><strong>Seeking a Summer 2027 research internship</strong> in contactless physiological sensing, multimodal and vision-language models, and trustworthy health AI. Please <a href="mailto:ssakib1@umbc.edu?subject=Summer%202027%20Research%20Internship">reach out</a> if you have an opening.</span>
+  <span class="avail__text"><strong>Open to Summer 2027 research internships</strong> in multimodal and vision-language modeling, computer vision, and trustworthy health AI. My background fits Research Scientist, Applied Scientist, and ML Research Intern positions, and I would be glad to discuss how I can contribute to your team. <a href="mailto:ssakib1@umbc.edu?subject=Summer%202027%20Research%20Internship">Email me</a>.</span>
 </div>
 
 I am a third-year Ph.D. student in Information Systems at the [University of Maryland, Baltimore County (UMBC)](https://umbc.edu/), working on **trustworthy multimodal AI for healthcare**. I am advised by [Prof. Nirmalya Roy](https://artiamas.umd.edu/nirmalya-roy/) in the [Mobile Pervasive and Sensor Computing (MPSC) Lab](https://mpsc.umbc.edu/home), am affiliated with the [Center for Research in Use-Inspired Cyber-Physical Systems (CYPRESS)](https://cypress.umbc.edu/), and serve as a Graduate Teaching Assistant with [Prof. Zhiyuan Chen](https://userpages.umbc.edu/~zhchen/).
