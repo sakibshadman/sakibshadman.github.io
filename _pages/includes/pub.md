@@ -1,134 +1,12 @@
 # Research Highlights
 
-<p class="hl-sub">A few papers that best represent my work. <a href="#publications">See all publications</a></p>
+<p class="hl-sub">Selected highlights across contactless physiological sensing and trustworthy multimodal AI. <a href="#publications">Browse all publications</a></p>
 
 <div class="hl-tabs" role="tablist" aria-label="Filter highlights by area">
   <button class="hl-tab is-active" type="button" data-filter="all" aria-selected="true">All <span class="hl-tab__n">11</span></button>
   <button class="hl-tab" type="button" data-filter="trust" aria-selected="false">Trustworthy &amp; Agentic AI <span class="hl-tab__n">6</span></button>
   <button class="hl-tab" type="button" data-filter="contactless" aria-selected="false">Contactless Sensing <span class="hl-tab__n">5</span></button>
 </div>
-
-<div class='paper-box' data-cat='trust'>
-<div class='paper-box-image'>
-<div>
-<div class="badge">NeurIPS 2026 @Med-Reasoner</div>
-<img src='images/measure26.jpg' alt="Measure What Matters" width="100%">
-</div>
-</div>
-
-<div class='paper-box-text' markdown="1">
-
-<span class="ptitle">Measure What Matters: Active Evidence Acquisition for Reliable Physiological Reasoning</span> \\
-**Shadman Sakib**, Nirmalya Roy \\
-*NeurIPS 2026 Workshop on Medical Reasoning with Vision Language Foundation Models (Med-Reasoner)*
-
-<a class="pdf-btn" href="https://drive.google.com/file/d/1B4r10UoS3IYqClQ0eTsBuIxxql9tt090/view"><i class="fas fa-file-pdf"></i> PDF</a>
-
-</div>
-</div>
-
-
-<div class='paper-box' data-cat='trust'>
-<div class='paper-box-image'>
-<div>
-<div class="badge">NeurIPS 2026 @Med-Reasoner</div>
-<img src='images/keeptime26.jpg' alt="Can VLMs Keep Time?" width="100%">
-</div>
-</div>
-
-<div class='paper-box-text' markdown="1">
-
-<span class="ptitle">Can VLMs Keep Time? Probing Quantitative Temporal Reasoning in Physiological Videos</span> \\
-**Shadman Sakib**, Nirmalya Roy \\
-*NeurIPS 2026 Workshop on Medical Reasoning with Vision Language Foundation Models (Med-Reasoner)*
-
-<a class="pdf-btn" href="https://drive.google.com/file/d/1QVT9kdUWBEAnXftCWekVjMSfdgzAL9dI/view"><i class="fas fa-file-pdf"></i> PDF</a>
-
-</div>
-</div>
-
-
-<div class='paper-box' data-cat='trust'>
-<div class='paper-box-image'>
-<div>
-<div class="badge">AAAI FSS 2026 @TAS</div>
-<img src='images/cfaudit26.jpg' alt="Counterfactual Auditing" width="100%">
-</div>
-</div>
-
-<div class='paper-box-text' markdown="1">
-
-<span class="ptitle">Does the Agent Follow the Evidence? Counterfactual Auditing for Trustworthy Multimodal Health Agents</span> \\
-**Shadman Sakib**, Nirmalya Roy \\
-*AAAI 2026 Fall Symposium on Trustworthy Agentic Systems (TAS 2026)*
-
-<a class="pdf-btn" href="https://drive.google.com/file/d/1_R9zvNgJY-CpGD4OrJHa_sM9w1-LJZDa/view?usp=sharing"><i class="fas fa-file-pdf"></i> PDF</a>
-
-</div>
-</div>
-
-
-<div class='paper-box' data-cat='trust'>
-<div class='paper-box-image'>
-<div>
-<div class="badge">MICCAI 2026 @SAFER</div>
-<img src='images/evical26.png' alt="EviCal-RR" width="100%">
-</div>
-</div>
-
-<div class='paper-box-text' markdown="1">
-
-<span class="ptitle">EviCal-RR: Evidence-Calibrated Reasoning for Contactless Respiratory Monitoring</span> \\
-**Shadman Sakib**, Nirmalya Roy \\
-*MICCAI 2026 Workshop on Stable Adaptation and Faithful Evaluation of Reasoning in Medical Foundation Models (SAFER)*
-
-<a class="pdf-btn" href="https://drive.google.com/file/d/1_P-2eoTz9MTqR7LD4BKQ_IjTuAri1R4m/view?usp=sharing"><i class="fas fa-file-pdf"></i> PDF</a>
-
-</div>
-</div>
-
-
-<div class='paper-box' data-cat='trust'>
-<div class='paper-box-image'>
-<div>
-<div class="badge">CHASE 2026</div>
-<img src='images/vlsrr26.jpg' alt="VLS-RR" width="100%">
-</div>
-</div>
-
-<div class='paper-box-text' markdown="1">
-
-<span class="ptitle">Decoupling Perception and Reasoning for Contactless Respiratory Rate with Vision Language and Small Language Models</span> \\
-**Shadman Sakib**, Gaurav Shinde, Nirmalya Roy \\
-*IEEE/ACM International Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE 2026)*
-
-<a class="pdf-btn" href="https://drive.google.com/file/d/1oF4TUfFocZsIw6tBQSWbLIsMjxOxfgXX/view?usp=sharing"><i class="fas fa-file-pdf"></i> PDF</a>
-
-</div>
-</div>
-
-
-<div class='paper-box' data-cat='trust'>
-<div class='paper-box-image'>
-<div>
-<div class="badge">CVPR 2026 @GRAIL-V</div>
-<img src='images/calibra26.png' alt="CALIBRA" width="100%">
-</div>
-</div>
-
-<div class='paper-box-text' markdown="1">
-
-<span class="ptitle">CALIBRA: Calibration-Aware Multi-Agent Verification for Contactless Physiological Monitoring</span> \\
-**Shadman Sakib**, Gaurav Shinde, Nirmalya Roy \\
-*CVPR 2026 Workshop on Grounded Retrieval and Agentic Intelligence for Vision-Language (GRAIL-V)*
-
-<a class="pdf-btn" href="https://openaccess.thecvf.com/CVPR2026_workshops/GRAIL-V"><i class="fas fa-file-pdf"></i> PDF</a>
-
-</div>
-</div>
-
-
-
 
 <div class='paper-box' data-cat='contactless'>
 <div class='paper-box-image'>
@@ -150,6 +28,119 @@
 </div>
 </div>
 
+<div class='paper-box' data-cat='trust'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">NeurIPS 2026 @Med-Reasoner</div>
+<img src='images/measure26.jpg' alt="Measure What Matters" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+<span class="ptitle">Measure What Matters: Active Evidence Acquisition for Reliable Physiological Reasoning</span> \\
+**Shadman Sakib**, Nirmalya Roy \\
+*NeurIPS 2026 Workshop on Medical Reasoning with Vision Language Foundation Models (Med-Reasoner)*
+
+<a class="pdf-btn" href="https://drive.google.com/file/d/1B4r10UoS3IYqClQ0eTsBuIxxql9tt090/view"><i class="fas fa-file-pdf"></i> PDF</a>
+
+</div>
+</div>
+
+<div class='paper-box' data-cat='trust'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">NeurIPS 2026 @Med-Reasoner</div>
+<img src='images/keeptime26.jpg' alt="Can VLMs Keep Time?" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+<span class="ptitle">Can VLMs Keep Time? Probing Quantitative Temporal Reasoning in Physiological Videos</span> \\
+**Shadman Sakib**, Nirmalya Roy \\
+*NeurIPS 2026 Workshop on Medical Reasoning with Vision Language Foundation Models (Med-Reasoner)*
+
+<a class="pdf-btn" href="https://drive.google.com/file/d/1QVT9kdUWBEAnXftCWekVjMSfdgzAL9dI/view"><i class="fas fa-file-pdf"></i> PDF</a>
+
+</div>
+</div>
+
+<div class='paper-box' data-cat='trust'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">AAAI FSS 2026 @TAS</div>
+<img src='images/cfaudit26.jpg' alt="Counterfactual Auditing" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+<span class="ptitle">Does the Agent Follow the Evidence? Counterfactual Auditing for Trustworthy Multimodal Health Agents</span> \\
+**Shadman Sakib**, Nirmalya Roy \\
+*AAAI 2026 Fall Symposium on Trustworthy Agentic Systems (TAS 2026)*
+
+<a class="pdf-btn" href="https://drive.google.com/file/d/1_R9zvNgJY-CpGD4OrJHa_sM9w1-LJZDa/view?usp=sharing"><i class="fas fa-file-pdf"></i> PDF</a>
+
+</div>
+</div>
+
+<div class='paper-box' data-cat='trust'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">MICCAI 2026 @SAFER</div>
+<img src='images/evical26.png' alt="EviCal-RR" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+<span class="ptitle">EviCal-RR: Evidence-Calibrated Reasoning for Contactless Respiratory Monitoring</span> \\
+**Shadman Sakib**, Nirmalya Roy \\
+*MICCAI 2026 Workshop on Stable Adaptation and Faithful Evaluation of Reasoning in Medical Foundation Models (SAFER)*
+
+<a class="pdf-btn" href="https://drive.google.com/file/d/1_P-2eoTz9MTqR7LD4BKQ_IjTuAri1R4m/view?usp=sharing"><i class="fas fa-file-pdf"></i> PDF</a>
+
+</div>
+</div>
+
+<div class='paper-box' data-cat='trust'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">CHASE 2026</div>
+<img src='images/vlsrr26.jpg' alt="VLS-RR" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+<span class="ptitle">Decoupling Perception and Reasoning for Contactless Respiratory Rate with Vision Language and Small Language Models</span> \\
+**Shadman Sakib**, Gaurav Shinde, Nirmalya Roy \\
+*IEEE/ACM International Conference on Connected Health: Applications, Systems and Engineering Technologies (CHASE 2026)*
+
+<a class="pdf-btn" href="https://drive.google.com/file/d/1oF4TUfFocZsIw6tBQSWbLIsMjxOxfgXX/view?usp=sharing"><i class="fas fa-file-pdf"></i> PDF</a>
+
+</div>
+</div>
+
+<div class='paper-box' data-cat='trust'>
+<div class='paper-box-image'>
+<div>
+<div class="badge">CVPR 2026 @GRAIL-V</div>
+<img src='images/calibra26.png' alt="CALIBRA" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+<span class="ptitle">CALIBRA: Calibration-Aware Multi-Agent Verification for Contactless Physiological Monitoring</span> \\
+**Shadman Sakib**, Gaurav Shinde, Nirmalya Roy \\
+*CVPR 2026 Workshop on Grounded Retrieval and Agentic Intelligence for Vision-Language (GRAIL-V)*
+
+<a class="pdf-btn" href="https://openaccess.thecvf.com/CVPR2026_workshops/GRAIL-V"><i class="fas fa-file-pdf"></i> PDF</a>
+
+</div>
+</div>
 
 <div class='paper-box' data-cat='contactless'>
 <div class='paper-box-image'>
@@ -170,7 +161,6 @@
 </div>
 </div>
 
-
 <div class='paper-box' data-cat='contactless'>
 <div class='paper-box-image'>
 <div>
@@ -190,7 +180,6 @@
 </div>
 </div>
 
-
 <div class='paper-box' data-cat='contactless'>
 <div class='paper-box-image'>
 <div>
@@ -209,7 +198,6 @@
 
 </div>
 </div>
-
 
 <div class='paper-box' data-cat='contactless'>
 <div class='paper-box-image'>
