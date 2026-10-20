@@ -56,6 +56,78 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <script>
+/* Research Highlights: magnifier badge + click-to-enlarge lightbox */
+document.addEventListener("DOMContentLoaded", function () {
+  var figures = document.querySelectorAll(".paper-box-image");
+  if (!figures.length) { return; }
+
+  /* Build the lightbox once */
+  var lb = document.createElement("div");
+  lb.className = "lightbox";
+  lb.setAttribute("aria-hidden", "true");
+  lb.innerHTML =
+    '<button type="button" class="lightbox__close" aria-label="Close (Esc)">&times;</button>' +
+    '<figure class="lightbox__fig">' +
+      '<img class="lightbox__img" alt="">' +
+      '<figcaption class="lightbox__cap"></figcaption>' +
+    '</figure>';
+  document.body.appendChild(lb);
+
+  var lbImg   = lb.querySelector(".lightbox__img");
+  var lbCap   = lb.querySelector(".lightbox__cap");
+  var closeBt = lb.querySelector(".lightbox__close");
+
+  function openLightbox(src, caption) {
+    lbImg.src = src;
+    lbImg.alt = caption || "";
+    if (caption) { lbCap.textContent = caption; lbCap.style.display = ""; }
+    else { lbCap.textContent = ""; lbCap.style.display = "none"; }
+    lb.classList.add("is-open");
+    lb.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    lb.classList.remove("is-open");
+    lb.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+    lbImg.src = "";
+  }
+
+  figures.forEach(function (box) {
+    var img = box.querySelector("img");
+    if (!img) { return; }
+
+    var badge = document.createElement("span");
+    badge.className = "zoom-badge";
+    badge.innerHTML = '<i class="fas fa-search-plus" aria-hidden="true"></i>';
+    box.appendChild(badge);
+
+    box.style.cursor = "zoom-in";
+    box.setAttribute("role", "button");
+    box.setAttribute("tabindex", "0");
+    box.setAttribute("aria-label", "Enlarge figure" + (img.alt ? ": " + img.alt : ""));
+
+    box.addEventListener("click", function () {
+      openLightbox(img.currentSrc || img.src, img.alt);
+    });
+    box.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        openLightbox(img.currentSrc || img.src, img.alt);
+      }
+    });
+  });
+
+  closeBt.addEventListener("click", closeLightbox);
+  lb.addEventListener("click", function (e) { if (e.target === lb) { closeLightbox(); } });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && lb.classList.contains("is-open")) { closeLightbox(); }
+  });
+});
+</script>
+
+<script>
 document.addEventListener("DOMContentLoaded", function () {
   var summaries = document.querySelectorAll("details > summary");
 
