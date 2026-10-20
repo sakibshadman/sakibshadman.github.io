@@ -15,43 +15,35 @@ Previously, I was a [HUMAP Fellow](https://hyogo-humap.jp/en/search/203) at the 
 
   <p class="ri-thrusts__title">Research Interests</p>
 
-  <ul class="thrusts">
+  <ul class="ri-list">
 
-    <li class="thrust">
-      <span class="thrust__cat">Trustworthy &amp; Agentic Health AI</span>
-      <span class="thrust__items">
-        <span class="ti"><a href="https://openaccess.thecvf.com/CVPR2026_workshops/GRAIL-V" target="_blank" rel="noopener">CALIBRA</a> <span class="tv">(CVPR 2026 @GRAIL-V)</span></span>
-        <span class="ti"><a href="https://drive.google.com/file/d/1_R9zvNgJY-CpGD4OrJHa_sM9w1-LJZDa/view" target="_blank" rel="noopener">Counterfactual Auditing</a> <span class="tv">(AAAI 2026 @TAS)</span></span>
-        <span class="ti"><a href="https://drive.google.com/file/d/1_P-2eoTz9MTqR7LD4BKQ_IjTuAri1R4m/view" target="_blank" rel="noopener">EviCal-RR</a> <span class="tv">(MICCAI 2026 @SAFER)</span></span>
-        <span class="ti"><a href="https://drive.google.com/file/d/1B4r10UoS3IYqClQ0eTsBuIxxql9tt090/view" target="_blank" rel="noopener">Measure What Matters</a> <span class="tv">(NeurIPS 2026 @Med-Reasoner)</span></span>
-      </span>
+    <li>
+      <span class="ri-list__cat">Trustworthy &amp; Agentic Health AI:</span>
+      <span class="ti"><a href="https://openaccess.thecvf.com/CVPR2026_workshops/GRAIL-V" target="_blank" rel="noopener">CALIBRA</a> <span class="tv">CVPR 2026 @GRAIL-V</span></span>
+      <span class="ti"><a href="https://drive.google.com/file/d/1_R9zvNgJY-CpGD4OrJHa_sM9w1-LJZDa/view" target="_blank" rel="noopener">Counterfactual Auditing</a> <span class="tv">AAAI 2026 @TAS</span></span>
+      <span class="ti"><a href="https://drive.google.com/file/d/1_P-2eoTz9MTqR7LD4BKQ_IjTuAri1R4m/view" target="_blank" rel="noopener">EviCal-RR</a> <span class="tv">MICCAI 2026 @SAFER</span></span>
+      <span class="ti"><a href="https://drive.google.com/file/d/1B4r10UoS3IYqClQ0eTsBuIxxql9tt090/view" target="_blank" rel="noopener">Measure What Matters</a> <span class="tv">NeurIPS 2026 @Med-Reasoner</span></span>
     </li>
 
-    <li class="thrust">
-      <span class="thrust__cat">Contactless Physiological Sensing</span>
-      <span class="thrust__items">
-        <span class="ti"><a href="https://sakibshadman.github.io/pixels-to-phase/" target="_blank" rel="noopener">Pixels-to-Phase</a> <span class="tv">(WACV 2027)</span></span>
-        <span class="ti"><a href="https://drive.google.com/file/d/1CyoQrBMLuhcM0W3E8yvdeQWxWzC29GCk/view" target="_blank" rel="noopener">ViTaL-Diff</a> <span class="tv">(ICML 2026 @SD4H)</span></span>
-        <span class="ti"><a href="https://drive.google.com/file/d/1bMdFk0pYLXdmMfyMulAUOtvW7Fl1rwci/view" target="_blank" rel="noopener">RespFormer</a> <span class="tv">(ICMLA 2025)</span></span>
-        <span class="ti"><a href="https://dl.acm.org/doi/10.1145/3721201.3721366" target="_blank" rel="noopener">RRPIPS</a> <span class="tv">(ACM CHASE 2025)</span></span>
-      </span>
+    <li>
+      <span class="ri-list__cat">Contactless Physiological Sensing:</span>
+      <span class="ti"><a href="https://sakibshadman.github.io/pixels-to-phase/" target="_blank" rel="noopener">Pixels-to-Phase</a> <span class="tv">WACV 2027</span></span>
+      <span class="ti"><a href="https://drive.google.com/file/d/1CyoQrBMLuhcM0W3E8yvdeQWxWzC29GCk/view" target="_blank" rel="noopener">ViTaL-Diff</a> <span class="tv">ICML 2026 @SD4H</span></span>
+      <span class="ti"><a href="https://drive.google.com/file/d/1bMdFk0pYLXdmMfyMulAUOtvW7Fl1rwci/view" target="_blank" rel="noopener">RespFormer</a> <span class="tv">ICMLA 2025</span></span>
+      <span class="ti"><a href="https://dl.acm.org/doi/10.1145/3721201.3721366" target="_blank" rel="noopener">RRPIPS</a> <span class="tv">ACM CHASE 2025</span></span>
     </li>
 
-    <li class="thrust">
-      <span class="thrust__cat">Multimodal &amp; Vision-Language Reasoning</span>
-      <span class="thrust__items">
-        <span class="ti"><a href="https://drive.google.com/file/d/1QVT9kdUWBEAnXftCWekVjMSfdgzAL9dI/view" target="_blank" rel="noopener">Can VLMs Keep Time?</a> <span class="tv">(NeurIPS 2026 @Med-Reasoner)</span></span>
-        <span class="ti"><a href="https://drive.google.com/file/d/1_wHP_3e1s5KN2ztvJkb66XsY8whUs0L6/view" target="_blank" rel="noopener">Reliability-Guided Tokens</a> <span class="tv">(CIKM 2026)</span></span>
-        <span class="ti"><a href="https://drive.google.com/file/d/1oF4TUfFocZsIw6tBQSWbLIsMjxOxfgXX/view" target="_blank" rel="noopener">VLS-RR</a> <span class="tv">(ACM CHASE 2026)</span></span>
-      </span>
+    <li>
+      <span class="ri-list__cat">Multimodal &amp; Vision-Language Reasoning:</span>
+      <span class="ti"><a href="https://drive.google.com/file/d/1QVT9kdUWBEAnXftCWekVjMSfdgzAL9dI/view" target="_blank" rel="noopener">Can VLMs Keep Time?</a> <span class="tv">NeurIPS 2026 @Med-Reasoner</span></span>
+      <span class="ti"><a href="https://drive.google.com/file/d/1_wHP_3e1s5KN2ztvJkb66XsY8whUs0L6/view" target="_blank" rel="noopener">Reliability-Guided Tokens</a> <span class="tv">CIKM 2026</span></span>
+      <span class="ti"><a href="https://drive.google.com/file/d/1oF4TUfFocZsIw6tBQSWbLIsMjxOxfgXX/view" target="_blank" rel="noopener">VLS-RR</a> <span class="tv">ACM CHASE 2026</span></span>
     </li>
 
-    <li class="thrust">
-      <span class="thrust__cat">Medical Imaging</span>
-      <span class="thrust__items">
-        <span class="ti"><span class="tn">Retinal AV Segmentation</span> <span class="tv">(BMVC 2026 @BD-MedVis)</span></span>
-        <span class="ti"><a href="https://arxiv.org/abs/2601.19136" target="_blank" rel="noopener">TFFM</a> <span class="tv">(WACV 2026)</span></span>
-      </span>
+    <li>
+      <span class="ri-list__cat">Medical Imaging:</span>
+      <span class="ti"><span class="tn">Retinal AV Segmentation</span> <span class="tv">BMVC 2026 @BD-MedVis</span></span>
+      <span class="ti"><a href="https://arxiv.org/abs/2601.19136" target="_blank" rel="noopener">TFFM</a> <span class="tv">WACV 2026</span></span>
     </li>
 
   </ul>
