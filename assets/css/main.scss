@@ -2501,3 +2501,21 @@ a, button, summary, .masthead__menu-item a {
 @media (max-width: 600px) {
   .avail { font-size: 0.9rem; padding: 0.8em 1em; }
 }
+
+
+/* ==========================================================================
+   BIO PROSE: refined link colour (deep teal) in place of the bright blue
+   ========================================================================== */
+
+.page__content > p a {
+  color: #0b5f59;
+  text-decoration: underline;
+  text-decoration-color: rgba(15, 118, 110, 0.32);
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+.page__content > p a:hover {
+  color: #0f766e;
+  text-decoration-color: #0f766e;
+}
