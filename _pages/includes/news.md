@@ -1,4 +1,4 @@
-# 🔥 News
+# News
 
 <!-- News items live in _data/news.yml. This section shows on laptops and phones;
      on wide screens the same items appear in the panel on the right instead. -->
