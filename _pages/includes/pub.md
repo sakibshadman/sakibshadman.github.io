@@ -131,6 +131,27 @@
 <div class='paper-box'>
 <div class='paper-box-image'>
 <div>
+<div class="badge">WACV 2027</div>
+<img src='images/pixels2phase27.png' alt="Pixels-to-Phase" width="100%">
+</div>
+</div>
+
+<div class='paper-box-text' markdown="1">
+
+<span class="ptitle">Pixels-to-Phase: Reliability-Aware Latent State-Space Modeling for Contactless Respiratory Estimation</span> \\
+**Shadman Sakib**, Nirmalya Roy \\
+*IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2027)*
+
+<!-- Final PDF not yet available; add a PDF button here once it is released. -->
+<a class="pdf-btn" href="https://sakibshadman.github.io/pixels-to-phase/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Project Page</a>
+
+</div>
+</div>
+
+
+<div class='paper-box'>
+<div class='paper-box-image'>
+<div>
 <div class="badge">CIKM 2026</div>
 <img src='images/cikm26.png' alt="Reliability-Guided Video Token Learning" width="100%">
 </div>
@@ -256,7 +277,7 @@ Khan Md Hasib, Md Rafiqul Islam, <strong>Shadman Sakib</strong>, Md Ali Akbar, M
 
 <ul class="pub-list">
 <li><span class="pub-tag conference">WACV 2027</span>
-<strong>Pixels-to-Phase: Reliability-Aware Latent State-Space Modeling for Contactless Respiratory Estimation</strong><br>
+<a href="https://sakibshadman.github.io/pixels-to-phase/"><strong>Pixels-to-Phase: Reliability-Aware Latent State-Space Modeling for Contactless Respiratory Estimation</strong></a><br>
 <strong>Shadman Sakib</strong>, Nirmalya Roy<br>
 <em>IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2027), Orlando, Florida</em>
 </li>

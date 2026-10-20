@@ -25,7 +25,7 @@ Previously, I was a [HUMAP Fellow](https://hyogo-humap.jp/en/search/203) at the 
     <li class="thrust">
       <span class="thrust__cat">Contactless Physiological Sensing</span>
       <span class="thrust__items">
-        <span class="ti"><span class="tn">Pixels-to-Phase</span> <span class="tv">(WACV 2027)</span></span>
+        <span class="ti"><a href="https://sakibshadman.github.io/pixels-to-phase/" target="_blank" rel="noopener">Pixels-to-Phase</a> <span class="tv">(WACV 2027)</span></span>
         <span class="ti"><a href="https://drive.google.com/file/d/1CyoQrBMLuhcM0W3E8yvdeQWxWzC29GCk/view" target="_blank" rel="noopener">ViTaL-Diff</a> <span class="tv">(ICML 2026 @SD4H)</span></span>
         <span class="ti"><a href="https://drive.google.com/file/d/1bMdFk0pYLXdmMfyMulAUOtvW7Fl1rwci/view" target="_blank" rel="noopener">RespFormer</a> <span class="tv">(ICMLA 2025)</span></span>
         <span class="ti"><a href="https://dl.acm.org/doi/10.1145/3721201.3721366" target="_blank" rel="noopener">RRPIPS</a> <span class="tv">(ACM CHASE 2025)</span></span>
