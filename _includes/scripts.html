@@ -56,7 +56,31 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <script>
-/* Research Highlights: magnifier badge + click-to-enlarge lightbox */
+/* Research Highlights: category filter tabs */
+document.addEventListener("DOMContentLoaded", function () {
+  var tabs = document.querySelectorAll(".hl-tab");
+  var cards = document.querySelectorAll(".paper-box[data-cat]");
+  if (!tabs.length || !cards.length) { return; }
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () {
+      var f = tab.getAttribute("data-filter");
+      tabs.forEach(function (t) {
+        var on = (t === tab);
+        t.classList.toggle("is-active", on);
+        t.setAttribute("aria-selected", on ? "true" : "false");
+      });
+      cards.forEach(function (c) {
+        var show = (f === "all") || (c.getAttribute("data-cat") === f);
+        c.style.display = show ? "" : "none";
+      });
+    });
+  });
+});
+</script>
+
+<script>
+/* Research Highlights: click-to-enlarge lightbox */
 document.addEventListener("DOMContentLoaded", function () {
   var figures = document.querySelectorAll(".paper-box-image");
   if (!figures.length) { return; }
