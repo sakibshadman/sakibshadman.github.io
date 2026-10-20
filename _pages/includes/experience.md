@@ -45,7 +45,7 @@
 
 <div class="xp">
   <div class="xp__head"><span class="xp__role">NSF TRACE Testbed Workshop and Field Experiment</span><span class="xp__date">Apr 2026</span></div>
-  <div class="xp__org">CYPRESS Technology Research Center, UMBC</div>
+  <div class="xp__org">CYPRESS, UMBC</div>
   <p class="xp__lead">Field experiments and research demonstrations on the NSF-supported TRACE testbed for autonomous and cyber-physical systems. <a href="https://cypress.umbc.edu/testbed/trace/gallery/">Gallery</a> · <a href="https://cypress.umbc.edu/testbed/trace/trace_workshop_sp26/">Workshop</a></p>
 </div>
 
