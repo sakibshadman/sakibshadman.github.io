@@ -857,6 +857,22 @@ $news-rail-from : 1440px;   // screens at least this wide get the right-hand pan
 .news-inline .news-item { padding: 0.6em 0; }
 .news-inline .news-text { font-size: 1em; }
 
+/* Cap the height and scroll inside, so the list doesn't run down the page */
+.news-inline {
+  max-height: 30em;
+  overflow-y: auto;
+  padding-right: 0.7em;
+  scrollbar-width: thin;
+  scrollbar-color: #c7d2dd transparent;
+}
+.news-inline::-webkit-scrollbar { width: 8px; }
+.news-inline::-webkit-scrollbar-thumb { background: #c7d2dd; border-radius: 6px; }
+.news-inline::-webkit-scrollbar-track { background: transparent; }
+
+@media (max-width: 600px) {
+  .news-inline { max-height: 26em; }
+}
+
 /* Right-hand panel: hidden until the screen is wide enough */
 .news-rail { display: none; }
 
