@@ -1022,65 +1022,75 @@ $news-rail-from : 1440px;   // screens at least this wide get the right-hand pan
 }
 
 /* Research interests as themes, each with representative papers + venue tags */
-.thrusts {
+/* Research interests: areas with representative work, square markers + venue pills */
+.ri-list {
   margin: 0;
-  padding: 0;
+  padding-left: 0;
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 11px;
 }
-
-.thrust {
-  padding-left: 13px;
-  border-left: 3px solid $navy-light;
-  line-height: 1.6;
-}
-
-.thrust__cat {
-  color: $navy;
-  font-size: 0.95rem;
-  font-weight: 700;
-
-  &::after { content: ":"; margin-right: 2px; }
-}
-
-.thrust__items {
+.ri-list > li {
+  position: relative;
+  padding-left: 1.45em;
+  margin-bottom: 0.85em;
   color: $text-color;
-  font-size: 0.92rem;
+  font-size: 0.93rem;
+  line-height: 1.75;
+}
+.ri-list > li:last-child { margin-bottom: 0; }
+
+/* a small teal square marker instead of a plain bullet */
+.ri-list > li::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  background: $teal;
+  border-radius: 2px;
 }
 
-.thrust__items .ti {
-  white-space: nowrap;
+.ri-list__cat {
+  color: $navy;
+  font-weight: 700;
+  margin-right: 5px;
 }
 
-/* dot between consecutive papers in a theme */
-.thrust__items .ti + .ti::before {
+.ri-list .ti { white-space: nowrap; }
+
+/* dot between consecutive papers within an area */
+.ri-list .ti + .ti::before {
   content: "·";
   margin: 0 7px;
   color: $gray;
-  opacity: 0.6;
+  opacity: 0.55;
 }
 
-.thrust__items a,
-.thrust__items .tn {
+.ri-list a {
   color: $navy-light;
   font-weight: 600;
   text-decoration: none;
 }
-.thrust__items a:hover { color: $teal-dark; text-decoration: underline; }
+.ri-list a:hover { color: $teal-dark; text-decoration: underline; }
 
-/* papers not yet linked read the same, minus the link affordance */
-.thrust__items .tn { color: $navy; cursor: default; }
+/* a paper without a link yet reads the same, minus the link affordance */
+.ri-list .tn { color: $navy; font-weight: 600; }
 
-.thrust__items .tv {
+/* venue tag as a subtle pill rather than bare parentheses */
+.ri-list .tv {
+  margin-left: 5px;
+  padding: 1px 7px;
+  background: #eef3f7;
   color: $gray;
-  font-size: 0.82rem;
-  font-variant-numeric: tabular-nums;
+  border-radius: 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
 }
 
 @media (max-width: 560px) {
-  .thrust__items .ti { white-space: normal; }
+  .ri-list .ti { white-space: normal; }
 }
 
 /* ==========================================================================
