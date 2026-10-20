@@ -1,10 +1,14 @@
 # Research Highlights
 
+<p class="hl-sub">A few papers that best represent my work. <a href="#publications">See all publications</a></p>
 
-## Trustworthy and Agentic Reasoning for Health AI
+<div class="hl-tabs" role="tablist" aria-label="Filter highlights by area">
+  <button class="hl-tab is-active" type="button" data-filter="all" aria-selected="true">All <span class="hl-tab__n">11</span></button>
+  <button class="hl-tab" type="button" data-filter="trust" aria-selected="false">Trustworthy &amp; Agentic AI <span class="hl-tab__n">6</span></button>
+  <button class="hl-tab" type="button" data-filter="contactless" aria-selected="false">Contactless Sensing <span class="hl-tab__n">5</span></button>
+</div>
 
-
-<div class='paper-box'>
+<div class='paper-box' data-cat='trust'>
 <div class='paper-box-image'>
 <div>
 <div class="badge">NeurIPS 2026 @Med-Reasoner</div>
@@ -24,7 +28,7 @@
 </div>
 
 
-<div class='paper-box'>
+<div class='paper-box' data-cat='trust'>
 <div class='paper-box-image'>
 <div>
 <div class="badge">NeurIPS 2026 @Med-Reasoner</div>
@@ -44,7 +48,7 @@
 </div>
 
 
-<div class='paper-box'>
+<div class='paper-box' data-cat='trust'>
 <div class='paper-box-image'>
 <div>
 <div class="badge">AAAI FSS 2026 @TAS</div>
@@ -64,7 +68,7 @@
 </div>
 
 
-<div class='paper-box'>
+<div class='paper-box' data-cat='trust'>
 <div class='paper-box-image'>
 <div>
 <div class="badge">MICCAI 2026 @SAFER</div>
@@ -84,7 +88,7 @@
 </div>
 
 
-<div class='paper-box'>
+<div class='paper-box' data-cat='trust'>
 <div class='paper-box-image'>
 <div>
 <div class="badge">CHASE 2026</div>
@@ -104,7 +108,7 @@
 </div>
 
 
-<div class='paper-box'>
+<div class='paper-box' data-cat='trust'>
 <div class='paper-box-image'>
 <div>
 <div class="badge">CVPR 2026 @GRAIL-V</div>
@@ -125,10 +129,8 @@
 
 
 
-## Contactless Physiological Sensing
 
-
-<div class='paper-box'>
+<div class='paper-box' data-cat='contactless'>
 <div class='paper-box-image'>
 <div>
 <div class="badge">WACV 2027</div>
@@ -149,7 +151,7 @@
 </div>
 
 
-<div class='paper-box'>
+<div class='paper-box' data-cat='contactless'>
 <div class='paper-box-image'>
 <div>
 <div class="badge">CIKM 2026</div>
@@ -169,7 +171,7 @@
 </div>
 
 
-<div class='paper-box'>
+<div class='paper-box' data-cat='contactless'>
 <div class='paper-box-image'>
 <div>
 <div class="badge">ICML 2026 @SD4H</div>
@@ -189,7 +191,7 @@
 </div>
 
 
-<div class='paper-box'>
+<div class='paper-box' data-cat='contactless'>
 <div class='paper-box-image'>
 <div>
 <div class="badge">ICMLA 2025</div>
@@ -209,7 +211,7 @@
 </div>
 
 
-<div class='paper-box'>
+<div class='paper-box' data-cat='contactless'>
 <div class='paper-box-image'>
 <div>
 <div class="badge">SmartComp 2025</div>
@@ -227,7 +229,6 @@
 
 </div>
 </div>
-
 
 
 <h1 id="publications">Selected Publications <a class="scholar-link" href="https://scholar.google.com/citations?user=RlxTPrkAAAAJ"><i class="fas fa-graduation-cap"></i> Google Scholar</a></h1>
