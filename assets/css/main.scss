@@ -2521,15 +2521,16 @@ a, button, summary, .masthead__menu-item a {
 
 .sidebar .doc-buttons {
   display: flex;
-  gap: 8px;
+  justify-content: center;
+  gap: 10px;
   margin: 14px 0;
 }
 .sidebar .doc-buttons .cv-button {
   margin: 0;
-  flex: 1 1 0;
-  width: auto;
-  min-width: 0;
-  padding: 7px 10px;
+  flex: 0 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 7px 18px;
 }
 
 /* CV and Resume share the same filled style */
