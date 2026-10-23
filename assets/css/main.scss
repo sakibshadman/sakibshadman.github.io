@@ -2513,3 +2513,30 @@ a, button, summary, .masthead__menu-item a {
   color: #0f766e;
   text-decoration-color: #0f766e;
 }
+
+
+/* ==========================================================================
+   SIDEBAR: CV + Resume buttons as a centered pair
+   ========================================================================== */
+
+.sidebar .doc-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 14px 0;
+}
+.sidebar .doc-buttons .cv-button { margin: 0; }
+
+/* Resume is the secondary action, so CV stays primary (filled) */
+.sidebar .cv-button--alt {
+  color: $navy-light !important;
+  background: #ffffff;
+  border-color: $navy-light;
+  box-shadow: 0 2px 7px rgba(49, 83, 111, 0.10);
+}
+.sidebar .cv-button--alt:hover {
+  color: #ffffff !important;
+  background: $teal-dark;
+  border-color: $teal-dark;
+}
